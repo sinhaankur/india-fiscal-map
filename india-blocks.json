@@ -1,7 +1,7 @@
 {
   "_meta": {
     "title": "India block / taluk / tehsil dataset",
-    "scope": "V2 covers 8 states: Kerala (75 taluks), Goa (12 talukas), Sikkim (10 sub-divisions), Himachal Pradesh (90 tehsils), Uttarakhand (97 tehsils), Delhi (33 subdivisions), Punjab (88 tehsils), Haryana (110 tehsils) — 515 blocks across 100 districts. Larger states (TN, KA, MH, BR, UP, AP, TS, WB, MP, RJ, GJ) still on the roadmap.",
+    "scope": "V3 covers 19 states/UTs · 768 blocks · 168 districts. Northern (HP, UK, Punjab, Haryana, Delhi), southern (Kerala, Goa, Puducherry), small UTs (Chandigarh, Lakshadweep, A&N, Ladakh, DNH&DD), all NE states (Sikkim, Tripura, Meghalaya, Mizoram, Nagaland, Manipur). Bigger states still on roadmap (TN, KA, MH, BR, UP, AP, TS, WB, MP, RJ, GJ, Assam, AP-NE, J&K, Chhattisgarh, Jharkhand, Odisha).",
     "source": "Census 2011 sub-district directory; state revenue department websites for naming cross-check.",
     "caveat": "Block-level population from Census 2011 PDF tables is not yet integrated — V2 lists block names + parent district only. Each block is headed by a Tahsildar / Block Development Officer (BDO), typically state civil service, not IAS. The state-cadre IAS list rarely extends below district headquarters. Naming uses Census 2011 sub-district directory transliterations; minor variations vs current state-revenue-dept usage may exist (e.g., 'Tehsil' vs 'Tahsil').",
     "block_label_by_state": {
@@ -26,7 +26,7 @@
       "Maharashtra": "Taluka",
       "default": "Block"
     },
-    "roadmap_states": ["Tamil Nadu", "Karnataka", "Bihar", "Maharashtra", "Uttar Pradesh", "Andhra Pradesh", "Telangana", "West Bengal", "Madhya Pradesh", "Rajasthan", "Gujarat"]
+    "roadmap_states": ["Tamil Nadu", "Karnataka", "Bihar", "Maharashtra", "Uttar Pradesh", "Andhra Pradesh", "Telangana", "West Bengal", "Madhya Pradesh", "Rajasthan", "Gujarat", "Assam", "Arunachal Pradesh", "Jammu & Kashmir", "Chhattisgarh", "Jharkhand", "Odisha"]
   },
   "states": {
     "Kerala": {
@@ -133,6 +133,118 @@
         "Sangrur":              ["Bhawanigarh", "Dhuri", "Lehragaga", "Malerkotla", "Moonak", "Sangrur", "Sunam"],
         "Shahid Bhagat Singh Nagar": ["Balachaur", "Nawanshahr", "Rahon"],
         "Tarn Taran":           ["Bhikhiwind", "Khadoor Sahib", "Patti", "Tarn Taran"]
+      }
+    },
+    "Tripura": {
+      "districts": {
+        "West Tripura":         ["Bamutia", "Dukli", "Hezamara", "Jirania", "Lefunga", "Mandwi", "Mohanpur"],
+        "Sepahijala":           ["Bishalgarh", "Boxanagar", "Charilam", "Jampuijala", "Kathalia", "Melaghar", "Nalchhar"],
+        "Khowai":                ["Kalyanpur", "Khowai", "Mungiakami", "Padmabil", "Teliamura", "Tulashikhar"],
+        "Gomati":                ["Amarpur", "Kakraban", "Karbook", "Killa", "Matabari", "Ompi", "Tepania"],
+        "South Tripura":        ["Bagafa", "Belonia", "Hrishyamukh", "Poangbari", "Rajnagar", "Rupaichari", "Sabroom", "Satchand"],
+        "Dhalai":                ["Ambassa", "Chawmanu", "Dumburnagar", "Durga Chowmuhani", "Ganganagar", "Manu", "Raishyabari", "Salema"],
+        "Unakoti":              ["Gournagar", "Kailashahar", "Kumarghat", "Pecharthal"],
+        "North Tripura":        ["Damcherra", "Dasda", "Dharmanagar", "Jampui Hills", "Kadamtala", "Laljuri", "Panisagar", "Yubarajnagar"]
+      }
+    },
+    "Meghalaya": {
+      "districts": {
+        "East Khasi Hills":     ["Khatarshnong-Laitkroh", "Mawphlang", "Mawkynrew", "Mawryngkneng", "Mawsynram", "Pynursla", "Shella-Bholaganj"],
+        "West Khasi Hills":     ["Mairang", "Mawthadraishan", "Nongstoin", "Rambrai-Jyrngam"],
+        "South West Khasi Hills": ["Mawkyrwat", "Ranikor"],
+        "Ri-Bhoi":              ["Bhoirymbong", "Jirang", "Umling", "Umsning"],
+        "East Jaintia Hills":   ["Khliehriat", "Saipung"],
+        "West Jaintia Hills":   ["Amlarem", "Laskein", "Thadlaskein"],
+        "East Garo Hills":      ["Dambo Rongjeng", "Resubelpara", "Songsak"],
+        "West Garo Hills":      ["Dadenggre", "Gambegre", "Rongram", "Selsella", "Tikrikilla"],
+        "North Garo Hills":     ["Bajengdoba", "Kharkutta"],
+        "South Garo Hills":     ["Baghmara", "Chokpot", "Gasuapara", "Rongara-Songgong"],
+        "South West Garo Hills": ["Betasing", "Zikzak"]
+      }
+    },
+    "Mizoram": {
+      "districts": {
+        "Aizawl":               ["Aibawk", "Darlawn", "Phullen", "Thingsulthliah", "Tlangnuam"],
+        "Lunglei":              ["Bunghmun", "Hnahthial", "Lungsen", "Lunglei"],
+        "Champhai":             ["Champhai", "Khawbung", "Khawzawl", "Ngopa"],
+        "Mamit":                ["Mamit", "Reiek", "West Phaileng", "Zawlnuam"],
+        "Kolasib":              ["Bilkhawthlir", "Thingdawl"],
+        "Serchhip":             ["East Lungdar", "Serchhip"],
+        "Lawngtlai":            ["Bungtlang South", "Chawngte", "Lawngtlai", "Sangau"],
+        "Saiha":                ["Saiha", "Tuipang"]
+      }
+    },
+    "Nagaland": {
+      "districts": {
+        "Kohima":               ["Kohima", "Sechü Zubza", "Tseminyu"],
+        "Phek":                 ["Phek", "Pfutsero", "Sekrüzu"],
+        "Dimapur":              ["Dimapur", "Medziphema", "Niuland"],
+        "Peren":                ["Jalukie", "Peren"],
+        "Mokokchung":           ["Changtongya", "Mangkolemba", "Mokokchung", "Tuli"],
+        "Wokha":                ["Bhandari", "Sanis", "Wokha"],
+        "Zunheboto":            ["Aghunato", "Akuluto", "Pughoboto", "Zunheboto"],
+        "Mon":                  ["Aboi", "Mon", "Phomching", "Tobu", "Wakching"],
+        "Longleng":             ["Longleng", "Tamlu"],
+        "Kiphire":              ["Kiphire", "Pungro", "Sittimi"],
+        "Tuensang":             ["Noklak", "Sangsangnyu", "Shamator", "Tuensang"]
+      }
+    },
+    "Manipur": {
+      "districts": {
+        "Imphal East":          ["Sawombung", "Keirao Bitra", "Imphal East-I", "Imphal East-II"],
+        "Imphal West":          ["Imphal West-I", "Imphal West-II", "Lamphelpat", "Wangoi"],
+        "Bishnupur":            ["Bishnupur", "Moirang", "Nambol"],
+        "Thoubal":              ["Lilong", "Thoubal", "Kakching (now district)", "Wabagai"],
+        "Kakching":             ["Kakching", "Sugnu"],
+        "Senapati":             ["Senapati", "Kangpokpi (now district)", "Saitu", "Paomata", "Purul", "Tadubi"],
+        "Kangpokpi":            ["Kangpokpi", "Saitu-Gamphazol"],
+        "Tamenglong":           ["Tamenglong", "Nungba", "Tamei", "Tousem"],
+        "Noney":                ["Noney", "Khoupum"],
+        "Churachandpur":        ["Churachandpur", "Singngat", "Tipaimukh", "Henglep"],
+        "Pherzawl":             ["Pherzawl", "Parbung", "Vangai"],
+        "Chandel":              ["Chandel", "Chakpikarong", "Tengnoupal (now district)"],
+        "Tengnoupal":           ["Machi", "Moreh", "Tengnoupal"],
+        "Ukhrul":               ["Ukhrul", "Kamjong (now district)", "Phungyar", "Lambui"],
+        "Kamjong":              ["Kamjong", "Phungyar", "Kasom Khullen"],
+        "Jiribam":              ["Jiribam"]
+      }
+    },
+    "Chandigarh": {
+      "districts": {
+        "Chandigarh":           ["Chandigarh"]
+      }
+    },
+    "Puducherry": {
+      "districts": {
+        "Puducherry":           ["Puducherry (Town)", "Ariyankuppam", "Bahour", "Mannadipet", "Villianur"],
+        "Karaikal":             ["Karaikal (North)", "Karaikal (South)", "Kottucherry", "Neravy", "Thirunallar"],
+        "Mahe":                 ["Mahe"],
+        "Yanam":                ["Yanam"]
+      }
+    },
+    "Ladakh": {
+      "districts": {
+        "Leh":                  ["Leh", "Nubra", "Khalsi", "Nyoma", "Durbuk"],
+        "Kargil":               ["Kargil", "Sankoo", "Drass", "Zanskar"]
+      }
+    },
+    "Andaman & Nicobar": {
+      "districts": {
+        "South Andaman":        ["Ferrargunj", "Little Andaman", "Port Blair"],
+        "North & Middle Andaman": ["Diglipur", "Mayabunder", "Rangat"],
+        "Nicobar":              ["Car Nicobar", "Nancowry", "Great Nicobar"]
+      }
+    },
+    "Lakshadweep": {
+      "districts": {
+        "Lakshadweep":          ["Amini", "Andrott", "Kavaratti", "Minicoy", "Kalpeni", "Kiltan", "Chetlat", "Bitra", "Agatti", "Kadmat"]
+      }
+    },
+    "Dadra and Nagar Haveli and Daman and Diu": {
+      "districts": {
+        "Dadra and Nagar Haveli": ["Silvassa", "Khanvel"],
+        "Daman":                 ["Daman"],
+        "Diu":                   ["Diu"]
       }
     },
     "Haryana": {
