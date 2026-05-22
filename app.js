@@ -517,6 +517,11 @@
       else console.warn('india-extras.json missing — proceeding without governance footprint');
 
       ui.state.yearIdx = DATA._meta.years.length - 1;
+      // Compute the color domain BEFORE building the map: Leaflet's GeoJSON layer
+      // synchronously invokes the style callback for every feature during construction,
+      // which calls fillStyle → colorFor(domain). Without this, domain is undefined and
+      // colorFor crashes on the first paint.
+      ui._domain = computeDomain(VIEWS[ui.state.view], ui.state.yearIdx);
       wireControls();
       buildMap();
       repaint();
@@ -524,7 +529,7 @@
       console.error('Bootstrap failed:', err);
       const wrap = $ind('#india-map-wrap');
       if (wrap) {
-        wrap.innerHTML = `<div style="padding:2rem;color:var(--muted-foreground);font-family:var(--font-mono);font-size:12px">Couldn't load data — serve over HTTP (not file://).<br/><br/><code>${esc(err.message)}</code></div>`;
+        wrap.innerHTML = `<div style="padding:2rem;color:var(--muted-foreground);font-family:var(--font-mono);font-size:12px"><strong style="color:var(--foreground)">Bootstrap failed.</strong><br/><br/><code style="display:block;background:oklch(0.18 0 0);padding:0.5rem;border-radius:4px;color:oklch(0.7 0.18 30)">${esc(err.message)}</code><br/>If you're opening the HTML file directly (file://), serve it over HTTP instead:<br/><code>python3 -m http.server 8000</code></div>`;
       }
     }
   }
