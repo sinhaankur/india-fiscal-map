@@ -1,0 +1,184 @@
+{
+  "_meta": {
+    "source": "github.com/geohacker/india (Datameet-derived), Census 2011 district boundaries",
+    "caveat": "Telangana absent \u2014 geojson predates 2014 bifurcation; AP entries cover undivided AP. Some newer post-2011 districts (carved out after 2011 Census) not represented.",
+    "as_of": "Census 2011"
+  },
+  "states": {
+    "Andaman & Nicobar": {
+      "file": "districts/Andaman_and_Nicobar.geojson",
+      "districts": 2,
+      "size_kb": 2213
+    },
+    "Andhra Pradesh": {
+      "file": "districts/Andhra_Pradesh.geojson",
+      "districts": 23,
+      "size_kb": 2095
+    },
+    "Arunachal Pradesh": {
+      "file": "districts/Arunachal_Pradesh.geojson",
+      "districts": 15,
+      "size_kb": 238
+    },
+    "Assam": {
+      "file": "districts/Assam.geojson",
+      "districts": 23,
+      "size_kb": 478
+    },
+    "Bihar": {
+      "file": "districts/Bihar.geojson",
+      "districts": 37,
+      "size_kb": 691
+    },
+    "Chandigarh": {
+      "file": "districts/Chandigarh.geojson",
+      "districts": 1,
+      "size_kb": 3
+    },
+    "Chhattisgarh": {
+      "file": "districts/Chhattisgarh.geojson",
+      "districts": 16,
+      "size_kb": 423
+    },
+    "Dadra and Nagar Haveli": {
+      "file": "districts/Dadra_and_Nagar_Haveli.geojson",
+      "districts": 1,
+      "size_kb": 10
+    },
+    "Daman and Diu": {
+      "file": "districts/Daman_and_Diu.geojson",
+      "districts": 2,
+      "size_kb": 73
+    },
+    "Delhi": {
+      "file": "districts/Delhi.geojson",
+      "districts": 1,
+      "size_kb": 8
+    },
+    "Goa": {
+      "file": "districts/Goa.geojson",
+      "districts": 2,
+      "size_kb": 203
+    },
+    "Gujarat": {
+      "file": "districts/Gujarat.geojson",
+      "districts": 25,
+      "size_kb": 4768
+    },
+    "Haryana": {
+      "file": "districts/Haryana.geojson",
+      "districts": 19,
+      "size_kb": 226
+    },
+    "Himachal Pradesh": {
+      "file": "districts/Himachal_Pradesh.geojson",
+      "districts": 12,
+      "size_kb": 209
+    },
+    "Jammu & Kashmir": {
+      "file": "districts/Jammu_and_Kashmir.geojson",
+      "districts": 14,
+      "size_kb": 109
+    },
+    "Jharkhand": {
+      "file": "districts/Jharkhand.geojson",
+      "districts": 22,
+      "size_kb": 421
+    },
+    "Karnataka": {
+      "file": "districts/Karnataka.geojson",
+      "districts": 27,
+      "size_kb": 1044
+    },
+    "Kerala": {
+      "file": "districts/Kerala.geojson",
+      "districts": 14,
+      "size_kb": 1560
+    },
+    "Lakshadweep": {
+      "file": "districts/Lakshadweep.geojson",
+      "districts": 1,
+      "size_kb": 138
+    },
+    "Madhya Pradesh": {
+      "file": "districts/Madhya_Pradesh.geojson",
+      "districts": 48,
+      "size_kb": 1685
+    },
+    "Maharashtra": {
+      "file": "districts/Maharashtra.geojson",
+      "districts": 34,
+      "size_kb": 2301
+    },
+    "Manipur": {
+      "file": "districts/Manipur.geojson",
+      "districts": 9,
+      "size_kb": 144
+    },
+    "Meghalaya": {
+      "file": "districts/Meghalaya.geojson",
+      "districts": 7,
+      "size_kb": 122
+    },
+    "Mizoram": {
+      "file": "districts/Mizoram.geojson",
+      "districts": 8,
+      "size_kb": 168
+    },
+    "Nagaland": {
+      "file": "districts/Nagaland.geojson",
+      "districts": 8,
+      "size_kb": 102
+    },
+    "Odisha": {
+      "file": "districts/Odisha.geojson",
+      "districts": 30,
+      "size_kb": 1347
+    },
+    "Puducherry": {
+      "file": "districts/Puducherry.geojson",
+      "districts": 4,
+      "size_kb": 114
+    },
+    "Punjab": {
+      "file": "districts/Punjab.geojson",
+      "districts": 17,
+      "size_kb": 355
+    },
+    "Rajasthan": {
+      "file": "districts/Rajasthan.geojson",
+      "districts": 32,
+      "size_kb": 900
+    },
+    "Sikkim": {
+      "file": "districts/Sikkim.geojson",
+      "districts": 4,
+      "size_kb": 51
+    },
+    "Tamil Nadu": {
+      "file": "districts/Tamil_Nadu.geojson",
+      "districts": 30,
+      "size_kb": 1997
+    },
+    "Tripura": {
+      "file": "districts/Tripura.geojson",
+      "districts": 4,
+      "size_kb": 119
+    },
+    "Uttar Pradesh": {
+      "file": "districts/Uttar_Pradesh.geojson",
+      "districts": 70,
+      "size_kb": 1626
+    },
+    "Uttarakhand": {
+      "file": "districts/Uttarakhand.geojson",
+      "districts": 13,
+      "size_kb": 299
+    },
+    "West Bengal": {
+      "file": "districts/West_Bengal.geojson",
+      "districts": 19,
+      "size_kb": 3353
+    }
+  }
+}

@@ -1,0 +1,5853 @@
+{
+ "_meta": {
+  "source": "Census of India 2011 \u2014 district-level totals",
+  "source_url": "https://censusindia.gov.in",
+  "fetched_via": "github.com/nishusharma1608/India-Census-2011-Analysis",
+  "caveats": [
+   "Most recent district-level census; Census 2021 deferred.",
+   "Some districts have been bifurcated post-2011 \u2014 newer districts not captured.",
+   "Telangana is included under Andhra Pradesh (bifurcation occurred in 2014)."
+  ],
+  "fields": {
+   "population": "Total population (persons)",
+   "male": "Male population",
+   "female": "Female population",
+   "literate": "Literate persons (age 7+)",
+   "households": "Total households",
+   "rural_hh": "Rural households",
+   "urban_hh": "Urban households"
+  }
+ },
+ "states": {
+  "JAMMU AND KASHMIR": {
+   "Kupwara": {
+    "population": 870354,
+    "male": 474190,
+    "female": 396164,
+    "literate": 439654,
+    "households": 181664,
+    "rural_hh": 158438,
+    "urban_hh": 23226
+   },
+   "Badgam": {
+    "population": 753745,
+    "male": 398041,
+    "female": 355704,
+    "literate": 335649,
+    "households": 187839,
+    "rural_hh": 160649,
+    "urban_hh": 27190
+   },
+   "Leh(Ladakh)": {
+    "population": 133487,
+    "male": 78971,
+    "female": 54516,
+    "literate": 93770,
+    "households": 54394,
+    "rural_hh": 36920,
+    "urban_hh": 17474
+   },
+   "Kargil": {
+    "population": 140802,
+    "male": 77785,
+    "female": 63017,
+    "literate": 86236,
+    "households": 48144,
+    "rural_hh": 40370,
+    "urban_hh": 7774
+   },
+   "Punch": {
+    "population": 476835,
+    "male": 251899,
+    "female": 224936,
+    "literate": 261724,
+    "households": 147408,
+    "rural_hh": 132139,
+    "urban_hh": 15269
+   },
+   "Rajouri": {
+    "population": 642415,
+    "male": 345351,
+    "female": 297064,
+    "literate": 364109,
+    "households": 213578,
+    "rural_hh": 196070,
+    "urban_hh": 17508
+   },
+   "Kathua": {
+    "population": 616435,
+    "male": 326109,
+    "female": 290326,
+    "literate": 389204,
+    "households": 214847,
+    "rural_hh": 181374,
+    "urban_hh": 33473
+   },
+   "Baramula": {
+    "population": 1008039,
+    "male": 534733,
+    "female": 473306,
+    "literate": 545149,
+    "households": 259475,
+    "rural_hh": 210543,
+    "urban_hh": 48932
+   },
+   "Bandipore": {
+    "population": 392232,
+    "male": 207680,
+    "female": 184552,
+    "literate": 185979,
+    "households": 98076,
+    "rural_hh": 80521,
+    "urban_hh": 17555
+   },
+   "Srinagar": {
+    "population": 1236829,
+    "male": 651124,
+    "female": 585705,
+    "literate": 748584,
+    "households": 262239,
+    "rural_hh": 4518,
+    "urban_hh": 257721
+   },
+   "Ganderbal": {
+    "population": 297446,
+    "male": 158720,
+    "female": 138726,
+    "literate": 143276,
+    "households": 77346,
+    "rural_hh": 63788,
+    "urban_hh": 13558
+   },
+   "Pulwama": {
+    "population": 560440,
+    "male": 293064,
+    "female": 267376,
+    "literate": 293958,
+    "households": 169223,
+    "rural_hh": 147520,
+    "urban_hh": 21703
+   },
+   "Shupiyan": {
+    "population": 266215,
+    "male": 136480,
+    "female": 129735,
+    "literate": 136500,
+    "households": 80888,
+    "rural_hh": 75616,
+    "urban_hh": 5272
+   },
+   "Anantnag": {
+    "population": 1078692,
+    "male": 559767,
+    "female": 518925,
+    "literate": 545532,
+    "households": 277733,
+    "rural_hh": 207067,
+    "urban_hh": 70666
+   },
+   "Kulgam": {
+    "population": 424483,
+    "male": 217620,
+    "female": 206863,
+    "literate": 209085,
+    "households": 121130,
+    "rural_hh": 95952,
+    "urban_hh": 25178
+   },
+   "Doda": {
+    "population": 409936,
+    "male": 213641,
+    "female": 196295,
+    "literate": 219083,
+    "households": 133617,
+    "rural_hh": 122267,
+    "urban_hh": 11350
+   },
+   "Ramban": {
+    "population": 283713,
+    "male": 149132,
+    "female": 134581,
+    "literate": 124065,
+    "households": 89622,
+    "rural_hh": 84281,
+    "urban_hh": 5341
+   },
+   "Kishtwar": {
+    "population": 230696,
+    "male": 120165,
+    "female": 110531,
+    "literate": 107506,
+    "households": 78371,
+    "rural_hh": 72378,
+    "urban_hh": 5993
+   },
+   "Udhampur": {
+    "population": 554985,
+    "male": 296784,
+    "female": 258201,
+    "literate": 322354,
+    "households": 183360,
+    "rural_hh": 148664,
+    "urban_hh": 34696
+   },
+   "Reasi": {
+    "population": 314667,
+    "male": 166461,
+    "female": 148206,
+    "literate": 150542,
+    "households": 107833,
+    "rural_hh": 95572,
+    "urban_hh": 12261
+   },
+   "Jammu": {
+    "population": 1529958,
+    "male": 813821,
+    "female": 716137,
+    "literate": 1137135,
+    "households": 502609,
+    "rural_hh": 254566,
+    "urban_hh": 248043
+   },
+   "Samba": {
+    "population": 318898,
+    "male": 169124,
+    "female": 149774,
+    "literate": 228139,
+    "households": 114236,
+    "rural_hh": 94247,
+    "urban_hh": 19989
+   }
+  },
+  "HIMACHAL PRADESH": {
+   "Chamba": {
+    "population": 519080,
+    "male": 261320,
+    "female": 257760,
+    "literate": 323842,
+    "households": 200231,
+    "rural_hh": 186395,
+    "urban_hh": 13836
+   },
+   "Kangra": {
+    "population": 1510075,
+    "male": 750591,
+    "female": 759484,
+    "literate": 1152640,
+    "households": 627328,
+    "rural_hh": 588321,
+    "urban_hh": 39007
+   },
+   "Lahul AND Spiti": {
+    "population": 31564,
+    "male": 16588,
+    "female": 14976,
+    "literate": 21845,
+    "households": 17434,
+    "rural_hh": 17434,
+    "urban_hh": 0
+   },
+   "Kullu": {
+    "population": 437903,
+    "male": 225452,
+    "female": 212451,
+    "literate": 307672,
+    "households": 188704,
+    "rural_hh": 167995,
+    "urban_hh": 20709
+   },
+   "Mandi": {
+    "population": 999777,
+    "male": 498065,
+    "female": 501712,
+    "literate": 723747,
+    "households": 462825,
+    "rural_hh": 431129,
+    "urban_hh": 31696
+   },
+   "Hamirpur": {
+    "population": 454768,
+    "male": 217070,
+    "female": 237698,
+    "literate": 358091,
+    "households": 211348,
+    "rural_hh": 196116,
+    "urban_hh": 15232
+   },
+   "Una": {
+    "population": 521173,
+    "male": 263692,
+    "female": 257481,
+    "literate": 399715,
+    "households": 205217,
+    "rural_hh": 185091,
+    "urban_hh": 20126
+   },
+   "Bilaspur": {
+    "population": 381956,
+    "male": 192764,
+    "female": 189192,
+    "literate": 287620,
+    "households": 164445,
+    "rural_hh": 152458,
+    "urban_hh": 11987
+   },
+   "Solan": {
+    "population": 580320,
+    "male": 308754,
+    "female": 271566,
+    "literate": 428578,
+    "households": 244296,
+    "rural_hh": 192787,
+    "urban_hh": 51509
+   },
+   "Sirmaur": {
+    "population": 529855,
+    "male": 276289,
+    "female": 253566,
+    "literate": 362645,
+    "households": 192156,
+    "rural_hh": 171102,
+    "urban_hh": 21054
+   },
+   "Shimla": {
+    "population": 814010,
+    "male": 425039,
+    "female": 388971,
+    "literate": 612642,
+    "households": 375165,
+    "rural_hh": 279269,
+    "urban_hh": 95896
+   },
+   "Kinnaur": {
+    "population": 84121,
+    "male": 46249,
+    "female": 37872,
+    "literate": 60699,
+    "households": 44514,
+    "rural_hh": 44514,
+    "urban_hh": 0
+   }
+  },
+  "PUNJAB": {
+   "Gurdaspur": {
+    "population": 2298323,
+    "male": 1212617,
+    "female": 1085706,
+    "literate": 1634719,
+    "households": 606348,
+    "rural_hh": 420860,
+    "urban_hh": 185488
+   },
+   "Kapurthala": {
+    "population": 815168,
+    "male": 426311,
+    "female": 388857,
+    "literate": 576567,
+    "households": 261203,
+    "rural_hh": 165433,
+    "urban_hh": 95770
+   },
+   "Jalandhar": {
+    "population": 2193590,
+    "male": 1145211,
+    "female": 1048379,
+    "literate": 1622537,
+    "households": 708130,
+    "rural_hh": 330339,
+    "urban_hh": 377791
+   },
+   "Hoshiarpur": {
+    "population": 1586625,
+    "male": 809057,
+    "female": 777568,
+    "literate": 1199699,
+    "households": 551265,
+    "rural_hh": 422673,
+    "urban_hh": 128592
+   },
+   "Shahid Bhagat Singh Nagar": {
+    "population": 612310,
+    "male": 313291,
+    "female": 299019,
+    "literate": 438459,
+    "households": 231551,
+    "rural_hh": 183168,
+    "urban_hh": 48383
+   },
+   "Fatehgarh Sahib": {
+    "population": 600163,
+    "male": 320795,
+    "female": 279368,
+    "literate": 426033,
+    "households": 174896,
+    "rural_hh": 117559,
+    "urban_hh": 57337
+   },
+   "Ludhiana": {
+    "population": 3498739,
+    "male": 1867816,
+    "female": 1630923,
+    "literate": 2560225,
+    "households": 1036821,
+    "rural_hh": 395032,
+    "urban_hh": 641789
+   },
+   "Moga": {
+    "population": 995746,
+    "male": 525920,
+    "female": 469826,
+    "literate": 627889,
+    "households": 288439,
+    "rural_hh": 214295,
+    "urban_hh": 74144
+   },
+   "Firozpur": {
+    "population": 2029074,
+    "male": 1071637,
+    "female": 957437,
+    "literate": 1227511,
+    "households": 502390,
+    "rural_hh": 348522,
+    "urban_hh": 153868
+   },
+   "Muktsar": {
+    "population": 901896,
+    "male": 475622,
+    "female": 426274,
+    "literate": 524848,
+    "households": 224157,
+    "rural_hh": 149507,
+    "urban_hh": 74650
+   },
+   "Faridkot": {
+    "population": 617508,
+    "male": 326671,
+    "female": 290837,
+    "literate": 381285,
+    "households": 158863,
+    "rural_hh": 99946,
+    "urban_hh": 58917
+   },
+   "Bathinda": {
+    "population": 1388525,
+    "male": 743197,
+    "female": 645328,
+    "literate": 844868,
+    "households": 355722,
+    "rural_hh": 218159,
+    "urban_hh": 137563
+   },
+   "Mansa": {
+    "population": 769751,
+    "male": 408732,
+    "female": 361019,
+    "literate": 423560,
+    "households": 196389,
+    "rural_hh": 145603,
+    "urban_hh": 50786
+   },
+   "Patiala": {
+    "population": 1895686,
+    "male": 1002522,
+    "female": 893164,
+    "literate": 1266791,
+    "households": 517369,
+    "rural_hh": 299279,
+    "urban_hh": 218090
+   },
+   "Amritsar": {
+    "population": 2490656,
+    "male": 1318408,
+    "female": 1172248,
+    "literate": 1684770,
+    "households": 660953,
+    "rural_hh": 275477,
+    "urban_hh": 385476
+   },
+   "Tarn Taran": {
+    "population": 1119627,
+    "male": 589369,
+    "female": 530258,
+    "literate": 666162,
+    "households": 267174,
+    "rural_hh": 222717,
+    "urban_hh": 44457
+   },
+   "Rupnagar": {
+    "population": 684627,
+    "male": 357485,
+    "female": 327142,
+    "literate": 502731,
+    "households": 208699,
+    "rural_hh": 148162,
+    "urban_hh": 60537
+   },
+   "Sahibzada Ajit Singh Nagar": {
+    "population": 994628,
+    "male": 529253,
+    "female": 465375,
+    "literate": 736575,
+    "households": 291335,
+    "rural_hh": 117293,
+    "urban_hh": 174042
+   },
+   "Sangrur": {
+    "population": 1655169,
+    "male": 878029,
+    "female": 777140,
+    "literate": 1002077,
+    "households": 448944,
+    "rural_hh": 292156,
+    "urban_hh": 156788
+   },
+   "Barnala": {
+    "population": 595527,
+    "male": 317522,
+    "female": 278005,
+    "literate": 359831,
+    "households": 156799,
+    "rural_hh": 102577,
+    "urban_hh": 54222
+   }
+  },
+  "CHANDIGARH": {
+   "Chandigarh": {
+    "population": 1055450,
+    "male": 580663,
+    "female": 474787,
+    "literate": 805438,
+    "households": 298367,
+    "rural_hh": 8911,
+    "urban_hh": 289456
+   }
+  },
+  "UTTARAKHAND": {
+   "Uttarkashi": {
+    "population": 330086,
+    "male": 168597,
+    "female": 161489,
+    "literate": 215126,
+    "households": 121209,
+    "rural_hh": 112148,
+    "urban_hh": 9061
+   },
+   "Chamoli": {
+    "population": 391605,
+    "male": 193991,
+    "female": 197614,
+    "literate": 280556,
+    "households": 186340,
+    "rural_hh": 163434,
+    "urban_hh": 22906
+   },
+   "Rudraprayag": {
+    "population": 242285,
+    "male": 114589,
+    "female": 127696,
+    "literate": 170933,
+    "households": 117159,
+    "rural_hh": 112705,
+    "urban_hh": 4454
+   },
+   "Tehri Garhwal": {
+    "population": 618931,
+    "male": 297986,
+    "female": 320945,
+    "literate": 407994,
+    "households": 254236,
+    "rural_hh": 227059,
+    "urban_hh": 27177
+   },
+   "Dehradun": {
+    "population": 1696694,
+    "male": 892199,
+    "female": 804495,
+    "literate": 1259506,
+    "households": 497638,
+    "rural_hh": 228245,
+    "urban_hh": 269393
+   },
+   "Garhwal": {
+    "population": 687271,
+    "male": 326829,
+    "female": 360442,
+    "literate": 494889,
+    "households": 316462,
+    "rural_hh": 279682,
+    "urban_hh": 36780
+   },
+   "Pithoragarh": {
+    "population": 483439,
+    "male": 239306,
+    "female": 244133,
+    "literate": 345550,
+    "households": 209943,
+    "rural_hh": 183687,
+    "urban_hh": 26256
+   },
+   "Bageshwar": {
+    "population": 259898,
+    "male": 124326,
+    "female": 135572,
+    "literate": 179483,
+    "households": 99911,
+    "rural_hh": 96031,
+    "urban_hh": 3880
+   },
+   "Almora": {
+    "population": 622506,
+    "male": 291081,
+    "female": 331425,
+    "literate": 436497,
+    "households": 281138,
+    "rural_hh": 260056,
+    "urban_hh": 21082
+   },
+   "Champawat": {
+    "population": 259648,
+    "male": 131125,
+    "female": 128523,
+    "literate": 177726,
+    "households": 98041,
+    "rural_hh": 85202,
+    "urban_hh": 12839
+   },
+   "Nainital": {
+    "population": 954605,
+    "male": 493666,
+    "female": 460939,
+    "literate": 696500,
+    "households": 298663,
+    "rural_hh": 193086,
+    "urban_hh": 105577
+   },
+   "Udham Singh Nagar": {
+    "population": 1648902,
+    "male": 858783,
+    "female": 790119,
+    "literate": 1037839,
+    "households": 414659,
+    "rural_hh": 269406,
+    "urban_hh": 145253
+   },
+   "Hardwar": {
+    "population": 1890422,
+    "male": 1005295,
+    "female": 885127,
+    "literate": 1178354,
+    "households": 488011,
+    "rural_hh": 301828,
+    "urban_hh": 186183
+   }
+  },
+  "HARYANA": {
+   "Panchkula": {
+    "population": 561293,
+    "male": 299679,
+    "female": 261614,
+    "literate": 405318,
+    "households": 164551,
+    "rural_hh": 70895,
+    "urban_hh": 93656
+   },
+   "Ambala": {
+    "population": 1128350,
+    "male": 598703,
+    "female": 529647,
+    "literate": 818025,
+    "households": 315256,
+    "rural_hh": 175365,
+    "urban_hh": 139891
+   },
+   "Yamunanagar": {
+    "population": 1214205,
+    "male": 646718,
+    "female": 567487,
+    "literate": 832457,
+    "households": 357723,
+    "rural_hh": 214464,
+    "urban_hh": 143259
+   },
+   "Kurukshetra": {
+    "population": 964655,
+    "male": 510976,
+    "female": 453679,
+    "literate": 646893,
+    "households": 291821,
+    "rural_hh": 203553,
+    "urban_hh": 88268
+   },
+   "Kaithal": {
+    "population": 1074304,
+    "male": 571003,
+    "female": 503301,
+    "literate": 646529,
+    "households": 306787,
+    "rural_hh": 231091,
+    "urban_hh": 75696
+   },
+   "Karnal": {
+    "population": 1505324,
+    "male": 797712,
+    "female": 707612,
+    "literate": 978013,
+    "households": 428602,
+    "rural_hh": 292682,
+    "urban_hh": 135920
+   },
+   "Panipat": {
+    "population": 1205437,
+    "male": 646857,
+    "female": 558580,
+    "literate": 786599,
+    "households": 327306,
+    "rural_hh": 173502,
+    "urban_hh": 153804
+   },
+   "Sonipat": {
+    "population": 1450001,
+    "male": 781299,
+    "female": 668702,
+    "literate": 998316,
+    "households": 417434,
+    "rural_hh": 283858,
+    "urban_hh": 133576
+   },
+   "Jind": {
+    "population": 1334152,
+    "male": 713006,
+    "female": 621146,
+    "literate": 832758,
+    "households": 368000,
+    "rural_hh": 278335,
+    "urban_hh": 89665
+   },
+   "Fatehabad": {
+    "population": 942011,
+    "male": 495360,
+    "female": 446651,
+    "literate": 557578,
+    "households": 258380,
+    "rural_hh": 203020,
+    "urban_hh": 55360
+   },
+   "Sirsa": {
+    "population": 1295189,
+    "male": 682582,
+    "female": 612607,
+    "literate": 782897,
+    "households": 338792,
+    "rural_hh": 245476,
+    "urban_hh": 93316
+   },
+   "Hisar": {
+    "population": 1743931,
+    "male": 931562,
+    "female": 812369,
+    "literate": 1114311,
+    "households": 456126,
+    "rural_hh": 302013,
+    "urban_hh": 154113
+   },
+   "Bhiwani": {
+    "population": 1634445,
+    "male": 866672,
+    "female": 767773,
+    "literate": 1069871,
+    "households": 456282,
+    "rural_hh": 357047,
+    "urban_hh": 99235
+   },
+   "Rohtak": {
+    "population": 1061204,
+    "male": 568479,
+    "female": 492725,
+    "literate": 747582,
+    "households": 306942,
+    "rural_hh": 175203,
+    "urban_hh": 131739
+   },
+   "Jhajjar": {
+    "population": 958405,
+    "male": 514667,
+    "female": 443738,
+    "literate": 676091,
+    "households": 290144,
+    "rural_hh": 211816,
+    "urban_hh": 78328
+   },
+   "Mahendragarh": {
+    "population": 922088,
+    "male": 486665,
+    "female": 435423,
+    "literate": 630255,
+    "households": 267942,
+    "rural_hh": 223726,
+    "urban_hh": 44216
+   },
+   "Rewari": {
+    "population": 900332,
+    "male": 474335,
+    "female": 425997,
+    "literate": 636947,
+    "households": 268754,
+    "rural_hh": 199449,
+    "urban_hh": 69305
+   },
+   "Gurgaon": {
+    "population": 1514432,
+    "male": 816690,
+    "female": 697742,
+    "literate": 1111116,
+    "households": 523691,
+    "rural_hh": 141703,
+    "urban_hh": 381988
+   },
+   "Mewat": {
+    "population": 1089263,
+    "male": 571162,
+    "female": 518101,
+    "literate": 454897,
+    "households": 223635,
+    "rural_hh": 187398,
+    "urban_hh": 36237
+   },
+   "Faridabad": {
+    "population": 1809733,
+    "male": 966110,
+    "female": 843623,
+    "literate": 1272739,
+    "households": 470681,
+    "rural_hh": 87700,
+    "urban_hh": 382981
+   },
+   "Palwal": {
+    "population": 1042708,
+    "male": 554497,
+    "female": 488211,
+    "literate": 599796,
+    "households": 249159,
+    "rural_hh": 186069,
+    "urban_hh": 63090
+   }
+  },
+  "NCT OF DELHI": {
+   "North West": {
+    "population": 3656539,
+    "male": 1960922,
+    "female": 1695617,
+    "literate": 2707855,
+    "households": 1026867,
+    "rural_hh": 67592,
+    "urban_hh": 959275
+   },
+   "North": {
+    "population": 887978,
+    "male": 475002,
+    "female": 412976,
+    "literate": 681517,
+    "households": 301071,
+    "rural_hh": 4512,
+    "urban_hh": 296559
+   },
+   "North East": {
+    "population": 2241624,
+    "male": 1188425,
+    "female": 1053199,
+    "literate": 1611588,
+    "households": 487581,
+    "rural_hh": 5326,
+    "urban_hh": 482255
+   },
+   "East": {
+    "population": 1709346,
+    "male": 907500,
+    "female": 801846,
+    "literate": 1352998,
+    "households": 462218,
+    "rural_hh": 1086,
+    "urban_hh": 461132
+   },
+   "New Delhi": {
+    "population": 142004,
+    "male": 77942,
+    "female": 64062,
+    "literate": 114179,
+    "households": 52664,
+    "rural_hh": 0,
+    "urban_hh": 52664
+   },
+   "Central": {
+    "population": 582320,
+    "male": 307821,
+    "female": 274499,
+    "literate": 442360,
+    "households": 194897,
+    "rural_hh": 0,
+    "urban_hh": 194897
+   },
+   "West": {
+    "population": 2543243,
+    "male": 1356240,
+    "female": 1187003,
+    "literate": 1961179,
+    "households": 701512,
+    "rural_hh": 1809,
+    "urban_hh": 699703
+   },
+   "South West": {
+    "population": 2292958,
+    "male": 1246046,
+    "female": 1046912,
+    "literate": 1787689,
+    "households": 647682,
+    "rural_hh": 41179,
+    "urban_hh": 606503
+   },
+   "South": {
+    "population": 2731929,
+    "male": 1467428,
+    "female": 1264501,
+    "literate": 2078402,
+    "households": 731063,
+    "rural_hh": 2918,
+    "urban_hh": 728145
+   }
+  },
+  "RAJASTHAN": {
+   "Ganganagar": {
+    "population": 1969168,
+    "male": 1043340,
+    "female": 925828,
+    "literate": 1193343,
+    "households": 562594,
+    "rural_hh": 397697,
+    "urban_hh": 164897
+   },
+   "Hanumangarh": {
+    "population": 1774692,
+    "male": 931184,
+    "female": 843508,
+    "literate": 1034136,
+    "households": 497753,
+    "rural_hh": 389059,
+    "urban_hh": 108694
+   },
+   "Bikaner": {
+    "population": 2363937,
+    "male": 1240801,
+    "female": 1123136,
+    "literate": 1278801,
+    "households": 531933,
+    "rural_hh": 335754,
+    "urban_hh": 196179
+   },
+   "Churu": {
+    "population": 2039547,
+    "male": 1051446,
+    "female": 988101,
+    "literate": 1149269,
+    "households": 493893,
+    "rural_hh": 344897,
+    "urban_hh": 148996
+   },
+   "Jhunjhunun": {
+    "population": 2137045,
+    "male": 1095896,
+    "female": 1041149,
+    "literate": 1370360,
+    "households": 650809,
+    "rural_hh": 500452,
+    "urban_hh": 150357
+   },
+   "Alwar": {
+    "population": 3674179,
+    "male": 1939026,
+    "female": 1735153,
+    "literate": 2182476,
+    "households": 995261,
+    "rural_hh": 782294,
+    "urban_hh": 212967
+   },
+   "Bharatpur": {
+    "population": 2548462,
+    "male": 1355726,
+    "female": 1192736,
+    "literate": 1480869,
+    "households": 609134,
+    "rural_hh": 479437,
+    "urban_hh": 129697
+   },
+   "Dhaulpur": {
+    "population": 1206516,
+    "male": 653647,
+    "female": 552869,
+    "literate": 683098,
+    "households": 273296,
+    "rural_hh": 214670,
+    "urban_hh": 58626
+   },
+   "Karauli": {
+    "population": 1458248,
+    "male": 783639,
+    "female": 674609,
+    "literate": 805849,
+    "households": 364355,
+    "rural_hh": 305047,
+    "urban_hh": 59308
+   },
+   "Sawai Madhopur": {
+    "population": 1335551,
+    "male": 704031,
+    "female": 631520,
+    "literate": 741748,
+    "households": 353321,
+    "rural_hh": 282057,
+    "urban_hh": 71264
+   },
+   "Dausa": {
+    "population": 1634409,
+    "male": 857787,
+    "female": 776622,
+    "literate": 938051,
+    "households": 420694,
+    "rural_hh": 361084,
+    "urban_hh": 59610
+   },
+   "Jaipur": {
+    "population": 6626178,
+    "male": 3468507,
+    "female": 3157671,
+    "literate": 4300965,
+    "households": 1732679,
+    "rural_hh": 754841,
+    "urban_hh": 977838
+   },
+   "Sikar": {
+    "population": 2677333,
+    "male": 1374990,
+    "female": 1302343,
+    "literate": 1652117,
+    "households": 705834,
+    "rural_hh": 527560,
+    "urban_hh": 178274
+   },
+   "Nagaur": {
+    "population": 3307743,
+    "male": 1696325,
+    "female": 1611418,
+    "literate": 1758624,
+    "households": 842201,
+    "rural_hh": 675712,
+    "urban_hh": 166489
+   },
+   "Jodhpur": {
+    "population": 3687165,
+    "male": 1923928,
+    "female": 1763237,
+    "literate": 2031532,
+    "households": 891657,
+    "rural_hh": 584215,
+    "urban_hh": 307442
+   },
+   "Jaisalmer": {
+    "population": 669919,
+    "male": 361708,
+    "female": 308211,
+    "literate": 308653,
+    "households": 189947,
+    "rural_hh": 159117,
+    "urban_hh": 30830
+   },
+   "Barmer": {
+    "population": 2603751,
+    "male": 1369022,
+    "female": 1234729,
+    "literate": 1188322,
+    "households": 598805,
+    "rural_hh": 542825,
+    "urban_hh": 55980
+   },
+   "Jalor": {
+    "population": 1828730,
+    "male": 936634,
+    "female": 892096,
+    "literate": 829582,
+    "households": 467418,
+    "rural_hh": 419216,
+    "urban_hh": 48202
+   },
+   "Sirohi": {
+    "population": 1036346,
+    "male": 534231,
+    "female": 502115,
+    "literate": 476806,
+    "households": 308174,
+    "rural_hh": 238535,
+    "urban_hh": 69639
+   },
+   "Pali": {
+    "population": 2037573,
+    "male": 1025422,
+    "female": 1012151,
+    "literate": 1085693,
+    "households": 652717,
+    "rural_hh": 512909,
+    "urban_hh": 139808
+   },
+   "Ajmer": {
+    "population": 2583052,
+    "male": 1324085,
+    "female": 1258967,
+    "literate": 1526673,
+    "households": 684254,
+    "rural_hh": 409335,
+    "urban_hh": 274919
+   },
+   "Tonk": {
+    "population": 1421326,
+    "male": 728136,
+    "female": 693190,
+    "literate": 749659,
+    "households": 380666,
+    "rural_hh": 298911,
+    "urban_hh": 81755
+   },
+   "Bundi": {
+    "population": 1110906,
+    "male": 577160,
+    "female": 533746,
+    "literate": 585044,
+    "households": 303288,
+    "rural_hh": 239836,
+    "urban_hh": 63452
+   },
+   "Bhilwara": {
+    "population": 2408523,
+    "male": 1220736,
+    "female": 1187787,
+    "literate": 1256126,
+    "households": 675880,
+    "rural_hh": 530015,
+    "urban_hh": 145865
+   },
+   "Rajsamand": {
+    "population": 1156597,
+    "male": 581339,
+    "female": 575258,
+    "literate": 619139,
+    "households": 365676,
+    "rural_hh": 304622,
+    "urban_hh": 61054
+   },
+   "Dungarpur": {
+    "population": 1388552,
+    "male": 696532,
+    "female": 692020,
+    "literate": 681591,
+    "households": 354363,
+    "rural_hh": 322816,
+    "urban_hh": 31547
+   },
+   "Banswara": {
+    "population": 1797485,
+    "male": 907754,
+    "female": 889731,
+    "literate": 829343,
+    "households": 429844,
+    "rural_hh": 390437,
+    "urban_hh": 39407
+   },
+   "Chittaurgarh": {
+    "population": 1544338,
+    "male": 783171,
+    "female": 761167,
+    "literate": 821825,
+    "households": 455653,
+    "rural_hh": 366780,
+    "urban_hh": 88873
+   },
+   "Kota": {
+    "population": 1951014,
+    "male": 1021161,
+    "female": 929853,
+    "literate": 1298345,
+    "households": 515189,
+    "rural_hh": 203454,
+    "urban_hh": 311735
+   },
+   "Baran": {
+    "population": 1222755,
+    "male": 633945,
+    "female": 588810,
+    "literate": 693307,
+    "households": 318988,
+    "rural_hh": 249184,
+    "urban_hh": 69804
+   },
+   "Jhalawar": {
+    "population": 1411129,
+    "male": 725143,
+    "female": 685986,
+    "literate": 739792,
+    "households": 362387,
+    "rural_hh": 298624,
+    "urban_hh": 63763
+   },
+   "Udaipur": {
+    "population": 3068420,
+    "male": 1566801,
+    "female": 1501619,
+    "literate": 1582629,
+    "households": 848218,
+    "rural_hh": 665449,
+    "urban_hh": 182769
+   },
+   "Pratapgarh": {
+    "population": 867848,
+    "male": 437744,
+    "female": 430104,
+    "literate": 401515,
+    "households": 234082,
+    "rural_hh": 209813,
+    "urban_hh": 24269
+   }
+  },
+  "UTTAR PRADESH": {
+   "Saharanpur": {
+    "population": 3466382,
+    "male": 1834106,
+    "female": 1632276,
+    "literate": 2077108,
+    "households": 889238,
+    "rural_hh": 605082,
+    "urban_hh": 284156
+   },
+   "Muzaffarnagar": {
+    "population": 4143512,
+    "male": 2193434,
+    "female": 1950078,
+    "literate": 2417339,
+    "households": 969850,
+    "rural_hh": 673746,
+    "urban_hh": 296104
+   },
+   "Bijnor": {
+    "population": 3682713,
+    "male": 1921215,
+    "female": 1761498,
+    "literate": 2135393,
+    "households": 908523,
+    "rural_hh": 683875,
+    "urban_hh": 224648
+   },
+   "Moradabad": {
+    "population": 4772006,
+    "male": 2503186,
+    "female": 2268820,
+    "literate": 2263848,
+    "households": 1047916,
+    "rural_hh": 692398,
+    "urban_hh": 355518
+   },
+   "Rampur": {
+    "population": 2335819,
+    "male": 1223889,
+    "female": 1111930,
+    "literate": 1043666,
+    "households": 539992,
+    "rural_hh": 396775,
+    "urban_hh": 143217
+   },
+   "Jyotiba Phule Nagar": {
+    "population": 1840221,
+    "male": 963449,
+    "female": 876772,
+    "literate": 983110,
+    "households": 451374,
+    "rural_hh": 335888,
+    "urban_hh": 115486
+   },
+   "Meerut": {
+    "population": 3443689,
+    "male": 1825743,
+    "female": 1617946,
+    "literate": 2141488,
+    "households": 803823,
+    "rural_hh": 381520,
+    "urban_hh": 422303
+   },
+   "Baghpat": {
+    "population": 1303048,
+    "male": 700070,
+    "female": 602978,
+    "literate": 797970,
+    "households": 316046,
+    "rural_hh": 246055,
+    "urban_hh": 69991
+   },
+   "Ghaziabad": {
+    "population": 4681645,
+    "male": 2488834,
+    "female": 2192811,
+    "literate": 3123264,
+    "households": 1191723,
+    "rural_hh": 355407,
+    "urban_hh": 836316
+   },
+   "Gautam Buddha Nagar": {
+    "population": 1648115,
+    "male": 890214,
+    "female": 757901,
+    "literate": 1122947,
+    "households": 509770,
+    "rural_hh": 170835,
+    "urban_hh": 338935
+   },
+   "Bulandshahr": {
+    "population": 3499171,
+    "male": 1845260,
+    "female": 1653911,
+    "literate": 2031656,
+    "households": 880077,
+    "rural_hh": 658449,
+    "urban_hh": 221628
+   },
+   "Aligarh": {
+    "population": 3673889,
+    "male": 1951996,
+    "female": 1721893,
+    "literate": 2092567,
+    "households": 858059,
+    "rural_hh": 582117,
+    "urban_hh": 275942
+   },
+   "Mahamaya Nagar": {
+    "population": 1564708,
+    "male": 836127,
+    "female": 728581,
+    "literate": 942572,
+    "households": 373033,
+    "rural_hh": 288150,
+    "urban_hh": 84883
+   },
+   "Mathura": {
+    "population": 2547184,
+    "male": 1367125,
+    "female": 1180059,
+    "literate": 1507746,
+    "households": 585290,
+    "rural_hh": 407488,
+    "urban_hh": 177802
+   },
+   "Agra": {
+    "population": 4418797,
+    "male": 2364953,
+    "female": 2053844,
+    "literate": 2680510,
+    "households": 903823,
+    "rural_hh": 496971,
+    "urban_hh": 406852
+   },
+   "Firozabad": {
+    "population": 2498156,
+    "male": 1332046,
+    "female": 1166110,
+    "literate": 1521806,
+    "households": 535368,
+    "rural_hh": 349747,
+    "urban_hh": 185621
+   },
+   "Mainpuri": {
+    "population": 1868529,
+    "male": 993377,
+    "female": 875152,
+    "literate": 1203885,
+    "households": 411258,
+    "rural_hh": 338475,
+    "urban_hh": 72783
+   },
+   "Budaun": {
+    "population": 3681896,
+    "male": 1967759,
+    "female": 1714137,
+    "literate": 1547477,
+    "households": 867624,
+    "rural_hh": 710956,
+    "urban_hh": 156668
+   },
+   "Bareilly": {
+    "population": 4448359,
+    "male": 2357665,
+    "female": 2090694,
+    "literate": 2191759,
+    "households": 994411,
+    "rural_hh": 631613,
+    "urban_hh": 362798
+   },
+   "Pilibhit": {
+    "population": 2031007,
+    "male": 1072002,
+    "female": 959005,
+    "literate": 1061095,
+    "households": 461390,
+    "rural_hh": 371752,
+    "urban_hh": 89638
+   },
+   "Shahjahanpur": {
+    "population": 3006538,
+    "male": 1606403,
+    "female": 1400135,
+    "literate": 1490930,
+    "households": 655003,
+    "rural_hh": 520289,
+    "urban_hh": 134714
+   },
+   "Kheri": {
+    "population": 4021243,
+    "male": 2123187,
+    "female": 1898056,
+    "literate": 2034044,
+    "households": 862610,
+    "rural_hh": 754938,
+    "urban_hh": 107672
+   },
+   "Sitapur": {
+    "population": 4483992,
+    "male": 2375264,
+    "female": 2108728,
+    "literate": 2283733,
+    "households": 938902,
+    "rural_hh": 827583,
+    "urban_hh": 111319
+   },
+   "Hardoi": {
+    "population": 4092845,
+    "male": 2191442,
+    "female": 1901403,
+    "literate": 2221601,
+    "households": 907677,
+    "rural_hh": 786613,
+    "urban_hh": 121064
+   },
+   "Unnao": {
+    "population": 3108367,
+    "male": 1630087,
+    "female": 1478280,
+    "literate": 1773584,
+    "households": 717356,
+    "rural_hh": 596317,
+    "urban_hh": 121039
+   },
+   "Lucknow": {
+    "population": 4589838,
+    "male": 2394476,
+    "female": 2195362,
+    "literate": 3127260,
+    "households": 1061721,
+    "rural_hh": 344155,
+    "urban_hh": 717566
+   },
+   "Rae Bareli": {
+    "population": 3405559,
+    "male": 1752542,
+    "female": 1653017,
+    "literate": 1965843,
+    "households": 778418,
+    "rural_hh": 705025,
+    "urban_hh": 73393
+   },
+   "Farrukhabad": {
+    "population": 1885204,
+    "male": 1006240,
+    "female": 878964,
+    "literate": 1092677,
+    "households": 411490,
+    "rural_hh": 316647,
+    "urban_hh": 94843
+   },
+   "Kannauj": {
+    "population": 1656616,
+    "male": 881776,
+    "female": 774840,
+    "literate": 1017087,
+    "households": 365770,
+    "rural_hh": 299785,
+    "urban_hh": 65985
+   },
+   "Etawah": {
+    "population": 1581810,
+    "male": 845856,
+    "female": 735954,
+    "literate": 1062003,
+    "households": 351126,
+    "rural_hh": 265643,
+    "urban_hh": 85483
+   },
+   "Auraiya": {
+    "population": 1379545,
+    "male": 740040,
+    "female": 639505,
+    "literate": 930836,
+    "households": 314274,
+    "rural_hh": 255836,
+    "urban_hh": 58438
+   },
+   "Kanpur Dehat": {
+    "population": 1796184,
+    "male": 963255,
+    "female": 832929,
+    "literate": 1170243,
+    "households": 405256,
+    "rural_hh": 363933,
+    "urban_hh": 41323
+   },
+   "Kanpur Nagar": {
+    "population": 4581268,
+    "male": 2459806,
+    "female": 2121462,
+    "literate": 3243022,
+    "households": 1049775,
+    "rural_hh": 364869,
+    "urban_hh": 684906
+   },
+   "Jalaun": {
+    "population": 1689974,
+    "male": 906092,
+    "female": 783882,
+    "literate": 1075196,
+    "households": 396421,
+    "rural_hh": 304856,
+    "urban_hh": 91565
+   },
+   "Jhansi": {
+    "population": 1998603,
+    "male": 1057436,
+    "female": 941167,
+    "literate": 1304513,
+    "households": 504913,
+    "rural_hh": 309592,
+    "urban_hh": 195321
+   },
+   "Lalitpur": {
+    "population": 1221592,
+    "male": 641011,
+    "female": 580581,
+    "literate": 641191,
+    "households": 301832,
+    "rural_hh": 258013,
+    "urban_hh": 43819
+   },
+   "Hamirpur": {
+    "population": 1104285,
+    "male": 593537,
+    "female": 510748,
+    "literate": 653299,
+    "households": 311381,
+    "rural_hh": 256081,
+    "urban_hh": 55300
+   },
+   "Mahoba": {
+    "population": 875958,
+    "male": 466358,
+    "female": 409600,
+    "literate": 488106,
+    "households": 246823,
+    "rural_hh": 198298,
+    "urban_hh": 48525
+   },
+   "Banda": {
+    "population": 1799410,
+    "male": 965876,
+    "female": 833534,
+    "literate": 1002937,
+    "households": 445625,
+    "rural_hh": 378056,
+    "urban_hh": 67569
+   },
+   "Chitrakoot": {
+    "population": 991730,
+    "male": 527721,
+    "female": 464009,
+    "literate": 531072,
+    "households": 230795,
+    "rural_hh": 207237,
+    "urban_hh": 23558
+   },
+   "Fatehpur": {
+    "population": 2632733,
+    "male": 1384722,
+    "female": 1248011,
+    "literate": 1512166,
+    "households": 636540,
+    "rural_hh": 558807,
+    "urban_hh": 77733
+   },
+   "Pratapgarh": {
+    "population": 3209141,
+    "male": 1606085,
+    "female": 1603056,
+    "literate": 1931559,
+    "households": 752786,
+    "rural_hh": 711085,
+    "urban_hh": 41701
+   },
+   "Kaushambi": {
+    "population": 1599596,
+    "male": 838485,
+    "female": 761111,
+    "literate": 813424,
+    "households": 380620,
+    "rural_hh": 349856,
+    "urban_hh": 30764
+   },
+   "Allahabad": {
+    "population": 5954391,
+    "male": 3131807,
+    "female": 2822584,
+    "literate": 3665727,
+    "households": 1248570,
+    "rural_hh": 983266,
+    "urban_hh": 265304
+   },
+   "Bara Banki": {
+    "population": 3260699,
+    "male": 1707073,
+    "female": 1553626,
+    "literate": 1692458,
+    "households": 714908,
+    "rural_hh": 635840,
+    "urban_hh": 79068
+   },
+   "Faizabad": {
+    "population": 2470996,
+    "male": 1259628,
+    "female": 1211368,
+    "literate": 1450901,
+    "households": 589666,
+    "rural_hh": 510378,
+    "urban_hh": 79288
+   },
+   "Ambedkar Nagar": {
+    "population": 2397888,
+    "male": 1212410,
+    "female": 1185478,
+    "literate": 1486939,
+    "households": 566590,
+    "rural_hh": 501559,
+    "urban_hh": 65031
+   },
+   "Sultanpur": {
+    "population": 3797117,
+    "male": 1914586,
+    "female": 1882531,
+    "literate": 2239902,
+    "households": 889628,
+    "rural_hh": 839737,
+    "urban_hh": 49891
+   },
+   "Bahraich": {
+    "population": 3487731,
+    "male": 1843884,
+    "female": 1643847,
+    "literate": 1398368,
+    "households": 760262,
+    "rural_hh": 698520,
+    "urban_hh": 61742
+   },
+   "Shrawasti": {
+    "population": 1117361,
+    "male": 593897,
+    "female": 523464,
+    "literate": 423313,
+    "households": 257274,
+    "rural_hh": 248770,
+    "urban_hh": 8504
+   },
+   "Balrampur": {
+    "population": 2148665,
+    "male": 1114721,
+    "female": 1033944,
+    "literate": 868357,
+    "households": 445838,
+    "rural_hh": 410070,
+    "urban_hh": 35768
+   },
+   "Gonda": {
+    "population": 3433919,
+    "male": 1787146,
+    "female": 1646773,
+    "literate": 1679994,
+    "households": 726372,
+    "rural_hh": 673578,
+    "urban_hh": 52794
+   },
+   "Siddharthnagar": {
+    "population": 2559297,
+    "male": 1295095,
+    "female": 1264202,
+    "literate": 1228926,
+    "households": 513513,
+    "rural_hh": 480165,
+    "urban_hh": 33348
+   },
+   "Basti": {
+    "population": 2464464,
+    "male": 1255272,
+    "female": 1209192,
+    "literate": 1393783,
+    "households": 545025,
+    "rural_hh": 513960,
+    "urban_hh": 31065
+   },
+   "Sant Kabir Nagar": {
+    "population": 1715183,
+    "male": 869656,
+    "female": 845527,
+    "literate": 954949,
+    "households": 352151,
+    "rural_hh": 324972,
+    "urban_hh": 27179
+   },
+   "Mahrajganj": {
+    "population": 2684703,
+    "male": 1381754,
+    "female": 1302949,
+    "literate": 1419144,
+    "households": 607079,
+    "rural_hh": 573046,
+    "urban_hh": 34033
+   },
+   "Gorakhpur": {
+    "population": 4440895,
+    "male": 2277777,
+    "female": 2163118,
+    "literate": 2700328,
+    "households": 951128,
+    "rural_hh": 761958,
+    "urban_hh": 189170
+   },
+   "Kushinagar": {
+    "population": 3564544,
+    "male": 1818055,
+    "female": 1746489,
+    "literate": 1954820,
+    "households": 785099,
+    "rural_hh": 742324,
+    "urban_hh": 42775
+   },
+   "Deoria": {
+    "population": 3100946,
+    "male": 1537436,
+    "female": 1563510,
+    "literate": 1875239,
+    "households": 665706,
+    "rural_hh": 597778,
+    "urban_hh": 67928
+   },
+   "Azamgarh": {
+    "population": 4613913,
+    "male": 2285004,
+    "female": 2328909,
+    "literate": 2771917,
+    "households": 971458,
+    "rural_hh": 891024,
+    "urban_hh": 80434
+   },
+   "Mau": {
+    "population": 2205968,
+    "male": 1114709,
+    "female": 1091259,
+    "literate": 1363044,
+    "households": 451528,
+    "rural_hh": 352207,
+    "urban_hh": 99321
+   },
+   "Ballia": {
+    "population": 3239774,
+    "male": 1672902,
+    "female": 1566872,
+    "literate": 1963590,
+    "households": 629381,
+    "rural_hh": 564927,
+    "urban_hh": 64454
+   },
+   "Jaunpur": {
+    "population": 4494204,
+    "male": 2220465,
+    "female": 2273739,
+    "literate": 2731677,
+    "households": 1006670,
+    "rural_hh": 926088,
+    "urban_hh": 80582
+   },
+   "Ghazipur": {
+    "population": 3620268,
+    "male": 1855075,
+    "female": 1765193,
+    "literate": 2197549,
+    "households": 761640,
+    "rural_hh": 700173,
+    "urban_hh": 61467
+   },
+   "Chandauli": {
+    "population": 1952756,
+    "male": 1017905,
+    "female": 934851,
+    "literate": 1174606,
+    "households": 395759,
+    "rural_hh": 344937,
+    "urban_hh": 50822
+   },
+   "Varanasi": {
+    "population": 3676841,
+    "male": 1921857,
+    "female": 1754984,
+    "literate": 2403903,
+    "households": 755064,
+    "rural_hh": 438935,
+    "urban_hh": 316129
+   },
+   "Sant Ravidas Nagar (Bhadohi)": {
+    "population": 1578213,
+    "male": 807099,
+    "female": 771114,
+    "literate": 910146,
+    "households": 339507,
+    "rural_hh": 293510,
+    "urban_hh": 45997
+   },
+   "Mirzapur": {
+    "population": 2496970,
+    "male": 1312302,
+    "female": 1184668,
+    "literate": 1428683,
+    "households": 543115,
+    "rural_hh": 465152,
+    "urban_hh": 77963
+   },
+   "Sonbhadra": {
+    "population": 1862559,
+    "male": 971344,
+    "female": 891215,
+    "literate": 985708,
+    "households": 428088,
+    "rural_hh": 337048,
+    "urban_hh": 91040
+   },
+   "Etah": {
+    "population": 1774480,
+    "male": 947339,
+    "female": 827141,
+    "literate": 1055202,
+    "households": 401998,
+    "rural_hh": 334246,
+    "urban_hh": 67752
+   },
+   "Kanshiram Nagar": {
+    "population": 1436719,
+    "male": 764165,
+    "female": 672554,
+    "literate": 724850,
+    "households": 343724,
+    "rural_hh": 271234,
+    "urban_hh": 72490
+   }
+  },
+  "BIHAR": {
+   "Pashchim Champaran": {
+    "population": 3935042,
+    "male": 2061110,
+    "female": 1873932,
+    "literate": 1759481,
+    "households": 936134,
+    "rural_hh": 839514,
+    "urban_hh": 96620
+   },
+   "Purba Champaran": {
+    "population": 5099371,
+    "male": 2681209,
+    "female": 2418162,
+    "literate": 2276957,
+    "households": 1243825,
+    "rural_hh": 1142260,
+    "urban_hh": 101565
+   },
+   "Sheohar": {
+    "population": 656246,
+    "male": 346673,
+    "female": 309573,
+    "literate": 283698,
+    "households": 166000,
+    "rural_hh": 158484,
+    "urban_hh": 7516
+   },
+   "Sitamarhi": {
+    "population": 3423574,
+    "male": 1803252,
+    "female": 1620322,
+    "literate": 1436794,
+    "households": 856964,
+    "rural_hh": 807294,
+    "urban_hh": 49670
+   },
+   "Madhubani": {
+    "population": 4487379,
+    "male": 2329313,
+    "female": 2158066,
+    "literate": 2155338,
+    "households": 1088786,
+    "rural_hh": 1047552,
+    "urban_hh": 41234
+   },
+   "Supaul": {
+    "population": 2229076,
+    "male": 1155283,
+    "female": 1073793,
+    "literate": 1033283,
+    "households": 600102,
+    "rural_hh": 572287,
+    "urban_hh": 27815
+   },
+   "Araria": {
+    "population": 2811569,
+    "male": 1463333,
+    "female": 1348236,
+    "literate": 1195768,
+    "households": 703274,
+    "rural_hh": 659061,
+    "urban_hh": 44213
+   },
+   "Kishanganj": {
+    "population": 1690400,
+    "male": 866970,
+    "female": 823430,
+    "literate": 745056,
+    "households": 445150,
+    "rural_hh": 401793,
+    "urban_hh": 43357
+   },
+   "Purnia": {
+    "population": 3264619,
+    "male": 1699370,
+    "female": 1565249,
+    "literate": 1332326,
+    "households": 798596,
+    "rural_hh": 712847,
+    "urban_hh": 85749
+   },
+   "Katihar": {
+    "population": 3071029,
+    "male": 1600430,
+    "female": 1470599,
+    "literate": 1280190,
+    "households": 738070,
+    "rural_hh": 668232,
+    "urban_hh": 69838
+   },
+   "Madhepura": {
+    "population": 2001762,
+    "male": 1047559,
+    "female": 954203,
+    "literate": 834577,
+    "households": 510278,
+    "rural_hh": 486278,
+    "urban_hh": 24000
+   },
+   "Saharsa": {
+    "population": 1900661,
+    "male": 997174,
+    "female": 903487,
+    "literate": 804996,
+    "households": 470697,
+    "rural_hh": 432651,
+    "urban_hh": 38046
+   },
+   "Darbhanga": {
+    "population": 3937385,
+    "male": 2059949,
+    "female": 1877436,
+    "literate": 1816634,
+    "households": 1002713,
+    "rural_hh": 907174,
+    "urban_hh": 95539
+   },
+   "Muzaffarpur": {
+    "population": 4801062,
+    "male": 2527497,
+    "female": 2273565,
+    "literate": 2509232,
+    "households": 1119394,
+    "rural_hh": 998694,
+    "urban_hh": 120700
+   },
+   "Gopalganj": {
+    "population": 2562012,
+    "male": 1267666,
+    "female": 1294346,
+    "literate": 1382998,
+    "households": 554058,
+    "rural_hh": 515925,
+    "urban_hh": 38133
+   },
+   "Siwan": {
+    "population": 3330464,
+    "male": 1675090,
+    "female": 1655374,
+    "literate": 1930175,
+    "households": 674372,
+    "rural_hh": 632514,
+    "urban_hh": 41858
+   },
+   "Saran": {
+    "population": 3951862,
+    "male": 2022821,
+    "female": 1929041,
+    "literate": 2157454,
+    "households": 777622,
+    "rural_hh": 701323,
+    "urban_hh": 76299
+   },
+   "Vaishali": {
+    "population": 3495021,
+    "male": 1844535,
+    "female": 1650486,
+    "literate": 1926740,
+    "households": 750811,
+    "rural_hh": 699317,
+    "urban_hh": 51494
+   },
+   "Samastipur": {
+    "population": 4261566,
+    "male": 2230003,
+    "female": 2031563,
+    "literate": 2142880,
+    "households": 1056465,
+    "rural_hh": 1012979,
+    "urban_hh": 43486
+   },
+   "Begusarai": {
+    "population": 2970541,
+    "male": 1567660,
+    "female": 1402881,
+    "literate": 1548673,
+    "households": 733625,
+    "rural_hh": 594377,
+    "urban_hh": 139248
+   },
+   "Khagaria": {
+    "population": 1666886,
+    "male": 883786,
+    "female": 783100,
+    "literate": 768028,
+    "households": 394703,
+    "rural_hh": 373696,
+    "urban_hh": 21007
+   },
+   "Bhagalpur": {
+    "population": 3037766,
+    "male": 1615663,
+    "female": 1422103,
+    "literate": 1573066,
+    "households": 653161,
+    "rural_hh": 522527,
+    "urban_hh": 130634
+   },
+   "Banka": {
+    "population": 2034763,
+    "male": 1067140,
+    "female": 967623,
+    "literate": 965321,
+    "households": 444096,
+    "rural_hh": 425604,
+    "urban_hh": 18492
+   },
+   "Munger": {
+    "population": 1367765,
+    "male": 729041,
+    "female": 638724,
+    "literate": 801817,
+    "households": 308063,
+    "rural_hh": 222281,
+    "urban_hh": 85782
+   },
+   "Lakhisarai": {
+    "population": 1000912,
+    "male": 526345,
+    "female": 474567,
+    "literate": 507270,
+    "households": 207645,
+    "rural_hh": 175882,
+    "urban_hh": 31763
+   },
+   "Sheikhpura": {
+    "population": 636342,
+    "male": 329743,
+    "female": 306599,
+    "literate": 328676,
+    "households": 132638,
+    "rural_hh": 108293,
+    "urban_hh": 24345
+   },
+   "Nalanda": {
+    "population": 2877653,
+    "male": 1497060,
+    "female": 1380593,
+    "literate": 1519933,
+    "households": 616663,
+    "rural_hh": 514141,
+    "urban_hh": 102522
+   },
+   "Patna": {
+    "population": 5838465,
+    "male": 3078512,
+    "female": 2759953,
+    "literate": 3459679,
+    "households": 1210094,
+    "rural_hh": 657991,
+    "urban_hh": 552103
+   },
+   "Bhojpur": {
+    "population": 2728407,
+    "male": 1430380,
+    "female": 1298027,
+    "literate": 1599151,
+    "households": 511927,
+    "rural_hh": 434559,
+    "urban_hh": 77368
+   },
+   "Buxar": {
+    "population": 1706352,
+    "male": 887977,
+    "female": 818375,
+    "literate": 989807,
+    "households": 334657,
+    "rural_hh": 299252,
+    "urban_hh": 35405
+   },
+   "Kaimur (Bhabua)": {
+    "population": 1626384,
+    "male": 847006,
+    "female": 779378,
+    "literate": 920276,
+    "households": 340442,
+    "rural_hh": 325143,
+    "urban_hh": 15299
+   },
+   "Rohtas": {
+    "population": 2959918,
+    "male": 1543546,
+    "female": 1416372,
+    "literate": 1799832,
+    "households": 608061,
+    "rural_hh": 512383,
+    "urban_hh": 95678
+   },
+   "Aurangabad": {
+    "population": 2540073,
+    "male": 1318684,
+    "female": 1221389,
+    "literate": 1466002,
+    "households": 477297,
+    "rural_hh": 428291,
+    "urban_hh": 49006
+   },
+   "Gaya": {
+    "population": 4391418,
+    "male": 2266566,
+    "female": 2124852,
+    "literate": 2297613,
+    "households": 807571,
+    "rural_hh": 696289,
+    "urban_hh": 111282
+   },
+   "Nawada": {
+    "population": 2219146,
+    "male": 1144668,
+    "female": 1074478,
+    "literate": 1091012,
+    "households": 424874,
+    "rural_hh": 379551,
+    "urban_hh": 45323
+   },
+   "Jamui": {
+    "population": 1760405,
+    "male": 916064,
+    "female": 844341,
+    "literate": 858588,
+    "households": 356760,
+    "rural_hh": 325909,
+    "urban_hh": 30851
+   },
+   "Jehanabad": {
+    "population": 1125313,
+    "male": 585582,
+    "female": 539731,
+    "literate": 618881,
+    "households": 214792,
+    "rural_hh": 186660,
+    "urban_hh": 28132
+   },
+   "Arwal": {
+    "population": 700843,
+    "male": 363497,
+    "female": 337346,
+    "literate": 386351,
+    "households": 144294,
+    "rural_hh": 134334,
+    "urban_hh": 9960
+   }
+  },
+  "SIKKIM": {
+   "North  District": {
+    "population": 43709,
+    "male": 24730,
+    "female": 18979,
+    "literate": 30450,
+    "households": 13609,
+    "rural_hh": 11543,
+    "urban_hh": 2066
+   },
+   "West District": {
+    "population": 136435,
+    "male": 70238,
+    "female": 66197,
+    "literate": 93432,
+    "households": 33977,
+    "rural_hh": 32091,
+    "urban_hh": 1886
+   },
+   "South District": {
+    "population": 146850,
+    "male": 76670,
+    "female": 70180,
+    "literate": 106741,
+    "households": 39298,
+    "rural_hh": 31135,
+    "urban_hh": 8163
+   },
+   "East District": {
+    "population": 283583,
+    "male": 151432,
+    "female": 132151,
+    "literate": 214329,
+    "households": 82138,
+    "rural_hh": 40626,
+    "urban_hh": 41512
+   }
+  },
+  "ARUNACHAL PRADESH": {
+   "Tawang": {
+    "population": 49977,
+    "male": 29151,
+    "female": 20826,
+    "literate": 26073,
+    "households": 13182,
+    "rural_hh": 10730,
+    "urban_hh": 2452
+   },
+   "West Kameng": {
+    "population": 83947,
+    "male": 46155,
+    "female": 37792,
+    "literate": 48492,
+    "households": 24195,
+    "rural_hh": 17889,
+    "urban_hh": 6306
+   },
+   "East Kameng": {
+    "population": 78690,
+    "male": 38775,
+    "female": 39915,
+    "literate": 38449,
+    "households": 19718,
+    "rural_hh": 14503,
+    "urban_hh": 5215
+   },
+   "Papum Pare": {
+    "population": 176573,
+    "male": 89182,
+    "female": 87391,
+    "literate": 121048,
+    "households": 50488,
+    "rural_hh": 20308,
+    "urban_hh": 30180
+   },
+   "Upper Subansiri": {
+    "population": 83448,
+    "male": 41758,
+    "female": 41690,
+    "literate": 45278,
+    "households": 19214,
+    "rural_hh": 14542,
+    "urban_hh": 4672
+   },
+   "West Siang": {
+    "population": 112274,
+    "male": 58168,
+    "female": 54106,
+    "literate": 64746,
+    "households": 30775,
+    "rural_hh": 22272,
+    "urban_hh": 8503
+   },
+   "East Siang": {
+    "population": 99214,
+    "male": 50116,
+    "female": 49098,
+    "literate": 62576,
+    "households": 29021,
+    "rural_hh": 19497,
+    "urban_hh": 9524
+   },
+   "Upper Siang": {
+    "population": 35320,
+    "male": 18699,
+    "female": 16621,
+    "literate": 18195,
+    "households": 10751,
+    "rural_hh": 8569,
+    "urban_hh": 2182
+   },
+   "Changlang": {
+    "population": 148226,
+    "male": 76948,
+    "female": 71278,
+    "literate": 73174,
+    "households": 39920,
+    "rural_hh": 33422,
+    "urban_hh": 6498
+   },
+   "Tirap": {
+    "population": 111975,
+    "male": 57604,
+    "female": 54371,
+    "literate": 47974,
+    "households": 24920,
+    "rural_hh": 18420,
+    "urban_hh": 6500
+   },
+   "Lower Subansiri": {
+    "population": 83030,
+    "male": 41843,
+    "female": 41187,
+    "literate": 54057,
+    "households": 23477,
+    "rural_hh": 18112,
+    "urban_hh": 5365
+   },
+   "Kurung Kumey": {
+    "population": 92076,
+    "male": 45318,
+    "female": 46758,
+    "literate": 36606,
+    "households": 19695,
+    "rural_hh": 18603,
+    "urban_hh": 1092
+   },
+   "Dibang Valley": {
+    "population": 8004,
+    "male": 4414,
+    "female": 3590,
+    "literate": 4436,
+    "households": 3230,
+    "rural_hh": 2055,
+    "urban_hh": 1175
+   },
+   "Lower Dibang Valley": {
+    "population": 54080,
+    "male": 28053,
+    "female": 26027,
+    "literate": 31849,
+    "households": 15950,
+    "rural_hh": 12000,
+    "urban_hh": 3950
+   },
+   "Lohit": {
+    "population": 145726,
+    "male": 76221,
+    "female": 69505,
+    "literate": 83062,
+    "households": 44971,
+    "rural_hh": 33599,
+    "urban_hh": 11372
+   },
+   "Anjaw": {
+    "population": 21167,
+    "male": 11507,
+    "female": 9660,
+    "literate": 9990,
+    "households": 6453,
+    "rural_hh": 6025,
+    "urban_hh": 428
+   }
+  },
+  "NAGALAND": {
+   "Mon": {
+    "population": 250260,
+    "male": 131753,
+    "female": 118507,
+    "literate": 119626,
+    "households": 51022,
+    "rural_hh": 43607,
+    "urban_hh": 7415
+   },
+   "Mokokchung": {
+    "population": 194622,
+    "male": 101092,
+    "female": 93530,
+    "literate": 159494,
+    "households": 55278,
+    "rural_hh": 37536,
+    "urban_hh": 17742
+   },
+   "Zunheboto": {
+    "population": 140757,
+    "male": 71217,
+    "female": 69540,
+    "literate": 102881,
+    "households": 37311,
+    "rural_hh": 31267,
+    "urban_hh": 6044
+   },
+   "Wokha": {
+    "population": 166343,
+    "male": 84505,
+    "female": 81838,
+    "literate": 128208,
+    "households": 46669,
+    "rural_hh": 38499,
+    "urban_hh": 8170
+   },
+   "Dimapur": {
+    "population": 378811,
+    "male": 197394,
+    "female": 181417,
+    "literate": 278037,
+    "households": 111969,
+    "rural_hh": 49116,
+    "urban_hh": 62853
+   },
+   "Phek": {
+    "population": 163418,
+    "male": 83743,
+    "female": 79675,
+    "literate": 105893,
+    "households": 46198,
+    "rural_hh": 38903,
+    "urban_hh": 7295
+   },
+   "Tuensang": {
+    "population": 196596,
+    "male": 101933,
+    "female": 94663,
+    "literate": 117511,
+    "households": 50141,
+    "rural_hh": 40690,
+    "urban_hh": 9451
+   },
+   "Longleng": {
+    "population": 50484,
+    "male": 26502,
+    "female": 23982,
+    "literate": 29859,
+    "households": 15137,
+    "rural_hh": 12686,
+    "urban_hh": 2451
+   },
+   "Kiphire": {
+    "population": 74004,
+    "male": 37830,
+    "female": 36174,
+    "literate": 41232,
+    "households": 20322,
+    "rural_hh": 16032,
+    "urban_hh": 4290
+   },
+   "Kohima": {
+    "population": 267988,
+    "male": 138966,
+    "female": 129022,
+    "literate": 197489,
+    "households": 76100,
+    "rural_hh": 31845,
+    "urban_hh": 44255
+   },
+   "Peren": {
+    "population": 95219,
+    "male": 49714,
+    "female": 45505,
+    "literate": 62204,
+    "households": 24277,
+    "rural_hh": 20204,
+    "urban_hh": 4073
+   }
+  },
+  "MANIPUR": {
+   "Senapati": {
+    "population": 479148,
+    "male": 247323,
+    "female": 231825,
+    "literate": 264477,
+    "households": 39834,
+    "rural_hh": 38008,
+    "urban_hh": 1826
+   },
+   "Tamenglong": {
+    "population": 140651,
+    "male": 72371,
+    "female": 68280,
+    "literate": 85006,
+    "households": 28101,
+    "rural_hh": 23982,
+    "urban_hh": 4119
+   },
+   "Churachandpur": {
+    "population": 274143,
+    "male": 138820,
+    "female": 135323,
+    "literate": 195935,
+    "households": 57825,
+    "rural_hh": 52972,
+    "urban_hh": 4853
+   },
+   "Bishnupur": {
+    "population": 237399,
+    "male": 118782,
+    "female": 118617,
+    "literate": 156333,
+    "households": 56149,
+    "rural_hh": 34977,
+    "urban_hh": 21172
+   },
+   "Thoubal": {
+    "population": 422168,
+    "male": 210845,
+    "female": 211323,
+    "literate": 269304,
+    "households": 104263,
+    "rural_hh": 65961,
+    "urban_hh": 38302
+   },
+   "Imphal West": {
+    "population": 517992,
+    "male": 255054,
+    "female": 262938,
+    "literate": 392626,
+    "households": 136801,
+    "rural_hh": 51055,
+    "urban_hh": 85746
+   },
+   "Imphal East": {
+    "population": 456113,
+    "male": 226094,
+    "female": 230019,
+    "literate": 324664,
+    "households": 110941,
+    "rural_hh": 64421,
+    "urban_hh": 46520
+   },
+   "Ukhrul": {
+    "population": 183998,
+    "male": 94718,
+    "female": 89280,
+    "literate": 129829,
+    "households": 41890,
+    "rural_hh": 36084,
+    "urban_hh": 5806
+   },
+   "Chandel": {
+    "population": 144182,
+    "male": 74579,
+    "female": 69603,
+    "literate": 90302,
+    "households": 34160,
+    "rural_hh": 30377,
+    "urban_hh": 3783
+   }
+  },
+  "MIZORAM": {
+   "Mamit": {
+    "population": 86364,
+    "male": 44828,
+    "female": 41536,
+    "literate": 60191,
+    "households": 20855,
+    "rural_hh": 16726,
+    "urban_hh": 4129
+   },
+   "Kolasib": {
+    "population": 83955,
+    "male": 42918,
+    "female": 41037,
+    "literate": 65895,
+    "households": 22176,
+    "rural_hh": 9669,
+    "urban_hh": 12507
+   },
+   "Aizawl": {
+    "population": 400309,
+    "male": 199270,
+    "female": 201039,
+    "literate": 340595,
+    "households": 100911,
+    "rural_hh": 20570,
+    "urban_hh": 80341
+   },
+   "Champhai": {
+    "population": 125745,
+    "male": 63388,
+    "female": 62357,
+    "literate": 100802,
+    "households": 31112,
+    "rural_hh": 18395,
+    "urban_hh": 12717
+   },
+   "Serchhip": {
+    "population": 64937,
+    "male": 32851,
+    "female": 32086,
+    "literate": 54476,
+    "households": 15490,
+    "rural_hh": 7472,
+    "urban_hh": 8018
+   },
+   "Lunglei": {
+    "population": 161428,
+    "male": 82891,
+    "female": 78537,
+    "literate": 121122,
+    "households": 38794,
+    "rural_hh": 21479,
+    "urban_hh": 17315
+   },
+   "Lawngtlai": {
+    "population": 117894,
+    "male": 60599,
+    "female": 57295,
+    "literate": 62861,
+    "households": 27266,
+    "rural_hh": 21993,
+    "urban_hh": 5273
+   },
+   "Saiha": {
+    "population": 56574,
+    "male": 28594,
+    "female": 27980,
+    "literate": 42233,
+    "households": 12827,
+    "rural_hh": 7043,
+    "urban_hh": 5784
+   }
+  },
+  "TRIPURA": {
+   "West Tripura": {
+    "population": 1725739,
+    "male": 879428,
+    "female": 846311,
+    "literate": 1361354,
+    "households": 506637,
+    "rural_hh": 289621,
+    "urban_hh": 217016
+   },
+   "South Tripura": {
+    "population": 876001,
+    "male": 447544,
+    "female": 428457,
+    "literate": 646810,
+    "households": 264077,
+    "rural_hh": 219171,
+    "urban_hh": 44906
+   },
+   "Dhalai": {
+    "population": 378230,
+    "male": 194544,
+    "female": 183686,
+    "literate": 276217,
+    "households": 103528,
+    "rural_hh": 89457,
+    "urban_hh": 14071
+   },
+   "North Tripura": {
+    "population": 693947,
+    "male": 352860,
+    "female": 341087,
+    "literate": 520402,
+    "households": 192621,
+    "rural_hh": 150437,
+    "urban_hh": 42184
+   }
+  },
+  "MEGHALAYA": {
+   "West Garo Hills": {
+    "population": 643291,
+    "male": 324159,
+    "female": 319132,
+    "literate": 358702,
+    "households": 157945,
+    "rural_hh": 139351,
+    "urban_hh": 18594
+   },
+   "East Garo Hills": {
+    "population": 317917,
+    "male": 161223,
+    "female": 156694,
+    "literate": 192147,
+    "households": 74216,
+    "rural_hh": 62698,
+    "urban_hh": 11518
+   },
+   "South Garo Hills": {
+    "population": 142334,
+    "male": 73170,
+    "female": 69164,
+    "literate": 82062,
+    "households": 39643,
+    "rural_hh": 35930,
+    "urban_hh": 3713
+   },
+   "West Khasi Hills": {
+    "population": 383461,
+    "male": 193715,
+    "female": 189746,
+    "literate": 230678,
+    "households": 87131,
+    "rural_hh": 74832,
+    "urban_hh": 12299
+   },
+   "Ribhoi": {
+    "population": 258840,
+    "male": 132531,
+    "female": 126309,
+    "literate": 155859,
+    "households": 63724,
+    "rural_hh": 57988,
+    "urban_hh": 5736
+   },
+   "East Khasi Hills": {
+    "population": 825922,
+    "male": 410749,
+    "female": 415173,
+    "literate": 578030,
+    "households": 215091,
+    "rural_hh": 106248,
+    "urban_hh": 108843
+   },
+   "Jaintia Hills": {
+    "population": 395124,
+    "male": 196285,
+    "female": 198839,
+    "literate": 187527,
+    "households": 83717,
+    "rural_hh": 76546,
+    "urban_hh": 7171
+   }
+  },
+  "ASSAM": {
+   "Kokrajhar": {
+    "population": 887142,
+    "male": 452905,
+    "female": 434237,
+    "literate": 489305,
+    "households": 222011,
+    "rural_hh": 204896,
+    "urban_hh": 17115
+   },
+   "Dhubri": {
+    "population": 1949258,
+    "male": 997848,
+    "female": 951410,
+    "literate": 922341,
+    "households": 521019,
+    "rural_hh": 460602,
+    "urban_hh": 60417
+   },
+   "Goalpara": {
+    "population": 1008183,
+    "male": 513292,
+    "female": 494891,
+    "literate": 563577,
+    "households": 268114,
+    "rural_hh": 228610,
+    "urban_hh": 39504
+   },
+   "Barpeta": {
+    "population": 1693622,
+    "male": 867004,
+    "female": 826618,
+    "literate": 897058,
+    "households": 499381,
+    "rural_hh": 447189,
+    "urban_hh": 52192
+   },
+   "Morigaon": {
+    "population": 957423,
+    "male": 486651,
+    "female": 470772,
+    "literate": 539902,
+    "households": 257481,
+    "rural_hh": 232206,
+    "urban_hh": 25275
+   },
+   "Nagaon": {
+    "population": 2823768,
+    "male": 1439112,
+    "female": 1384656,
+    "literate": 1710716,
+    "households": 799185,
+    "rural_hh": 674999,
+    "urban_hh": 124186
+   },
+   "Sonitpur": {
+    "population": 1924110,
+    "male": 983904,
+    "female": 940206,
+    "literate": 1108572,
+    "households": 547853,
+    "rural_hh": 483325,
+    "urban_hh": 64528
+   },
+   "Lakhimpur": {
+    "population": 1042137,
+    "male": 529674,
+    "female": 512463,
+    "literate": 683486,
+    "households": 327933,
+    "rural_hh": 293239,
+    "urban_hh": 34694
+   },
+   "Dhemaji": {
+    "population": 686133,
+    "male": 351249,
+    "female": 334884,
+    "literate": 423028,
+    "households": 228262,
+    "rural_hh": 211758,
+    "urban_hh": 16504
+   },
+   "Tinsukia": {
+    "population": 1327929,
+    "male": 680231,
+    "female": 647698,
+    "literate": 798322,
+    "households": 381614,
+    "rural_hh": 290704,
+    "urban_hh": 90910
+   },
+   "Dibrugarh": {
+    "population": 1326335,
+    "male": 676434,
+    "female": 649901,
+    "literate": 884531,
+    "households": 377015,
+    "rural_hh": 299852,
+    "urban_hh": 77163
+   },
+   "Sivasagar": {
+    "population": 1151050,
+    "male": 589216,
+    "female": 561834,
+    "literate": 813505,
+    "households": 405229,
+    "rural_hh": 360182,
+    "urban_hh": 45047
+   },
+   "Jorhat": {
+    "population": 1092256,
+    "male": 556805,
+    "female": 535451,
+    "literate": 794929,
+    "households": 367154,
+    "rural_hh": 286330,
+    "urban_hh": 80824
+   },
+   "Golaghat": {
+    "population": 1066888,
+    "male": 543161,
+    "female": 523727,
+    "literate": 721764,
+    "households": 327083,
+    "rural_hh": 292893,
+    "urban_hh": 34190
+   },
+   "Karbi Anglong": {
+    "population": 956313,
+    "male": 490167,
+    "female": 466146,
+    "literate": 557214,
+    "households": 252876,
+    "rural_hh": 215691,
+    "urban_hh": 37185
+   },
+   "Dima Hasao": {
+    "population": 214102,
+    "male": 110802,
+    "female": 103300,
+    "literate": 140873,
+    "households": 58919,
+    "rural_hh": 37610,
+    "urban_hh": 21309
+   },
+   "Cachar": {
+    "population": 1736617,
+    "male": 886284,
+    "female": 850333,
+    "literate": 1174128,
+    "households": 435160,
+    "rural_hh": 346227,
+    "urban_hh": 88933
+   },
+   "Karimganj": {
+    "population": 1228686,
+    "male": 625864,
+    "female": 602822,
+    "literate": 795297,
+    "households": 294640,
+    "rural_hh": 261945,
+    "urban_hh": 32695
+   },
+   "Hailakandi": {
+    "population": 659296,
+    "male": 337890,
+    "female": 321406,
+    "literate": 407366,
+    "households": 175417,
+    "rural_hh": 159215,
+    "urban_hh": 16202
+   },
+   "Bongaigaon": {
+    "population": 738804,
+    "male": 375818,
+    "female": 362986,
+    "literate": 434078,
+    "households": 220393,
+    "rural_hh": 181923,
+    "urban_hh": 38470
+   },
+   "Chirang": {
+    "population": 482162,
+    "male": 244860,
+    "female": 237302,
+    "literate": 259902,
+    "households": 140631,
+    "rural_hh": 129018,
+    "urban_hh": 11613
+   },
+   "Kamrup": {
+    "population": 1517542,
+    "male": 778461,
+    "female": 739081,
+    "literate": 995319,
+    "households": 434445,
+    "rural_hh": 390596,
+    "urban_hh": 43849
+   },
+   "Kamrup Metropolitan": {
+    "population": 1253938,
+    "male": 647585,
+    "female": 606353,
+    "literate": 1001191,
+    "households": 428192,
+    "rural_hh": 61334,
+    "urban_hh": 366858
+   },
+   "Nalbari": {
+    "population": 771639,
+    "male": 396006,
+    "female": 375633,
+    "literate": 531771,
+    "households": 238944,
+    "rural_hh": 210706,
+    "urban_hh": 28238
+   },
+   "Baksa": {
+    "population": 950075,
+    "male": 481330,
+    "female": 468745,
+    "literate": 572837,
+    "households": 295221,
+    "rural_hh": 291641,
+    "urban_hh": 3580
+   },
+   "Darrang": {
+    "population": 928500,
+    "male": 475273,
+    "female": 453227,
+    "literate": 487039,
+    "households": 288706,
+    "rural_hh": 268517,
+    "urban_hh": 20189
+   },
+   "Udalguri": {
+    "population": 831668,
+    "male": 421617,
+    "female": 410051,
+    "literate": 469926,
+    "households": 281625,
+    "rural_hh": 267790,
+    "urban_hh": 13835
+   }
+  },
+  "WEST BENGAL": {
+   "Darjiling": {
+    "population": 1846823,
+    "male": 937259,
+    "female": 909564,
+    "literate": 1315585,
+    "households": 518959,
+    "rural_hh": 303284,
+    "urban_hh": 215675
+   },
+   "Jalpaiguri": {
+    "population": 3872846,
+    "male": 1983064,
+    "female": 1889782,
+    "literate": 2498780,
+    "households": 1117804,
+    "rural_hh": 798378,
+    "urban_hh": 319426
+   },
+   "Koch Bihar": {
+    "population": 2819086,
+    "male": 1451542,
+    "female": 1367544,
+    "literate": 1850504,
+    "households": 900738,
+    "rural_hh": 803407,
+    "urban_hh": 97331
+   },
+   "Uttar Dinajpur": {
+    "population": 3007134,
+    "male": 1551066,
+    "female": 1456068,
+    "literate": 1489667,
+    "households": 778250,
+    "rural_hh": 683981,
+    "urban_hh": 94269
+   },
+   "Dakshin Dinajpur": {
+    "population": 1676276,
+    "male": 857199,
+    "female": 819077,
+    "literate": 1083685,
+    "households": 461026,
+    "rural_hh": 390949,
+    "urban_hh": 70077
+   },
+   "Maldah": {
+    "population": 3988845,
+    "male": 2051541,
+    "female": 1937304,
+    "literate": 2086432,
+    "households": 958996,
+    "rural_hh": 830318,
+    "urban_hh": 128678
+   },
+   "Murshidabad": {
+    "population": 7103807,
+    "male": 3627564,
+    "female": 3476243,
+    "literate": 4055834,
+    "households": 1851965,
+    "rural_hh": 1501066,
+    "urban_hh": 350899
+   },
+   "Birbhum": {
+    "population": 3502404,
+    "male": 1790920,
+    "female": 1711484,
+    "literate": 2158447,
+    "households": 965609,
+    "rural_hh": 831044,
+    "urban_hh": 134565
+   },
+   "Barddhaman": {
+    "population": 7717563,
+    "male": 3966889,
+    "female": 3750674,
+    "literate": 5247208,
+    "households": 2227236,
+    "rural_hh": 1364868,
+    "urban_hh": 862368
+   },
+   "Nadia": {
+    "population": 5167600,
+    "male": 2653768,
+    "female": 2513832,
+    "literate": 3480555,
+    "households": 1549771,
+    "rural_hh": 1081381,
+    "urban_hh": 468390
+   },
+   "North Twenty Four Parganas": {
+    "population": 10009781,
+    "male": 5119389,
+    "female": 4890392,
+    "literate": 7608693,
+    "households": 2859140,
+    "rural_hh": 1209337,
+    "urban_hh": 1649803
+   },
+   "Hugli": {
+    "population": 5519145,
+    "male": 2814653,
+    "female": 2704492,
+    "literate": 4078388,
+    "households": 1640038,
+    "rural_hh": 992085,
+    "urban_hh": 647953
+   },
+   "Bankura": {
+    "population": 3596674,
+    "male": 1838095,
+    "female": 1758579,
+    "literate": 2232992,
+    "households": 991400,
+    "rural_hh": 900515,
+    "urban_hh": 90885
+   },
+   "Puruliya": {
+    "population": 2930115,
+    "male": 1496996,
+    "female": 1433119,
+    "literate": 1624905,
+    "households": 752652,
+    "rural_hh": 653219,
+    "urban_hh": 99433
+   },
+   "Haora": {
+    "population": 4850029,
+    "male": 2500819,
+    "female": 2349210,
+    "literate": 3605206,
+    "households": 1352697,
+    "rural_hh": 483384,
+    "urban_hh": 869313
+   },
+   "Kolkata": {
+    "population": 4496694,
+    "male": 2356766,
+    "female": 2139928,
+    "literate": 3588137,
+    "households": 1308106,
+    "rural_hh": 0,
+    "urban_hh": 1308106
+   },
+   "South Twenty Four Parganas": {
+    "population": 8161961,
+    "male": 4173778,
+    "female": 3988183,
+    "literate": 5531657,
+    "households": 2180232,
+    "rural_hh": 1568802,
+    "urban_hh": 611430
+   },
+   "Paschim Medinipur": {
+    "population": 5913457,
+    "male": 3007885,
+    "female": 2905572,
+    "literate": 4078412,
+    "households": 1565383,
+    "rural_hh": 1364335,
+    "urban_hh": 201048
+   },
+   "Purba Medinipur": {
+    "population": 5095875,
+    "male": 2629834,
+    "female": 2466041,
+    "literate": 3923194,
+    "households": 1363713,
+    "rural_hh": 1193006,
+    "urban_hh": 170707
+   }
+  },
+  "JHARKHAND": {
+   "Garhwa": {
+    "population": 1322784,
+    "male": 683575,
+    "female": 639209,
+    "literate": 653476,
+    "households": 292052,
+    "rural_hh": 272872,
+    "urban_hh": 19180
+   },
+   "Chatra": {
+    "population": 1042886,
+    "male": 533935,
+    "female": 508951,
+    "literate": 510061,
+    "households": 215502,
+    "rural_hh": 200974,
+    "urban_hh": 14528
+   },
+   "Kodarma": {
+    "population": 716259,
+    "male": 367222,
+    "female": 349037,
+    "literate": 390249,
+    "households": 151485,
+    "rural_hh": 116714,
+    "urban_hh": 34771
+   },
+   "Giridih": {
+    "population": 2445474,
+    "male": 1258098,
+    "female": 1187376,
+    "literate": 1253475,
+    "households": 499450,
+    "rural_hh": 452564,
+    "urban_hh": 46886
+   },
+   "Deoghar": {
+    "population": 1492073,
+    "male": 775022,
+    "female": 717051,
+    "literate": 793538,
+    "households": 321710,
+    "rural_hh": 257373,
+    "urban_hh": 64337
+   },
+   "Godda": {
+    "population": 1313551,
+    "male": 677927,
+    "female": 635624,
+    "literate": 604519,
+    "households": 292030,
+    "rural_hh": 276454,
+    "urban_hh": 15576
+   },
+   "Sahibganj": {
+    "population": 1150567,
+    "male": 589391,
+    "female": 561176,
+    "literate": 483263,
+    "households": 260993,
+    "rural_hh": 223450,
+    "urban_hh": 37543
+   },
+   "Pakur": {
+    "population": 900422,
+    "male": 452661,
+    "female": 447761,
+    "literate": 352881,
+    "households": 217175,
+    "rural_hh": 200588,
+    "urban_hh": 16587
+   },
+   "Dhanbad": {
+    "population": 2684487,
+    "male": 1405956,
+    "female": 1278531,
+    "literate": 1722204,
+    "households": 664219,
+    "rural_hh": 258764,
+    "urban_hh": 405455
+   },
+   "Bokaro": {
+    "population": 2062330,
+    "male": 1072807,
+    "female": 989523,
+    "literate": 1273520,
+    "households": 508764,
+    "rural_hh": 250312,
+    "urban_hh": 258452
+   },
+   "Lohardaga": {
+    "population": 461790,
+    "male": 232629,
+    "female": 229161,
+    "literate": 259707,
+    "households": 111484,
+    "rural_hh": 96759,
+    "urban_hh": 14725
+   },
+   "Purbi Singhbhum": {
+    "population": 2293919,
+    "male": 1176902,
+    "female": 1117017,
+    "literate": 1507699,
+    "households": 604663,
+    "rural_hh": 262537,
+    "urban_hh": 342126
+   },
+   "Palamu": {
+    "population": 1939869,
+    "male": 1006302,
+    "female": 933567,
+    "literate": 1024563,
+    "households": 407904,
+    "rural_hh": 355529,
+    "urban_hh": 52375
+   },
+   "Latehar": {
+    "population": 726978,
+    "male": 369666,
+    "female": 357312,
+    "literate": 350682,
+    "households": 160514,
+    "rural_hh": 146377,
+    "urban_hh": 14137
+   },
+   "Hazaribagh": {
+    "population": 1734495,
+    "male": 890881,
+    "female": 843614,
+    "literate": 1013249,
+    "households": 381748,
+    "rural_hh": 312983,
+    "urban_hh": 68765
+   },
+   "Ramgarh": {
+    "population": 949443,
+    "male": 494230,
+    "female": 455213,
+    "literate": 596497,
+    "households": 252625,
+    "rural_hh": 134067,
+    "urban_hh": 118558
+   },
+   "Dumka": {
+    "population": 1321442,
+    "male": 668514,
+    "female": 652928,
+    "literate": 672409,
+    "households": 326978,
+    "rural_hh": 303697,
+    "urban_hh": 23281
+   },
+   "Jamtara": {
+    "population": 791042,
+    "male": 404830,
+    "female": 386212,
+    "literate": 426312,
+    "households": 185668,
+    "rural_hh": 165555,
+    "urban_hh": 20113
+   },
+   "Ranchi": {
+    "population": 2914253,
+    "male": 1494937,
+    "female": 1419316,
+    "literate": 1911433,
+    "households": 730982,
+    "rural_hh": 420740,
+    "urban_hh": 310242
+   },
+   "Khunti": {
+    "population": 531885,
+    "male": 266335,
+    "female": 265550,
+    "literate": 284575,
+    "households": 135719,
+    "rural_hh": 123245,
+    "urban_hh": 12474
+   },
+   "Gumla": {
+    "population": 1025213,
+    "male": 514390,
+    "female": 510823,
+    "literate": 559720,
+    "households": 233074,
+    "rural_hh": 216629,
+    "urban_hh": 16445
+   },
+   "Simdega": {
+    "population": 599578,
+    "male": 300309,
+    "female": 299269,
+    "literate": 343483,
+    "households": 155283,
+    "rural_hh": 144169,
+    "urban_hh": 11114
+   },
+   "Pashchimi Singhbhum": {
+    "population": 1502338,
+    "male": 749385,
+    "female": 752953,
+    "literate": 727561,
+    "households": 400324,
+    "rural_hh": 336928,
+    "urban_hh": 63396
+   },
+   "Saraikela-Kharsawan": {
+    "population": 1065056,
+    "male": 544411,
+    "female": 520645,
+    "literate": 612993,
+    "households": 285687,
+    "rural_hh": 217248,
+    "urban_hh": 68439
+   }
+  },
+  "ORISSA": {
+   "Bargarh": {
+    "population": 1481255,
+    "male": 749161,
+    "female": 732094,
+    "literate": 983783,
+    "households": 458961,
+    "rural_hh": 411566,
+    "urban_hh": 47395
+   },
+   "Jharsuguda": {
+    "population": 579505,
+    "male": 296690,
+    "female": 282815,
+    "literate": 405879,
+    "households": 177186,
+    "rural_hh": 103224,
+    "urban_hh": 73962
+   },
+   "Sambalpur": {
+    "population": 1041099,
+    "male": 526877,
+    "female": 514222,
+    "literate": 703691,
+    "households": 315495,
+    "rural_hh": 220697,
+    "urban_hh": 94798
+   },
+   "Debagarh": {
+    "population": 312520,
+    "male": 158230,
+    "female": 154290,
+    "literate": 197819,
+    "households": 98758,
+    "rural_hh": 91408,
+    "urban_hh": 7350
+   },
+   "Sundargarh": {
+    "population": 2093437,
+    "male": 1061147,
+    "female": 1032290,
+    "literate": 1342322,
+    "households": 618062,
+    "rural_hh": 387911,
+    "urban_hh": 230151
+   },
+   "Kendujhar": {
+    "population": 1801733,
+    "male": 906487,
+    "female": 895246,
+    "literate": 1052518,
+    "households": 574298,
+    "rural_hh": 490634,
+    "urban_hh": 83664
+   },
+   "Mayurbhanj": {
+    "population": 2519738,
+    "male": 1256213,
+    "female": 1263525,
+    "literate": 1369397,
+    "households": 753589,
+    "rural_hh": 689110,
+    "urban_hh": 64479
+   },
+   "Baleshwar": {
+    "population": 2320529,
+    "male": 1185787,
+    "female": 1134742,
+    "literate": 1621232,
+    "households": 683594,
+    "rural_hh": 601154,
+    "urban_hh": 82440
+   },
+   "Bhadrak": {
+    "population": 1506337,
+    "male": 760260,
+    "female": 746077,
+    "literate": 1094140,
+    "households": 428106,
+    "rural_hh": 373862,
+    "urban_hh": 54244
+   },
+   "Kendrapara": {
+    "population": 1440361,
+    "male": 717814,
+    "female": 722547,
+    "literate": 1089265,
+    "households": 438243,
+    "rural_hh": 414749,
+    "urban_hh": 23494
+   },
+   "Jagatsinghapur": {
+    "population": 1136971,
+    "male": 577865,
+    "female": 559106,
+    "literate": 889027,
+    "households": 352732,
+    "rural_hh": 309685,
+    "urban_hh": 43047
+   },
+   "Cuttack": {
+    "population": 2624470,
+    "male": 1352760,
+    "female": 1271710,
+    "literate": 2011469,
+    "households": 790297,
+    "rural_hh": 579529,
+    "urban_hh": 210768
+   },
+   "Jajapur": {
+    "population": 1827192,
+    "male": 926034,
+    "female": 901158,
+    "literate": 1290455,
+    "households": 541139,
+    "rural_hh": 495611,
+    "urban_hh": 45528
+   },
+   "Dhenkanal": {
+    "population": 1192811,
+    "male": 612593,
+    "female": 580218,
+    "literate": 829910,
+    "households": 352369,
+    "rural_hh": 315390,
+    "urban_hh": 36979
+   },
+   "Anugul": {
+    "population": 1273821,
+    "male": 655718,
+    "female": 618103,
+    "literate": 869456,
+    "households": 414587,
+    "rural_hh": 340410,
+    "urban_hh": 74177
+   },
+   "Nayagarh": {
+    "population": 962789,
+    "male": 502636,
+    "female": 460153,
+    "literate": 688362,
+    "households": 288334,
+    "rural_hh": 261646,
+    "urban_hh": 26688
+   },
+   "Khordha": {
+    "population": 2251673,
+    "male": 1167137,
+    "female": 1084536,
+    "literate": 1749936,
+    "households": 688729,
+    "rural_hh": 331834,
+    "urban_hh": 356895
+   },
+   "Puri": {
+    "population": 1698730,
+    "male": 865380,
+    "female": 833350,
+    "literate": 1291939,
+    "households": 474224,
+    "rural_hh": 402014,
+    "urban_hh": 72210
+   },
+   "Ganjam": {
+    "population": 3529031,
+    "male": 1779218,
+    "female": 1749813,
+    "literate": 2210050,
+    "households": 1015394,
+    "rural_hh": 795476,
+    "urban_hh": 219918
+   },
+   "Gajapati": {
+    "population": 577817,
+    "male": 282882,
+    "female": 294935,
+    "literate": 262537,
+    "households": 175145,
+    "rural_hh": 152095,
+    "urban_hh": 23050
+   },
+   "Kandhamal": {
+    "population": 733110,
+    "male": 359945,
+    "female": 373165,
+    "literate": 399786,
+    "households": 242935,
+    "rural_hh": 218446,
+    "urban_hh": 24489
+   },
+   "Baudh": {
+    "population": 441162,
+    "male": 221625,
+    "female": 219537,
+    "literate": 271612,
+    "households": 137954,
+    "rural_hh": 131377,
+    "urban_hh": 6577
+   },
+   "Subarnapur": {
+    "population": 610183,
+    "male": 311312,
+    "female": 298871,
+    "literate": 398421,
+    "households": 193502,
+    "rural_hh": 176927,
+    "urban_hh": 16575
+   },
+   "Balangir": {
+    "population": 1648997,
+    "male": 830097,
+    "female": 818900,
+    "literate": 927260,
+    "households": 538962,
+    "rural_hh": 476770,
+    "urban_hh": 62192
+   },
+   "Nuapada": {
+    "population": 610382,
+    "male": 301962,
+    "female": 308420,
+    "literate": 299383,
+    "households": 209127,
+    "rural_hh": 197258,
+    "urban_hh": 11869
+   },
+   "Kalahandi": {
+    "population": 1576869,
+    "male": 787101,
+    "female": 789768,
+    "literate": 802036,
+    "households": 494748,
+    "rural_hh": 456336,
+    "urban_hh": 38412
+   },
+   "Rayagada": {
+    "population": 967911,
+    "male": 471960,
+    "female": 495951,
+    "literate": 407735,
+    "households": 286548,
+    "rural_hh": 237343,
+    "urban_hh": 49205
+   },
+   "Nabarangapur": {
+    "population": 1220946,
+    "male": 604812,
+    "female": 616134,
+    "literate": 470379,
+    "households": 372264,
+    "rural_hh": 342840,
+    "urban_hh": 29424
+   },
+   "Koraput": {
+    "population": 1379647,
+    "male": 678809,
+    "female": 700838,
+    "literate": 568090,
+    "households": 460128,
+    "rural_hh": 381789,
+    "urban_hh": 78339
+   },
+   "Malkangiri": {
+    "population": 613192,
+    "male": 303624,
+    "female": 309568,
+    "literate": 244706,
+    "households": 183723,
+    "rural_hh": 167884,
+    "urban_hh": 15839
+   }
+  },
+  "CHHATTISGARH": {
+   "Koriya": {
+    "population": 658917,
+    "male": 334737,
+    "female": 324180,
+    "literate": 397823,
+    "households": 181615,
+    "rural_hh": 121852,
+    "urban_hh": 59763
+   },
+   "Surguja": {
+    "population": 2359886,
+    "male": 1193129,
+    "female": 1166757,
+    "literate": 1187941,
+    "households": 590763,
+    "rural_hh": 525596,
+    "urban_hh": 65167
+   },
+   "Jashpur": {
+    "population": 851669,
+    "male": 424747,
+    "female": 426922,
+    "literate": 495415,
+    "households": 226392,
+    "rural_hh": 205670,
+    "urban_hh": 20722
+   },
+   "Raigarh": {
+    "population": 1493984,
+    "male": 750278,
+    "female": 743706,
+    "literate": 951639,
+    "households": 420916,
+    "rural_hh": 354278,
+    "urban_hh": 66638
+   },
+   "Korba": {
+    "population": 1206640,
+    "male": 612915,
+    "female": 593725,
+    "literate": 748759,
+    "households": 332653,
+    "rural_hh": 206598,
+    "urban_hh": 126055
+   },
+   "Janjgir - Champa": {
+    "population": 1619707,
+    "male": 815717,
+    "female": 803990,
+    "literate": 1019634,
+    "households": 440773,
+    "rural_hh": 379583,
+    "urban_hh": 61190
+   },
+   "Bilaspur": {
+    "population": 2663629,
+    "male": 1351574,
+    "female": 1312055,
+    "literate": 1596560,
+    "households": 737806,
+    "rural_hh": 549632,
+    "urban_hh": 188174
+   },
+   "Kabeerdham": {
+    "population": 822526,
+    "male": 412058,
+    "female": 410468,
+    "literate": 414167,
+    "households": 211179,
+    "rural_hh": 187311,
+    "urban_hh": 23868
+   },
+   "Rajnandgaon": {
+    "population": 1537133,
+    "male": 762855,
+    "female": 774278,
+    "literate": 1008379,
+    "households": 390132,
+    "rural_hh": 313604,
+    "urban_hh": 76528
+   },
+   "Durg": {
+    "population": 3343872,
+    "male": 1682101,
+    "female": 1661771,
+    "literate": 2303378,
+    "households": 883189,
+    "rural_hh": 533448,
+    "urban_hh": 349741
+   },
+   "Raipur": {
+    "population": 4063872,
+    "male": 2048186,
+    "female": 2015686,
+    "literate": 2629749,
+    "households": 1068500,
+    "rural_hh": 673499,
+    "urban_hh": 395001
+   },
+   "Mahasamund": {
+    "population": 1032754,
+    "male": 511967,
+    "female": 520787,
+    "literate": 637963,
+    "households": 310567,
+    "rural_hh": 274793,
+    "urban_hh": 35774
+   },
+   "Dhamtari": {
+    "population": 799781,
+    "male": 397897,
+    "female": 401884,
+    "literate": 546833,
+    "households": 210481,
+    "rural_hh": 168689,
+    "urban_hh": 41792
+   },
+   "Uttar Bastar Kanker": {
+    "population": 748941,
+    "male": 373338,
+    "female": 375603,
+    "literate": 456042,
+    "households": 194069,
+    "rural_hh": 169191,
+    "urban_hh": 24878
+   },
+   "Bastar": {
+    "population": 1413199,
+    "male": 698487,
+    "female": 714712,
+    "literate": 650863,
+    "households": 371319,
+    "rural_hh": 316425,
+    "urban_hh": 54894
+   },
+   "Narayanpur": {
+    "population": 139820,
+    "male": 70104,
+    "female": 69716,
+    "literate": 56621,
+    "households": 33095,
+    "rural_hh": 26916,
+    "urban_hh": 6179
+   },
+   "Dakshin Bastar Dantewada": {
+    "population": 533638,
+    "male": 264142,
+    "female": 269496,
+    "literate": 191237,
+    "households": 137849,
+    "rural_hh": 106545,
+    "urban_hh": 31304
+   },
+   "Bijapur": {
+    "population": 255230,
+    "male": 128663,
+    "female": 126567,
+    "literate": 86919,
+    "households": 58391,
+    "rural_hh": 50449,
+    "urban_hh": 7942
+   }
+  },
+  "MADHYA PRADESH": {
+   "Sheopur": {
+    "population": 687861,
+    "male": 361784,
+    "female": 326077,
+    "literate": 328025,
+    "households": 176522,
+    "rural_hh": 150146,
+    "urban_hh": 26376
+   },
+   "Morena": {
+    "population": 1965970,
+    "male": 1068417,
+    "female": 897553,
+    "literate": 1179685,
+    "households": 414586,
+    "rural_hh": 319298,
+    "urban_hh": 95288
+   },
+   "Bhind": {
+    "population": 1703005,
+    "male": 926843,
+    "female": 776162,
+    "literate": 1094917,
+    "households": 359596,
+    "rural_hh": 271211,
+    "urban_hh": 88385
+   },
+   "Gwalior": {
+    "population": 2032036,
+    "male": 1090327,
+    "female": 941709,
+    "literate": 1357210,
+    "households": 444892,
+    "rural_hh": 172720,
+    "urban_hh": 272172
+   },
+   "Datia": {
+    "population": 786754,
+    "male": 420157,
+    "female": 366597,
+    "literate": 491445,
+    "households": 203854,
+    "rural_hh": 160453,
+    "urban_hh": 43401
+   },
+   "Shivpuri": {
+    "population": 1726050,
+    "male": 919795,
+    "female": 806255,
+    "literate": 900846,
+    "households": 434618,
+    "rural_hh": 367859,
+    "urban_hh": 66759
+   },
+   "Tikamgarh": {
+    "population": 1445166,
+    "male": 760355,
+    "female": 684811,
+    "literate": 747940,
+    "households": 382992,
+    "rural_hh": 322772,
+    "urban_hh": 60220
+   },
+   "Chhatarpur": {
+    "population": 1762375,
+    "male": 936121,
+    "female": 826254,
+    "literate": 943033,
+    "households": 470917,
+    "rural_hh": 375869,
+    "urban_hh": 95048
+   },
+   "Panna": {
+    "population": 1016520,
+    "male": 533480,
+    "female": 483040,
+    "literate": 552559,
+    "households": 288923,
+    "rural_hh": 256744,
+    "urban_hh": 32179
+   },
+   "Sagar": {
+    "population": 2378458,
+    "male": 1256257,
+    "female": 1122201,
+    "literate": 1545719,
+    "households": 613915,
+    "rural_hh": 448408,
+    "urban_hh": 165507
+   },
+   "Damoh": {
+    "population": 1264219,
+    "male": 661873,
+    "female": 602346,
+    "literate": 747715,
+    "households": 369901,
+    "rural_hh": 303387,
+    "urban_hh": 66514
+   },
+   "Satna": {
+    "population": 2228935,
+    "male": 1157495,
+    "female": 1071440,
+    "literate": 1371781,
+    "households": 576004,
+    "rural_hh": 461831,
+    "urban_hh": 114173
+   },
+   "Rewa": {
+    "population": 2365106,
+    "male": 1225100,
+    "female": 1140006,
+    "literate": 1441757,
+    "households": 618399,
+    "rural_hh": 523910,
+    "urban_hh": 94489
+   },
+   "Umaria": {
+    "population": 644758,
+    "male": 330674,
+    "female": 314084,
+    "literate": 356672,
+    "households": 168066,
+    "rural_hh": 138100,
+    "urban_hh": 29966
+   },
+   "Neemuch": {
+    "population": 826067,
+    "male": 422653,
+    "female": 403414,
+    "literate": 508834,
+    "households": 242197,
+    "rural_hh": 174235,
+    "urban_hh": 67962
+   },
+   "Mandsaur": {
+    "population": 1340411,
+    "male": 682851,
+    "female": 657560,
+    "literate": 834591,
+    "households": 384119,
+    "rural_hh": 302287,
+    "urban_hh": 81832
+   },
+   "Ratlam": {
+    "population": 1455069,
+    "male": 738241,
+    "female": 716828,
+    "literate": 825880,
+    "households": 373867,
+    "rural_hh": 266716,
+    "urban_hh": 107151
+   },
+   "Ujjain": {
+    "population": 1986864,
+    "male": 1016289,
+    "female": 970575,
+    "literate": 1240990,
+    "households": 489449,
+    "rural_hh": 300765,
+    "urban_hh": 188684
+   },
+   "Shajapur": {
+    "population": 1512681,
+    "male": 780520,
+    "female": 732161,
+    "literate": 894612,
+    "households": 386608,
+    "rural_hh": 312611,
+    "urban_hh": 73997
+   },
+   "Dewas": {
+    "population": 1563715,
+    "male": 805359,
+    "female": 758356,
+    "literate": 925369,
+    "households": 376009,
+    "rural_hh": 274995,
+    "urban_hh": 101014
+   },
+   "Dhar": {
+    "population": 2185793,
+    "male": 1112725,
+    "female": 1073068,
+    "literate": 1077338,
+    "households": 515712,
+    "rural_hh": 412348,
+    "urban_hh": 103364
+   },
+   "Indore": {
+    "population": 3276697,
+    "male": 1699627,
+    "female": 1577070,
+    "literate": 2309130,
+    "households": 788318,
+    "rural_hh": 200371,
+    "urban_hh": 587947
+   },
+   "Khargone (West Nimar)": {
+    "population": 1873046,
+    "male": 953121,
+    "female": 919925,
+    "literate": 986234,
+    "households": 460163,
+    "rural_hh": 383543,
+    "urban_hh": 76620
+   },
+   "Barwani": {
+    "population": 1385881,
+    "male": 699340,
+    "female": 686541,
+    "literate": 549926,
+    "households": 299270,
+    "rural_hh": 250358,
+    "urban_hh": 48912
+   },
+   "Rajgarh": {
+    "population": 1545814,
+    "male": 790212,
+    "female": 755602,
+    "literate": 804245,
+    "households": 401717,
+    "rural_hh": 331894,
+    "urban_hh": 69823
+   },
+   "Vidisha": {
+    "population": 1458875,
+    "male": 769568,
+    "female": 689307,
+    "literate": 862918,
+    "households": 376409,
+    "rural_hh": 292579,
+    "urban_hh": 83830
+   },
+   "Bhopal": {
+    "population": 2371061,
+    "male": 1236130,
+    "female": 1134931,
+    "literate": 1660690,
+    "households": 700719,
+    "rural_hh": 118893,
+    "urban_hh": 581826
+   },
+   "Sehore": {
+    "population": 1311332,
+    "male": 683743,
+    "female": 627589,
+    "literate": 780362,
+    "households": 329647,
+    "rural_hh": 270427,
+    "urban_hh": 59220
+   },
+   "Raisen": {
+    "population": 1331597,
+    "male": 700358,
+    "female": 631239,
+    "literate": 820220,
+    "households": 325713,
+    "rural_hh": 251272,
+    "urban_hh": 74441
+   },
+   "Betul": {
+    "population": 1575362,
+    "male": 799236,
+    "female": 776126,
+    "literate": 939769,
+    "households": 406649,
+    "rural_hh": 318945,
+    "urban_hh": 87704
+   },
+   "Harda": {
+    "population": 570465,
+    "male": 294838,
+    "female": 275627,
+    "literate": 352550,
+    "households": 144559,
+    "rural_hh": 112714,
+    "urban_hh": 31845
+   },
+   "Hoshangabad": {
+    "population": 1241350,
+    "male": 648725,
+    "female": 592625,
+    "literate": 810644,
+    "households": 315396,
+    "rural_hh": 209650,
+    "urban_hh": 105746
+   },
+   "Katni": {
+    "population": 1292042,
+    "male": 662013,
+    "female": 630029,
+    "literate": 790773,
+    "households": 349031,
+    "rural_hh": 276151,
+    "urban_hh": 72880
+   },
+   "Jabalpur": {
+    "population": 2463289,
+    "male": 1277278,
+    "female": 1186011,
+    "literate": 1756468,
+    "households": 624761,
+    "rural_hh": 272284,
+    "urban_hh": 352477
+   },
+   "Narsimhapur": {
+    "population": 1091854,
+    "male": 568810,
+    "female": 523044,
+    "literate": 718785,
+    "households": 283718,
+    "rural_hh": 230659,
+    "urban_hh": 53059
+   },
+   "Dindori": {
+    "population": 704524,
+    "male": 351913,
+    "female": 352611,
+    "literate": 378714,
+    "households": 227795,
+    "rural_hh": 218021,
+    "urban_hh": 9774
+   },
+   "Mandla": {
+    "population": 1054905,
+    "male": 525272,
+    "female": 529633,
+    "literate": 604962,
+    "households": 316932,
+    "rural_hh": 279674,
+    "urban_hh": 37258
+   },
+   "Chhindwara": {
+    "population": 2090922,
+    "male": 1064468,
+    "female": 1026454,
+    "literate": 1294198,
+    "households": 553944,
+    "rural_hh": 413142,
+    "urban_hh": 140802
+   },
+   "Seoni": {
+    "population": 1379131,
+    "male": 695879,
+    "female": 683252,
+    "literate": 864194,
+    "households": 382587,
+    "rural_hh": 335045,
+    "urban_hh": 47542
+   },
+   "Balaghat": {
+    "population": 1701698,
+    "male": 842178,
+    "female": 859520,
+    "literate": 1147623,
+    "households": 470867,
+    "rural_hh": 400074,
+    "urban_hh": 70793
+   },
+   "Guna": {
+    "population": 1241519,
+    "male": 649362,
+    "female": 592157,
+    "literate": 653980,
+    "households": 285085,
+    "rural_hh": 212765,
+    "urban_hh": 72320
+   },
+   "Ashoknagar": {
+    "population": 845071,
+    "male": 443837,
+    "female": 401234,
+    "literate": 469109,
+    "households": 206741,
+    "rural_hh": 169606,
+    "urban_hh": 37135
+   },
+   "Shahdol": {
+    "population": 1066063,
+    "male": 540021,
+    "female": 526042,
+    "literate": 604194,
+    "households": 291440,
+    "rural_hh": 233594,
+    "urban_hh": 57846
+   },
+   "Anuppur": {
+    "population": 749237,
+    "male": 379114,
+    "female": 370123,
+    "literate": 436595,
+    "households": 207713,
+    "rural_hh": 147388,
+    "urban_hh": 60325
+   },
+   "Sidhi": {
+    "population": 1127033,
+    "male": 575912,
+    "female": 551121,
+    "literate": 600785,
+    "households": 276869,
+    "rural_hh": 250953,
+    "urban_hh": 25916
+   },
+   "Singrauli": {
+    "population": 1178273,
+    "male": 613637,
+    "female": 564636,
+    "literate": 585054,
+    "households": 287325,
+    "rural_hh": 228732,
+    "urban_hh": 58593
+   },
+   "Jhabua": {
+    "population": 1025048,
+    "male": 515023,
+    "female": 510025,
+    "literate": 352081,
+    "households": 235793,
+    "rural_hh": 211080,
+    "urban_hh": 24713
+   },
+   "Alirajpur": {
+    "population": 728999,
+    "male": 362542,
+    "female": 366457,
+    "literate": 209754,
+    "households": 150528,
+    "rural_hh": 135866,
+    "urban_hh": 14662
+   },
+   "Khandwa (East Nimar)": {
+    "population": 1310061,
+    "male": 674329,
+    "female": 635732,
+    "literate": 731615,
+    "households": 329088,
+    "rural_hh": 265663,
+    "urban_hh": 63425
+   },
+   "Burhanpur": {
+    "population": 757847,
+    "male": 388504,
+    "female": 369343,
+    "literate": 408679,
+    "households": 178840,
+    "rural_hh": 115979,
+    "urban_hh": 62861
+   }
+  },
+  "GUJARAT": {
+   "Kachchh": {
+    "population": 2092371,
+    "male": 1096737,
+    "female": 995634,
+    "literate": 1252319,
+    "households": 739275,
+    "rural_hh": 488293,
+    "urban_hh": 250982
+   },
+   "Banas Kantha": {
+    "population": 3120506,
+    "male": 1610379,
+    "female": 1510127,
+    "literate": 1704923,
+    "households": 804197,
+    "rural_hh": 666773,
+    "urban_hh": 137424
+   },
+   "Patan": {
+    "population": 1343734,
+    "male": 694397,
+    "female": 649337,
+    "literate": 837913,
+    "households": 404138,
+    "rural_hh": 301483,
+    "urban_hh": 102655
+   },
+   "Mahesana": {
+    "population": 2035064,
+    "male": 1056520,
+    "female": 978544,
+    "literate": 1502645,
+    "households": 659743,
+    "rural_hh": 476005,
+    "urban_hh": 183738
+   },
+   "Sabar Kantha": {
+    "population": 2428589,
+    "male": 1244231,
+    "female": 1184358,
+    "literate": 1578734,
+    "households": 665533,
+    "rural_hh": 544024,
+    "urban_hh": 121509
+   },
+   "Gandhinagar": {
+    "population": 1391753,
+    "male": 723864,
+    "female": 667889,
+    "literate": 1030494,
+    "households": 433258,
+    "rural_hh": 237624,
+    "urban_hh": 195634
+   },
+   "Ahmadabad": {
+    "population": 7214225,
+    "male": 3788051,
+    "female": 3426174,
+    "literate": 5435760,
+    "households": 2198552,
+    "rural_hh": 353169,
+    "urban_hh": 1845383
+   },
+   "Surendranagar": {
+    "population": 1756268,
+    "male": 909917,
+    "female": 846351,
+    "literate": 1093626,
+    "households": 500598,
+    "rural_hh": 340788,
+    "urban_hh": 159810
+   },
+   "Rajkot": {
+    "population": 3804558,
+    "male": 1974445,
+    "female": 1830113,
+    "literate": 2725056,
+    "households": 1181006,
+    "rural_hh": 459474,
+    "urban_hh": 721532
+   },
+   "Jamnagar": {
+    "population": 2160119,
+    "male": 1114192,
+    "female": 1045927,
+    "literate": 1396534,
+    "households": 646325,
+    "rural_hh": 347158,
+    "urban_hh": 299167
+   },
+   "Porbandar": {
+    "population": 585449,
+    "male": 300209,
+    "female": 285240,
+    "literate": 393678,
+    "households": 183572,
+    "rural_hh": 96015,
+    "urban_hh": 87557
+   },
+   "Junagadh": {
+    "population": 2743082,
+    "male": 1404356,
+    "female": 1338726,
+    "literate": 1842818,
+    "households": 776743,
+    "rural_hh": 489237,
+    "urban_hh": 287506
+   },
+   "Amreli": {
+    "population": 1514190,
+    "male": 771049,
+    "female": 743141,
+    "literate": 995459,
+    "households": 430613,
+    "rural_hh": 313714,
+    "urban_hh": 116899
+   },
+   "Bhavnagar": {
+    "population": 2880365,
+    "male": 1490201,
+    "female": 1390164,
+    "literate": 1887255,
+    "households": 744077,
+    "rural_hh": 387251,
+    "urban_hh": 356826
+   },
+   "Anand": {
+    "population": 2092745,
+    "male": 1087224,
+    "female": 1005521,
+    "literate": 1551253,
+    "households": 621987,
+    "rural_hh": 413078,
+    "urban_hh": 208909
+   },
+   "Kheda": {
+    "population": 2299885,
+    "male": 1185727,
+    "female": 1114158,
+    "literate": 1660243,
+    "households": 622026,
+    "rural_hh": 461479,
+    "urban_hh": 160547
+   },
+   "Panch Mahals": {
+    "population": 2390776,
+    "male": 1226961,
+    "female": 1163815,
+    "literate": 1440805,
+    "households": 567601,
+    "rural_hh": 463363,
+    "urban_hh": 104238
+   },
+   "Dohad": {
+    "population": 2127086,
+    "male": 1068651,
+    "female": 1058435,
+    "literate": 1007171,
+    "households": 376504,
+    "rural_hh": 323697,
+    "urban_hh": 52807
+   },
+   "Vadodara": {
+    "population": 4165626,
+    "male": 2153736,
+    "female": 2011890,
+    "literate": 2893080,
+    "households": 1240425,
+    "rural_hh": 547454,
+    "urban_hh": 692971
+   },
+   "Narmada": {
+    "population": 590297,
+    "male": 301086,
+    "female": 289211,
+    "literate": 370336,
+    "households": 160369,
+    "rural_hh": 138121,
+    "urban_hh": 22248
+   },
+   "Bharuch": {
+    "population": 1551019,
+    "male": 805707,
+    "female": 745312,
+    "literate": 1118276,
+    "households": 481996,
+    "rural_hh": 300677,
+    "urban_hh": 181319
+   },
+   "The Dangs": {
+    "population": 228291,
+    "male": 113821,
+    "female": 114470,
+    "literate": 140968,
+    "households": 59618,
+    "rural_hh": 52102,
+    "urban_hh": 7516
+   },
+   "Navsari": {
+    "population": 1329672,
+    "male": 678165,
+    "female": 651507,
+    "literate": 1001909,
+    "households": 409156,
+    "rural_hh": 267739,
+    "urban_hh": 141417
+   },
+   "Valsad": {
+    "population": 1705678,
+    "male": 887222,
+    "female": 818456,
+    "literate": 1170657,
+    "households": 498391,
+    "rural_hh": 262410,
+    "urban_hh": 235981
+   },
+   "Surat": {
+    "population": 6081322,
+    "male": 3402224,
+    "female": 2679098,
+    "literate": 4571410,
+    "households": 1899838,
+    "rural_hh": 369840,
+    "urban_hh": 1529998
+   },
+   "Tapi": {
+    "population": 807022,
+    "male": 402188,
+    "female": 404834,
+    "literate": 490036,
+    "households": 218489,
+    "rural_hh": 192272,
+    "urban_hh": 26217
+   }
+  },
+  "DAMAN AND DIU": {
+   "Diu": {
+    "population": 52074,
+    "male": 25642,
+    "female": 26432,
+    "literate": 38058,
+    "households": 18850,
+    "rural_hh": 9788,
+    "urban_hh": 9062
+   },
+   "Daman": {
+    "population": 191173,
+    "male": 124659,
+    "female": 66514,
+    "literate": 150348,
+    "households": 71079,
+    "rural_hh": 10006,
+    "urban_hh": 61073
+   }
+  },
+  "DADRA AND NAGAR HAVELI": {
+   "Dadra AND Nagar Haveli": {
+    "population": 343709,
+    "male": 193760,
+    "female": 149949,
+    "literate": 223230,
+    "households": 108783,
+    "rural_hh": 48221,
+    "urban_hh": 60562
+   }
+  },
+  "MAHARASHTRA": {
+   "Nandurbar": {
+    "population": 1648295,
+    "male": 833170,
+    "female": 815125,
+    "literate": 906509,
+    "households": 405012,
+    "rural_hh": 333440,
+    "urban_hh": 71572
+   },
+   "Dhule": {
+    "population": 2050862,
+    "male": 1054031,
+    "female": 996831,
+    "literate": 1293916,
+    "households": 528790,
+    "rural_hh": 382777,
+    "urban_hh": 146013
+   },
+   "Jalgaon": {
+    "population": 4229917,
+    "male": 2197365,
+    "female": 2032552,
+    "literate": 2891882,
+    "households": 1169788,
+    "rural_hh": 796223,
+    "urban_hh": 373565
+   },
+   "Buldana": {
+    "population": 2586258,
+    "male": 1337560,
+    "female": 1248698,
+    "literate": 1879874,
+    "households": 728192,
+    "rural_hh": 575405,
+    "urban_hh": 152787
+   },
+   "Akola": {
+    "population": 1813906,
+    "male": 932334,
+    "female": 881572,
+    "literate": 1411281,
+    "households": 504235,
+    "rural_hh": 308158,
+    "urban_hh": 196077
+   },
+   "Washim": {
+    "population": 1197160,
+    "male": 620302,
+    "female": 576858,
+    "literate": 869917,
+    "households": 330846,
+    "rural_hh": 274925,
+    "urban_hh": 55921
+   },
+   "Amravati": {
+    "population": 2888445,
+    "male": 1480768,
+    "female": 1407677,
+    "literate": 2251875,
+    "households": 781815,
+    "rural_hh": 508921,
+    "urban_hh": 272894
+   },
+   "Wardha": {
+    "population": 1300774,
+    "male": 668385,
+    "female": 632389,
+    "literate": 1019458,
+    "households": 388704,
+    "rural_hh": 268486,
+    "urban_hh": 120218
+   },
+   "Nagpur": {
+    "population": 4653570,
+    "male": 2384975,
+    "female": 2268595,
+    "literate": 3673808,
+    "households": 1308366,
+    "rural_hh": 430844,
+    "urban_hh": 877522
+   },
+   "Bhandara": {
+    "population": 1200334,
+    "male": 605520,
+    "female": 594814,
+    "literate": 899860,
+    "households": 356418,
+    "rural_hh": 283843,
+    "urban_hh": 72575
+   },
+   "Gondiya": {
+    "population": 1322507,
+    "male": 661554,
+    "female": 660953,
+    "literate": 1004243,
+    "households": 386515,
+    "rural_hh": 319702,
+    "urban_hh": 66813
+   },
+   "Gadchiroli": {
+    "population": 1072942,
+    "male": 541328,
+    "female": 531614,
+    "literate": 708365,
+    "households": 330840,
+    "rural_hh": 293586,
+    "urban_hh": 37254
+   },
+   "Chandrapur": {
+    "population": 2204307,
+    "male": 1123834,
+    "female": 1080473,
+    "literate": 1578615,
+    "households": 684655,
+    "rural_hh": 451324,
+    "urban_hh": 233331
+   },
+   "Yavatmal": {
+    "population": 2772348,
+    "male": 1419965,
+    "female": 1352383,
+    "literate": 2022574,
+    "households": 798132,
+    "rural_hh": 629243,
+    "urban_hh": 168889
+   },
+   "Nanded": {
+    "population": 3361292,
+    "male": 1730075,
+    "female": 1631217,
+    "literate": 2189425,
+    "households": 821682,
+    "rural_hh": 591119,
+    "urban_hh": 230563
+   },
+   "Hingoli": {
+    "population": 1177345,
+    "male": 606294,
+    "female": 571051,
+    "literate": 790743,
+    "households": 284369,
+    "rural_hh": 242456,
+    "urban_hh": 41913
+   },
+   "Parbhani": {
+    "population": 1836086,
+    "male": 942870,
+    "female": 893216,
+    "literate": 1157814,
+    "households": 427239,
+    "rural_hh": 293480,
+    "urban_hh": 133759
+   },
+   "Jalna": {
+    "population": 1959046,
+    "male": 1011473,
+    "female": 947573,
+    "literate": 1195523,
+    "households": 502830,
+    "rural_hh": 404746,
+    "urban_hh": 98084
+   },
+   "Aurangabad": {
+    "population": 3701282,
+    "male": 1924469,
+    "female": 1776813,
+    "literate": 2503837,
+    "households": 979132,
+    "rural_hh": 551789,
+    "urban_hh": 427343
+   },
+   "Nashik": {
+    "population": 6107187,
+    "male": 3157186,
+    "female": 2950001,
+    "literate": 4345366,
+    "households": 1668932,
+    "rural_hh": 904661,
+    "urban_hh": 764271
+   },
+   "Thane": {
+    "population": 11060148,
+    "male": 5865078,
+    "female": 5195070,
+    "literate": 8227161,
+    "households": 3618151,
+    "rural_hh": 713994,
+    "urban_hh": 2904157
+   },
+   "Mumbai Suburban": {
+    "population": 9356962,
+    "male": 5031323,
+    "female": 4325639,
+    "literate": 7575485,
+    "households": 3078829,
+    "rural_hh": 0,
+    "urban_hh": 3078829
+   },
+   "Mumbai": {
+    "population": 3085411,
+    "male": 1684608,
+    "female": 1400803,
+    "literate": 2509022,
+    "households": 1107321,
+    "rural_hh": 0,
+    "urban_hh": 1107321
+   },
+   "Raigarh": {
+    "population": 2634200,
+    "male": 1344345,
+    "female": 1289855,
+    "literate": 1939994,
+    "households": 959028,
+    "rural_hh": 581868,
+    "urban_hh": 377160
+   },
+   "Pune": {
+    "population": 9429408,
+    "male": 4924105,
+    "female": 4505303,
+    "literate": 7171723,
+    "households": 3222457,
+    "rural_hh": 1165718,
+    "urban_hh": 2056739
+   },
+   "Ahmadnagar": {
+    "population": 4543159,
+    "male": 2342825,
+    "female": 2200334,
+    "literate": 3151890,
+    "households": 1323404,
+    "rural_hh": 1041393,
+    "urban_hh": 282011
+   },
+   "Bid": {
+    "population": 2585049,
+    "male": 1349106,
+    "female": 1235943,
+    "literate": 1718507,
+    "households": 698571,
+    "rural_hh": 563114,
+    "urban_hh": 135457
+   },
+   "Latur": {
+    "population": 2454196,
+    "male": 1273140,
+    "female": 1181056,
+    "literate": 1650672,
+    "households": 585632,
+    "rural_hh": 428616,
+    "urban_hh": 157016
+   },
+   "Osmanabad": {
+    "population": 1657576,
+    "male": 861535,
+    "female": 796041,
+    "literate": 1137810,
+    "households": 444990,
+    "rural_hh": 367158,
+    "urban_hh": 77832
+   },
+   "Solapur": {
+    "population": 4317756,
+    "male": 2227852,
+    "female": 2089904,
+    "literate": 2910676,
+    "households": 1156231,
+    "rural_hh": 779929,
+    "urban_hh": 376302
+   },
+   "Satara": {
+    "population": 3003741,
+    "male": 1510842,
+    "female": 1492899,
+    "literate": 2225694,
+    "households": 975471,
+    "rural_hh": 774522,
+    "urban_hh": 200949
+   },
+   "Ratnagiri": {
+    "population": 1615069,
+    "male": 761121,
+    "female": 853948,
+    "literate": 1199392,
+    "households": 639362,
+    "rural_hh": 538538,
+    "urban_hh": 100824
+   },
+   "Sindhudurg": {
+    "population": 849651,
+    "male": 417332,
+    "female": 432319,
+    "literate": 666067,
+    "households": 340836,
+    "rural_hh": 295847,
+    "urban_hh": 44989
+   },
+   "Kolhapur": {
+    "population": 3876001,
+    "male": 1980658,
+    "female": 1895343,
+    "literate": 2825845,
+    "households": 1179314,
+    "rural_hh": 796496,
+    "urban_hh": 382818
+   },
+   "Sangli": {
+    "population": 2822143,
+    "male": 1435728,
+    "female": 1386415,
+    "literate": 2049467,
+    "households": 853673,
+    "rural_hh": 626872,
+    "urban_hh": 226801
+   }
+  },
+  "ANDHRA PRADESH": {
+   "Adilabad": {
+    "population": 2741239,
+    "male": 1369597,
+    "female": 1371642,
+    "literate": 1483347,
+    "households": 817714,
+    "rural_hh": 597466,
+    "urban_hh": 220248
+   },
+   "Nizamabad": {
+    "population": 2551335,
+    "male": 1250641,
+    "female": 1300694,
+    "literate": 1389810,
+    "households": 720298,
+    "rural_hh": 565165,
+    "urban_hh": 155133
+   },
+   "Karimnagar": {
+    "population": 3776269,
+    "male": 1880800,
+    "female": 1895469,
+    "literate": 2206829,
+    "households": 1165280,
+    "rural_hh": 877236,
+    "urban_hh": 288044
+   },
+   "Medak": {
+    "population": 3033288,
+    "male": 1523030,
+    "female": 1510258,
+    "literate": 1637137,
+    "households": 789132,
+    "rural_hh": 593653,
+    "urban_hh": 195479
+   },
+   "Hyderabad": {
+    "population": 3943323,
+    "male": 2018575,
+    "female": 1924748,
+    "literate": 2892155,
+    "households": 1066289,
+    "rural_hh": 0,
+    "urban_hh": 1066289
+   },
+   "Rangareddy": {
+    "population": 5296741,
+    "male": 2701008,
+    "female": 2595733,
+    "literate": 3538028,
+    "households": 1561322,
+    "rural_hh": 432098,
+    "urban_hh": 1129224
+   },
+   "Mahbubnagar": {
+    "population": 4053028,
+    "male": 2050386,
+    "female": 2002642,
+    "literate": 1940646,
+    "households": 1010015,
+    "rural_hh": 848963,
+    "urban_hh": 161052
+   },
+   "Nalgonda": {
+    "population": 3488809,
+    "male": 1759772,
+    "female": 1729037,
+    "literate": 2001019,
+    "households": 1030937,
+    "rural_hh": 833504,
+    "urban_hh": 197433
+   },
+   "Warangal": {
+    "population": 3512576,
+    "male": 1759281,
+    "female": 1753295,
+    "literate": 2065023,
+    "households": 1046987,
+    "rural_hh": 758738,
+    "urban_hh": 288249
+   },
+   "Khammam": {
+    "population": 2797370,
+    "male": 1390988,
+    "female": 1406382,
+    "literate": 1630234,
+    "households": 870625,
+    "rural_hh": 669262,
+    "urban_hh": 201363
+   },
+   "Srikakulam": {
+    "population": 2703114,
+    "male": 1341738,
+    "female": 1361376,
+    "literate": 1495381,
+    "households": 902436,
+    "rural_hh": 752752,
+    "urban_hh": 149684
+   },
+   "Vizianagaram": {
+    "population": 2344474,
+    "male": 1161477,
+    "female": 1182997,
+    "literate": 1238388,
+    "households": 749514,
+    "rural_hh": 592458,
+    "urban_hh": 157056
+   },
+   "Visakhapatnam": {
+    "population": 4290589,
+    "male": 2138910,
+    "female": 2151679,
+    "literate": 2568249,
+    "households": 1379340,
+    "rural_hh": 718847,
+    "urban_hh": 660493
+   },
+   "East Godavari": {
+    "population": 5154296,
+    "male": 2569688,
+    "female": 2584608,
+    "literate": 3288577,
+    "households": 1605841,
+    "rural_hh": 1199479,
+    "urban_hh": 406362
+   },
+   "West Godavari": {
+    "population": 3936966,
+    "male": 1964918,
+    "female": 1972048,
+    "literate": 2652389,
+    "households": 1255628,
+    "rural_hh": 1007255,
+    "urban_hh": 248373
+   },
+   "Krishna": {
+    "population": 4517398,
+    "male": 2267375,
+    "female": 2250023,
+    "literate": 3009718,
+    "households": 1476334,
+    "rural_hh": 909292,
+    "urban_hh": 567042
+   },
+   "Guntur": {
+    "population": 4887813,
+    "male": 2440521,
+    "female": 2447292,
+    "literate": 2960441,
+    "households": 1582990,
+    "rural_hh": 1069877,
+    "urban_hh": 513113
+   },
+   "Prakasam": {
+    "population": 3397448,
+    "male": 1714764,
+    "female": 1682684,
+    "literate": 1904435,
+    "households": 1087575,
+    "rural_hh": 873486,
+    "urban_hh": 214089
+   },
+   "Sri Potti Sriramulu Nellore": {
+    "population": 2963557,
+    "male": 1492974,
+    "female": 1470583,
+    "literate": 1832189,
+    "households": 953513,
+    "rural_hh": 689137,
+    "urban_hh": 264376
+   },
+   "Y.S.R.": {
+    "population": 2882469,
+    "male": 1451777,
+    "female": 1430692,
+    "literate": 1716766,
+    "households": 884093,
+    "rural_hh": 590589,
+    "urban_hh": 293504
+   },
+   "Kurnool": {
+    "population": 4053463,
+    "male": 2039227,
+    "female": 2014236,
+    "literate": 2127161,
+    "households": 1090835,
+    "rural_hh": 783853,
+    "urban_hh": 306982
+   },
+   "Anantapur": {
+    "population": 4081148,
+    "male": 2064495,
+    "female": 2016653,
+    "literate": 2310960,
+    "households": 1244428,
+    "rural_hh": 902997,
+    "urban_hh": 341431
+   },
+   "Chittoor": {
+    "population": 4174064,
+    "male": 2090204,
+    "female": 2083860,
+    "literate": 2667878,
+    "households": 1303870,
+    "rural_hh": 907970,
+    "urban_hh": 395900
+   }
+  },
+  "KARNATAKA": {
+   "Belgaum": {
+    "population": 4779661,
+    "male": 2423063,
+    "female": 2356598,
+    "literate": 3052032,
+    "households": 1318975,
+    "rural_hh": 962777,
+    "urban_hh": 356198
+   },
+   "Bagalkot": {
+    "population": 1889752,
+    "male": 950111,
+    "female": 939641,
+    "literate": 1113412,
+    "households": 490657,
+    "rural_hh": 324799,
+    "urban_hh": 165858
+   },
+   "Bijapur": {
+    "population": 2177331,
+    "male": 1111022,
+    "female": 1066309,
+    "literate": 1248268,
+    "households": 527490,
+    "rural_hh": 396449,
+    "urban_hh": 131041
+   },
+   "Bidar": {
+    "population": 1703300,
+    "male": 870665,
+    "female": 832635,
+    "literate": 1042673,
+    "households": 389403,
+    "rural_hh": 287134,
+    "urban_hh": 102269
+   },
+   "Raichur": {
+    "population": 1928812,
+    "male": 964511,
+    "female": 964301,
+    "literate": 979769,
+    "households": 455848,
+    "rural_hh": 330446,
+    "urban_hh": 125402
+   },
+   "Koppal": {
+    "population": 1389920,
+    "male": 699926,
+    "female": 689994,
+    "literate": 809085,
+    "households": 337649,
+    "rural_hh": 272968,
+    "urban_hh": 64681
+   },
+   "Gadag": {
+    "population": 1064570,
+    "male": 537147,
+    "female": 527423,
+    "literate": 700177,
+    "households": 291972,
+    "rural_hh": 180066,
+    "urban_hh": 111906
+   },
+   "Dharwad": {
+    "population": 1847023,
+    "male": 937206,
+    "female": 909817,
+    "literate": 1301664,
+    "households": 483104,
+    "rural_hh": 199707,
+    "urban_hh": 283397
+   },
+   "Uttara Kannada": {
+    "population": 1437169,
+    "male": 726256,
+    "female": 710913,
+    "literate": 1081906,
+    "households": 474792,
+    "rural_hh": 334281,
+    "urban_hh": 140511
+   },
+   "Haveri": {
+    "population": 1597668,
+    "male": 819128,
+    "female": 778540,
+    "literate": 1085443,
+    "households": 413564,
+    "rural_hh": 315076,
+    "urban_hh": 98488
+   },
+   "Bellary": {
+    "population": 2452595,
+    "male": 1236954,
+    "female": 1215641,
+    "literate": 1421621,
+    "households": 623480,
+    "rural_hh": 371604,
+    "urban_hh": 251876
+   },
+   "Chitradurga": {
+    "population": 1659456,
+    "male": 840843,
+    "female": 818613,
+    "literate": 1087392,
+    "households": 447348,
+    "rural_hh": 349704,
+    "urban_hh": 97644
+   },
+   "Davanagere": {
+    "population": 1945497,
+    "male": 986400,
+    "female": 959097,
+    "literate": 1308540,
+    "households": 530691,
+    "rural_hh": 354680,
+    "urban_hh": 176011
+   },
+   "Shimoga": {
+    "population": 1752753,
+    "male": 877415,
+    "female": 875338,
+    "literate": 1263016,
+    "households": 554106,
+    "rural_hh": 352444,
+    "urban_hh": 201662
+   },
+   "Udupi": {
+    "population": 1177361,
+    "male": 562131,
+    "female": 615230,
+    "literate": 926429,
+    "households": 385389,
+    "rural_hh": 269817,
+    "urban_hh": 115572
+   },
+   "Chikmagalur": {
+    "population": 1137961,
+    "male": 566622,
+    "female": 571339,
+    "literate": 818345,
+    "households": 392426,
+    "rural_hh": 311660,
+    "urban_hh": 80766
+   },
+   "Tumkur": {
+    "population": 2678980,
+    "male": 1350594,
+    "female": 1328386,
+    "literate": 1813391,
+    "households": 890242,
+    "rural_hh": 685443,
+    "urban_hh": 204799
+   },
+   "Bangalore": {
+    "population": 9621551,
+    "male": 5022661,
+    "female": 4598890,
+    "literate": 7512276,
+    "households": 3267960,
+    "rural_hh": 300576,
+    "urban_hh": 2967384
+   },
+   "Mandya": {
+    "population": 1805769,
+    "male": 905085,
+    "female": 900684,
+    "literate": 1149649,
+    "households": 562302,
+    "rural_hh": 458867,
+    "urban_hh": 103435
+   },
+   "Hassan": {
+    "population": 1776421,
+    "male": 883667,
+    "female": 892754,
+    "literate": 1225256,
+    "households": 628981,
+    "rural_hh": 496103,
+    "urban_hh": 132878
+   },
+   "Dakshina Kannada": {
+    "population": 2089649,
+    "male": 1034714,
+    "female": 1054935,
+    "literate": 1666323,
+    "households": 650292,
+    "rural_hh": 332919,
+    "urban_hh": 317373
+   },
+   "Kodagu": {
+    "population": 554519,
+    "male": 274608,
+    "female": 279911,
+    "literate": 412877,
+    "households": 212974,
+    "rural_hh": 181182,
+    "urban_hh": 31792
+   },
+   "Mysore": {
+    "population": 3001127,
+    "male": 1511600,
+    "female": 1489527,
+    "literate": 1962180,
+    "households": 920982,
+    "rural_hh": 540596,
+    "urban_hh": 380386
+   },
+   "Chamarajanagar": {
+    "population": 1020791,
+    "male": 512231,
+    "female": 508560,
+    "literate": 565279,
+    "households": 319880,
+    "rural_hh": 262680,
+    "urban_hh": 57200
+   },
+   "Gulbarga": {
+    "population": 2566326,
+    "male": 1301755,
+    "female": 1264571,
+    "literate": 1427368,
+    "households": 600007,
+    "rural_hh": 400704,
+    "urban_hh": 199303
+   },
+   "Yadgir": {
+    "population": 1174271,
+    "male": 590329,
+    "female": 583942,
+    "literate": 510003,
+    "households": 262995,
+    "rural_hh": 207787,
+    "urban_hh": 55208
+   },
+   "Kolar": {
+    "population": 1536401,
+    "male": 776396,
+    "female": 760005,
+    "literate": 1016219,
+    "households": 477609,
+    "rural_hh": 326567,
+    "urban_hh": 151042
+   },
+   "Chikkaballapura": {
+    "population": 1255104,
+    "male": 636437,
+    "female": 618667,
+    "literate": 783222,
+    "households": 409702,
+    "rural_hh": 315649,
+    "urban_hh": 94053
+   },
+   "Bangalore Rural": {
+    "population": 990923,
+    "male": 509172,
+    "female": 481751,
+    "literate": 688749,
+    "households": 326462,
+    "rural_hh": 231052,
+    "urban_hh": 95410
+   },
+   "Ramanagara": {
+    "population": 1082636,
+    "male": 548008,
+    "female": 534628,
+    "literate": 674758,
+    "households": 351784,
+    "rural_hh": 266950,
+    "urban_hh": 84834
+   }
+  },
+  "GOA": {
+   "North Goa": {
+    "population": 818008,
+    "male": 416677,
+    "female": 401331,
+    "literate": 663060,
+    "households": 325089,
+    "rural_hh": 115859,
+    "urban_hh": 209230
+   },
+   "South Goa": {
+    "population": 640537,
+    "male": 322463,
+    "female": 318074,
+    "literate": 502427,
+    "households": 251493,
+    "rural_hh": 88620,
+    "urban_hh": 162873
+   }
+  },
+  "LAKSHADWEEP": {
+   "Lakshadweep": {
+    "population": 64473,
+    "male": 33123,
+    "female": 31350,
+    "literate": 52553,
+    "households": 21242,
+    "rural_hh": 5289,
+    "urban_hh": 15953
+   }
+  },
+  "KERALA": {
+   "Kasaragod": {
+    "population": 1307375,
+    "male": 628613,
+    "female": 678762,
+    "literate": 1037492,
+    "households": 417805,
+    "rural_hh": 251641,
+    "urban_hh": 166164
+   },
+   "Kannur": {
+    "population": 2523003,
+    "male": 1181446,
+    "female": 1341557,
+    "literate": 2138434,
+    "households": 872479,
+    "rural_hh": 306288,
+    "urban_hh": 566191
+   },
+   "Wayanad": {
+    "population": 817420,
+    "male": 401684,
+    "female": 415736,
+    "literate": 645585,
+    "households": 277988,
+    "rural_hh": 266183,
+    "urban_hh": 11805
+   },
+   "Kozhikode": {
+    "population": 3086293,
+    "male": 1470942,
+    "female": 1615351,
+    "literate": 2615443,
+    "households": 990336,
+    "rural_hh": 323793,
+    "urban_hh": 666543
+   },
+   "Malappuram": {
+    "population": 4112920,
+    "male": 1960328,
+    "female": 2152592,
+    "literate": 3311315,
+    "households": 1157129,
+    "rural_hh": 634543,
+    "urban_hh": 522586
+   },
+   "Palakkad": {
+    "population": 2809934,
+    "male": 1359478,
+    "female": 1450456,
+    "literate": 2239492,
+    "households": 894341,
+    "rural_hh": 665899,
+    "urban_hh": 228442
+   },
+   "Thrissur": {
+    "population": 3121200,
+    "male": 1480763,
+    "female": 1640437,
+    "literate": 2678548,
+    "households": 1051867,
+    "rural_hh": 336748,
+    "urban_hh": 715119
+   },
+   "Ernakulam": {
+    "population": 3282388,
+    "male": 1619557,
+    "female": 1662831,
+    "literate": 2855676,
+    "households": 1174691,
+    "rural_hh": 369694,
+    "urban_hh": 804997
+   },
+   "Idukki": {
+    "population": 1108974,
+    "male": 552808,
+    "female": 556166,
+    "literate": 923010,
+    "households": 412433,
+    "rural_hh": 391610,
+    "urban_hh": 20823
+   },
+   "Kottayam": {
+    "population": 1974551,
+    "male": 968289,
+    "female": 1006262,
+    "literate": 1749798,
+    "households": 678161,
+    "rural_hh": 481967,
+    "urban_hh": 196194
+   },
+   "Alappuzha": {
+    "population": 2127789,
+    "male": 1013142,
+    "female": 1114647,
+    "literate": 1852797,
+    "households": 723536,
+    "rural_hh": 331419,
+    "urban_hh": 392117
+   },
+   "Pathanamthitta": {
+    "population": 1197412,
+    "male": 561716,
+    "female": 635696,
+    "literate": 1062553,
+    "households": 472840,
+    "rural_hh": 414992,
+    "urban_hh": 57848
+   },
+   "Kollam": {
+    "population": 2635375,
+    "male": 1246968,
+    "female": 1388407,
+    "literate": 2240273,
+    "households": 925130,
+    "rural_hh": 523715,
+    "urban_hh": 401415
+   },
+   "Thiruvananthapuram": {
+    "population": 3301427,
+    "male": 1581678,
+    "female": 1719749,
+    "literate": 2785408,
+    "households": 1169117,
+    "rural_hh": 559293,
+    "urban_hh": 609824
+   }
+  },
+  "TAMIL NADU": {
+   "Thiruvallur": {
+    "population": 3728104,
+    "male": 1876062,
+    "female": 1852042,
+    "literate": 2791721,
+    "households": 1119433,
+    "rural_hh": 387237,
+    "urban_hh": 732196
+   },
+   "Chennai": {
+    "population": 4646732,
+    "male": 2335844,
+    "female": 2310888,
+    "literate": 3776276,
+    "households": 1314125,
+    "rural_hh": 0,
+    "urban_hh": 1314125
+   },
+   "Kancheepuram": {
+    "population": 3998252,
+    "male": 2012958,
+    "female": 1985294,
+    "literate": 3013382,
+    "households": 1213504,
+    "rural_hh": 438799,
+    "urban_hh": 774705
+   },
+   "Vellore": {
+    "population": 3936331,
+    "male": 1961688,
+    "female": 1974643,
+    "literate": 2773928,
+    "households": 1140300,
+    "rural_hh": 653499,
+    "urban_hh": 486801
+   },
+   "Tiruvannamalai": {
+    "population": 2464875,
+    "male": 1235889,
+    "female": 1228986,
+    "literate": 1626813,
+    "households": 710163,
+    "rural_hh": 563102,
+    "urban_hh": 147061
+   },
+   "Viluppuram": {
+    "population": 3458873,
+    "male": 1740819,
+    "female": 1718054,
+    "literate": 2195776,
+    "households": 967314,
+    "rural_hh": 808042,
+    "urban_hh": 159272
+   },
+   "Salem": {
+    "population": 3482056,
+    "male": 1781571,
+    "female": 1700485,
+    "literate": 2285562,
+    "households": 1170352,
+    "rural_hh": 572813,
+    "urban_hh": 597539
+   },
+   "Namakkal": {
+    "population": 1726601,
+    "male": 869280,
+    "female": 857321,
+    "literate": 1176131,
+    "households": 627484,
+    "rural_hh": 370357,
+    "urban_hh": 257127
+   },
+   "Erode": {
+    "population": 2251744,
+    "male": 1129868,
+    "female": 1121876,
+    "literate": 1492662,
+    "households": 843684,
+    "rural_hh": 411286,
+    "urban_hh": 432398
+   },
+   "The Nilgiris": {
+    "population": 735394,
+    "male": 360143,
+    "female": 375251,
+    "literate": 569647,
+    "households": 264105,
+    "rural_hh": 112126,
+    "urban_hh": 151979
+   },
+   "Dindigul": {
+    "population": 2159775,
+    "male": 1080938,
+    "female": 1078837,
+    "literate": 1481834,
+    "households": 713542,
+    "rural_hh": 443818,
+    "urban_hh": 269724
+   },
+   "Karur": {
+    "population": 1064493,
+    "male": 528184,
+    "female": 536309,
+    "literate": 727044,
+    "households": 364661,
+    "rural_hh": 212241,
+    "urban_hh": 152420
+   },
+   "Tiruchirappalli": {
+    "population": 2722290,
+    "male": 1352284,
+    "female": 1370006,
+    "literate": 2038981,
+    "households": 875727,
+    "rural_hh": 452707,
+    "urban_hh": 423020
+   },
+   "Perambalur": {
+    "population": 565223,
+    "male": 282157,
+    "female": 283066,
+    "literate": 375823,
+    "households": 188592,
+    "rural_hh": 155413,
+    "urban_hh": 33179
+   },
+   "Ariyalur": {
+    "population": 754894,
+    "male": 374703,
+    "female": 380191,
+    "literate": 480604,
+    "households": 254277,
+    "rural_hh": 223955,
+    "urban_hh": 30322
+   },
+   "Cuddalore": {
+    "population": 2605914,
+    "male": 1311697,
+    "female": 1294217,
+    "literate": 1815281,
+    "households": 758209,
+    "rural_hh": 497429,
+    "urban_hh": 260780
+   },
+   "Nagapattinam": {
+    "population": 1616450,
+    "male": 798127,
+    "female": 818323,
+    "literate": 1213008,
+    "households": 517740,
+    "rural_hh": 399016,
+    "urban_hh": 118724
+   },
+   "Thiruvarur": {
+    "population": 1264277,
+    "male": 626693,
+    "female": 637584,
+    "literate": 946471,
+    "households": 408179,
+    "rural_hh": 321331,
+    "urban_hh": 86848
+   },
+   "Thanjavur": {
+    "population": 2405890,
+    "male": 1182416,
+    "female": 1223474,
+    "literate": 1790998,
+    "households": 753372,
+    "rural_hh": 479070,
+    "urban_hh": 274302
+   },
+   "Pudukkottai": {
+    "population": 1618345,
+    "male": 803188,
+    "female": 815157,
+    "literate": 1110545,
+    "households": 503941,
+    "rural_hh": 399712,
+    "urban_hh": 104229
+   },
+   "Sivaganga": {
+    "population": 1339101,
+    "male": 668672,
+    "female": 670429,
+    "literate": 959744,
+    "households": 452417,
+    "rural_hh": 309224,
+    "urban_hh": 143193
+   },
+   "Madurai": {
+    "population": 3038252,
+    "male": 1526475,
+    "female": 1511777,
+    "literate": 2273430,
+    "households": 1010441,
+    "rural_hh": 417718,
+    "urban_hh": 592723
+   },
+   "Theni": {
+    "population": 1245899,
+    "male": 625683,
+    "female": 620216,
+    "literate": 870080,
+    "households": 410623,
+    "rural_hh": 189328,
+    "urban_hh": 221295
+   },
+   "Virudhunagar": {
+    "population": 1942288,
+    "male": 967709,
+    "female": 974579,
+    "literate": 1398788,
+    "households": 734724,
+    "rural_hh": 363782,
+    "urban_hh": 370942
+   },
+   "Ramanathapuram": {
+    "population": 1353445,
+    "male": 682658,
+    "female": 670787,
+    "literate": 978946,
+    "households": 417239,
+    "rural_hh": 290478,
+    "urban_hh": 126761
+   },
+   "Thoothukkudi": {
+    "population": 1750176,
+    "male": 865021,
+    "female": 885155,
+    "literate": 1349697,
+    "households": 636739,
+    "rural_hh": 336078,
+    "urban_hh": 300661
+   },
+   "Tirunelveli": {
+    "population": 3077233,
+    "male": 1520912,
+    "female": 1556321,
+    "literate": 2273457,
+    "households": 1064667,
+    "rural_hh": 547962,
+    "urban_hh": 516705
+   },
+   "Kanniyakumari": {
+    "population": 1870374,
+    "male": 926345,
+    "female": 944029,
+    "literate": 1548738,
+    "households": 598041,
+    "rural_hh": 104253,
+    "urban_hh": 493788
+   },
+   "Dharmapuri": {
+    "population": 1506843,
+    "male": 774303,
+    "female": 732540,
+    "literate": 917709,
+    "households": 487926,
+    "rural_hh": 396819,
+    "urban_hh": 91107
+   },
+   "Krishnagiri": {
+    "population": 1879809,
+    "male": 960232,
+    "female": 919577,
+    "literate": 1187958,
+    "households": 580540,
+    "rural_hh": 437988,
+    "urban_hh": 142552
+   },
+   "Coimbatore": {
+    "population": 3458045,
+    "male": 1729297,
+    "female": 1728748,
+    "literate": 2635907,
+    "households": 1169752,
+    "rural_hh": 284795,
+    "urban_hh": 884957
+   },
+   "Tiruppur": {
+    "population": 2479052,
+    "male": 1246159,
+    "female": 1232893,
+    "literate": 1760566,
+    "households": 894908,
+    "rural_hh": 356886,
+    "urban_hh": 538022
+   }
+  },
+  "PONDICHERRY": {
+   "Yanam": {
+    "population": 55626,
+    "male": 27301,
+    "female": 28325,
+    "literate": 39274,
+    "households": 15519,
+    "rural_hh": 0,
+    "urban_hh": 15519
+   },
+   "PONDICHERRY": {
+    "population": 950289,
+    "male": 468258,
+    "female": 482031,
+    "literate": 726649,
+    "households": 291037,
+    "rural_hh": 87296,
+    "urban_hh": 203741
+   },
+   "Mahe": {
+    "population": 41816,
+    "male": 19143,
+    "female": 22673,
+    "literate": 36470,
+    "households": 12110,
+    "rural_hh": 0,
+    "urban_hh": 12110
+   },
+   "Karaikal": {
+    "population": 200222,
+    "male": 97809,
+    "female": 102413,
+    "literate": 154916,
+    "households": 69333,
+    "rural_hh": 35618,
+    "urban_hh": 33715
+   }
+  },
+  "ANDAMAN AND NICOBAR ISLANDS": {
+   "Nicobars": {
+    "population": 36842,
+    "male": 20727,
+    "female": 16115,
+    "literate": 25332,
+    "households": 15958,
+    "rural_hh": 15958,
+    "urban_hh": 0
+   },
+   "North  AND Middle Andaman": {
+    "population": 105597,
+    "male": 54861,
+    "female": 50736,
+    "literate": 78683,
+    "households": 40185,
+    "rural_hh": 39091,
+    "urban_hh": 1094
+   },
+   "South Andaman": {
+    "population": 238142,
+    "male": 127283,
+    "female": 110859,
+    "literate": 190266,
+    "households": 85532,
+    "rural_hh": 34901,
+    "urban_hh": 50631
+   }
+  }
+ }
+}

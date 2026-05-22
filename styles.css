@@ -250,7 +250,7 @@ a:hover { border-color: var(--foreground); }
   grid-template-columns: 1fr 5fr 4fr;
   gap: 2px;
   height: 6px;
-  margin: 0;
+  margin: 0.35rem 0 1.1rem;   /* extra bottom margin to make room for labels below */
   border-radius: 4px;
   overflow: visible;
   position: relative;
@@ -258,13 +258,18 @@ a:hover { border-color: var(--foreground); }
 .india-fc-strip .fc-seg { position: relative; border-radius: 2px; }
 .india-fc-strip .fc-seg .fc-label {
   position: absolute;
-  top: -16px;
+  top: 9px;        /* below the strip, not above the slider */
   left: 0;
+  right: 0;
+  text-align: center;
   font-family: var(--font-mono);
-  font-size: 9.5px;
+  font-size: 9px;
   color: var(--muted-foreground);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
 }
 .india-fc-strip .fc-seg.fc-13 { background: oklch(0.32 0.02 240); }
 .india-fc-strip .fc-seg.fc-14 { background: oklch(0.45 0.13 250); }
@@ -413,6 +418,61 @@ a:hover { border-color: var(--foreground); }
   cursor: pointer;
 }
 .india-back-btn:hover { color: var(--foreground); border-color: var(--foreground); }
+
+.india-drill-btn {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: oklch(0.78 0.16 70 / 0.12);
+  border: 1px solid oklch(0.78 0.16 70 / 0.4);
+  border-radius: 999px;
+  color: oklch(0.78 0.16 70);
+  padding: 4px 12px;
+  cursor: pointer;
+}
+.india-drill-btn:hover { background: oklch(0.78 0.16 70 / 0.22); border-color: oklch(0.78 0.16 70); color: var(--foreground); }
+
+.src-link {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: oklch(0.55 0 0);
+  text-decoration: none;
+  border: none;
+  margin-left: 3px;
+  opacity: 0.7;
+  transition: color 0.12s, opacity 0.12s;
+}
+.src-link:hover { color: oklch(0.78 0.16 70); opacity: 1; }
+
+.district-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-top: 0.3rem;
+}
+.district-row {
+  display: grid;
+  grid-template-columns: 24px 1fr 100px auto;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  background: oklch(0.17 0 0);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 11.5px;
+  color: var(--foreground);
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+}
+.district-row:hover { background: oklch(0.21 0 0); border-color: var(--border-strong); }
+.district-row .rnk { font-family: var(--font-mono); font-size: 9.5px; color: var(--muted-foreground); }
+.district-row .name { color: var(--foreground); }
+.district-row .bar-wrap { background: oklch(0.22 0 0); height: 6px; border-radius: 3px; overflow: hidden; }
+.district-row .bar { display: block; height: 100%; background: oklch(0.55 0.13 70); border-radius: 3px; }
+.district-row .val { font-family: var(--font-mono); font-size: 10.5px; color: var(--muted-foreground); }
 
 .india-detail-empty {
   display: flex;

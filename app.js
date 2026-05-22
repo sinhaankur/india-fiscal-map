@@ -64,6 +64,14 @@
       fmt: v => v.toFixed(1) + ' k cr',
       help: 'Estimated federal taxes (income, corporate, GST/IGST origin, customs) attributable to the state.'
     },
+    perCapitaGsdp: {
+      label: 'Per-capita GSDP (₹ lakh / yr)',
+      shortLabel: 'GDP / person',
+      diverging: false,
+      compute: (d) => d.meta?.pop_cr ? (d.gsdp * 1000 / d.meta.pop_cr) / 100000 : null,
+      fmt: v => v == null ? '—' : '₹' + v.toFixed(2) + ' L',
+      help: 'GSDP per resident per year (₹ lakh). State pop is 2024 estimate ≈ Census 2011 projection.'
+    },
     fcShare: {
       label: 'Finance Commission horizontal share (%)',
       shortLabel: 'FC share',
@@ -74,11 +82,46 @@
     }
   };
 
-  const ui = { state: { view: 'ownTax', yearIdx: 9, selected: null, hover: null } };
+  // Source-of-truth registry — surfaced as `↗ Source` links next to each metric.
+  const SOURCES = {
+    gsdp:           { name: 'MoSPI',                  url: 'https://mospi.gov.in/state-domestic-product' },
+    ownTax:         { name: 'RBI State Finances',     url: 'https://www.rbi.org.in/Scripts/AnnualPublications.aspx?head=Handbook+of+Statistics+on+Indian+States' },
+    devolution:     { name: 'Union Budget receipts',  url: 'https://www.indiabudget.gov.in/' },
+    grants:         { name: 'Union Budget receipts',  url: 'https://www.indiabudget.gov.in/' },
+    contribution:   { name: 'CBDT + GST Council (est.)', url: 'https://incometaxindia.gov.in/Pages/Direct-Taxes-Data.aspx' },
+    netFlow:        { name: 'Derived from above',     url: 'references.html' },
+    ownTaxPctGsdp:  { name: 'RBI ÷ MoSPI',            url: 'https://www.rbi.org.in/' },
+    perCapitaGsdp:  { name: 'MoSPI ÷ Census 2011 pop', url: 'https://mospi.gov.in/state-domestic-product' },
+    fcShare:        { name: 'FC XIV / XV reports',    url: 'https://fincomindia.nic.in' },
+    corruption:     { name: 'CMS India 2019',         url: 'https://www.cmsindia.org/india-corruption-study' },
+    ias:            { name: 'DoPT Civil List',        url: 'https://dopt.gov.in/' },
+    employees:      { name: 'State finance reports',  url: 'https://doe.gov.in/' },
+    districts:      { name: 'Datameet · Census 2011 boundaries', url: 'https://github.com/geohacker/india' },
+    population:     { name: 'Census of India 2011',   url: 'https://censusindia.gov.in' }
+  };
 
-  let DATA = null, EXTRAS = null, GEO = null;
-  let map = null, geoLayer = null;
+  const ui = { state: { view: 'ownTax', yearIdx: 9, selected: null, hover: null, mode: 'states', drillState: null, drillDistrict: null } };
+
+  let DATA = null, EXTRAS = null, GEO = null, DISTRICT_POP = null;
+  let map = null, geoLayer = null, districtLayer = null;
   const pathByName = new Map();
+  const districtPathByName = new Map();
+  const districtGeoCache = new Map();
+
+  // Census uses older / uppercase state names. Map to standard ST_NM.
+  const CENSUS_STATE_MAP = {
+    'ORISSA': 'Odisha',
+    'PONDICHERRY': 'Puducherry',
+    'NCT OF DELHI': 'Delhi',
+    'ANDAMAN AND NICOBAR ISLANDS': 'Andaman & Nicobar',
+    'JAMMU AND KASHMIR': 'Jammu & Kashmir',
+    'UTTARAKHAND': 'Uttarakhand'
+  };
+  function normalizeStateName(s) {
+    const up = s.toUpperCase();
+    if (CENSUS_STATE_MAP[up]) return CENSUS_STATE_MAP[up];
+    return s.split(/\s+/).map(w => w[0] + w.slice(1).toLowerCase()).join(' ');
+  }
 
   const $ind = s => root.querySelector(s);
   const $$ind = s => root.querySelectorAll(s);
@@ -282,6 +325,11 @@
       <p class="india-caveat">IAS counts are cadre approved-strength snapshots; a sizeable share is on Central deputation under DoPT at any given time, so this is a structural cap, not a count of officers physically present in the state.</p>
     ` : '';
 
+    const perCapita = s.pop_cr ? ((r.gsdp * 1000 / s.pop_cr) / 100000) : null;
+    const src = (key) => {
+      const o = SOURCES[key];
+      return o ? `<a class="src-link" href="${esc(o.url)}" target="_blank" rel="noopener" title="Source: ${esc(o.name)}">↗</a>` : '';
+    };
     detail.innerHTML = `
       <div class="india-detail-head">
         <div>
@@ -291,16 +339,19 @@
         <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.4rem">
           <button class="india-back-btn" id="india-back">← Back</button>
           <div class="india-detail-meta">${esc(r.yearLabel)} · <span style="opacity:0.6">${esc(r.fcPeriod?.name ?? '—')}</span></div>
+          <button class="india-drill-btn" id="india-drill">Districts ↘</button>
         </div>
       </div>
 
       <div class="india-stat-grid">
-        <div class="india-stat"><div class="label">GSDP</div><div class="value">₹${fmtComma(r.gsdp)} k cr</div></div>
-        <div class="india-stat"><div class="label">Own revenue</div><div class="value">₹${fmtComma(r.ownTax)} k cr</div></div>
-        <div class="india-stat"><div class="label">Devolution in</div><div class="value">₹${fmtComma(r.devolution)} k cr</div></div>
-        <div class="india-stat"><div class="label">Grants in</div><div class="value">₹${fmtComma(r.grants)} k cr</div></div>
-        <div class="india-stat"><div class="label">Contrib. to Center (est.)</div><div class="value">₹${fmtComma(r.contribution)} k cr</div></div>
-        <div class="india-stat ${isDonor ? 'donor' : 'recipient'}"><div class="label">Net flow</div><div class="value">${net >= 0 ? '+' : ''}${fmtComma(net)} k cr</div></div>
+        <div class="india-stat"><div class="label">GSDP ${src('gsdp')}</div><div class="value">₹${fmtComma(r.gsdp)} k cr</div></div>
+        <div class="india-stat"><div class="label">Own revenue ${src('ownTax')}</div><div class="value">₹${fmtComma(r.ownTax)} k cr</div></div>
+        <div class="india-stat"><div class="label">GDP / person ${src('perCapitaGsdp')}</div><div class="value">${perCapita == null ? '—' : '₹' + perCapita.toFixed(2) + ' L'}</div></div>
+        <div class="india-stat"><div class="label">FC share ${src('fcShare')}</div><div class="value">${r.fcShare.toFixed(3)}%</div></div>
+        <div class="india-stat"><div class="label">Devolution in ${src('devolution')}</div><div class="value">₹${fmtComma(r.devolution)} k cr</div></div>
+        <div class="india-stat"><div class="label">Grants in ${src('grants')}</div><div class="value">₹${fmtComma(r.grants)} k cr</div></div>
+        <div class="india-stat"><div class="label">Contrib. to Center (est.) ${src('contribution')}</div><div class="value">₹${fmtComma(r.contribution)} k cr</div></div>
+        <div class="india-stat ${isDonor ? 'donor' : 'recipient'}"><div class="label">Net flow ${src('netFlow')}</div><div class="value">${net >= 0 ? '+' : ''}${fmtComma(net)} k cr</div></div>
       </div>
 
       <div style="display:flex;justify-content:space-between;gap:0.6rem;font-family:var(--font-mono);font-size:11px;color:var(--muted-foreground);margin-bottom:0.85rem;flex-wrap:wrap">
@@ -329,6 +380,216 @@
     `;
     drawSpark(s, ui.state.yearIdx);
     $ind('#india-back')?.addEventListener('click', deselectState);
+    $ind('#india-drill')?.addEventListener('click', () => drillIntoDistricts(name));
+  }
+
+  /* ───────── DISTRICT DRILL-DOWN ───────── */
+  async function drillIntoDistricts(stateName) {
+    const fname = 'districts/' + stateName.replace(/ /g, '_').replace(/&/g, 'and') + '.geojson';
+    try {
+      let geo = districtGeoCache.get(stateName);
+      if (!geo) {
+        const res = await fetch(fname);
+        if (!res.ok) throw new Error('HTTP ' + res.status + ' fetching ' + fname);
+        geo = await res.json();
+        districtGeoCache.set(stateName, geo);
+      }
+      ui.state.mode = 'districts';
+      ui.state.drillState = stateName;
+      renderDistrictLayer(geo, stateName);
+      renderDistrictPanel(stateName, geo);
+    } catch (err) {
+      console.error('District drill failed:', err);
+      $ind('#india-detail').insertAdjacentHTML('afterbegin',
+        `<div style="background:oklch(0.25 0.08 30);padding:0.5rem;border-radius:4px;font-family:var(--font-mono);font-size:11px;margin-bottom:0.5rem">No district file for ${esc(stateName)}: ${esc(err.message)}</div>`);
+    }
+  }
+
+  function getDistrictPop(stateName, districtName) {
+    if (!DISTRICT_POP) return null;
+    // Census state names are uppercase + older; build matcher
+    for (const [csState, dists] of Object.entries(DISTRICT_POP.states)) {
+      const std = normalizeStateName(csState);
+      const stdAmp = std.replace(' and ', ' & ').replace('Andaman & Nicobar Islands', 'Andaman & Nicobar');
+      if (stdAmp === stateName || std === stateName) {
+        // Case-insensitive district match
+        for (const [dn, vals] of Object.entries(dists)) {
+          if (dn.toLowerCase() === districtName.toLowerCase()) return vals;
+        }
+      }
+    }
+    return null;
+  }
+
+  function renderDistrictLayer(geo, stateName) {
+    // Hide the state layer's other states by drastically reducing their opacity (keep selected state visible underneath as outline)
+    if (geoLayer) {
+      geoLayer.eachLayer(layer => {
+        const isThis = layer.feature.properties.ST_NM === stateName;
+        layer.setStyle({ fillOpacity: isThis ? 0.0 : 0.15, weight: isThis ? 1.5 : 0.3, color: isThis ? 'oklch(0.985 0 0)' : 'oklch(0.985 0 0 / 0.15)' });
+      });
+    }
+    if (districtLayer) {
+      districtLayer.remove();
+      districtPathByName.clear();
+    }
+    // Domain for district population coloring
+    const pops = [];
+    for (const f of geo.features) {
+      const pop = getDistrictPop(stateName, f.properties.DISTRICT)?.population;
+      if (typeof pop === 'number') pops.push(pop);
+    }
+    const popMax = pops.length ? Math.max(...pops) : 1;
+    const popMin = pops.length ? Math.min(...pops) : 0;
+
+    districtLayer = L.geoJSON(geo, {
+      style: f => {
+        const pop = getDistrictPop(stateName, f.properties.DISTRICT)?.population;
+        const t = pop != null ? (pop - popMin) / Math.max(1, popMax - popMin) : 0;
+        return {
+          className: 'india-state-path',
+          color: 'oklch(0.985 0 0 / 0.45)',
+          weight: 0.6,
+          fillColor: pop == null ? 'oklch(0.22 0 0)' : seqColor(t),
+          fillOpacity: pop == null ? 0.45 : 0.9
+        };
+      },
+      onEachFeature: (feature, layer) => {
+        const dn = feature.properties.DISTRICT;
+        districtPathByName.set(dn, layer);
+        layer.on('mouseover', () => {
+          layer.setStyle({ weight: 1.6, color: 'oklch(0.985 0 0)' });
+          const pop = getDistrictPop(stateName, dn)?.population;
+          updateDistrictReadout(dn, stateName, pop);
+        });
+        layer.on('mouseout', () => {
+          if (ui.state.drillDistrict !== dn) layer.setStyle({ weight: 0.6, color: 'oklch(0.985 0 0 / 0.45)' });
+          updateReadout();
+        });
+        layer.on('click', () => selectDistrict(dn, stateName));
+      }
+    }).addTo(map);
+
+    try { map.fitBounds(districtLayer.getBounds(), { padding: [30, 30] }); } catch (e) {}
+  }
+
+  function updateDistrictReadout(district, state, pop) {
+    $ind('.readout-label').textContent = `District · ${state}`;
+    $ind('.readout-name').textContent = district;
+    const valEl = $ind('.readout-value');
+    valEl.textContent = pop != null ? `Pop ${pop.toLocaleString('en-IN')} (Census 2011)` : 'Population data pending';
+    valEl.style.color = 'oklch(0.78 0.16 70)';
+    valEl.style.fontSize = '12.5px';
+  }
+
+  function selectDistrict(district, state) {
+    ui.state.drillDistrict = district;
+    districtPathByName.forEach((layer, n) => {
+      if (n === district) layer.setStyle({ weight: 2, color: 'oklch(0.985 0 0)' });
+      else layer.setStyle({ weight: 0.6, color: 'oklch(0.985 0 0 / 0.45)' });
+    });
+    renderDistrictDetail(district, state);
+  }
+
+  function renderDistrictPanel(stateName, geo) {
+    // List districts of this state sorted by population (Census 2011 where available)
+    const items = geo.features.map(f => {
+      const dn = f.properties.DISTRICT;
+      const data = getDistrictPop(stateName, dn);
+      return { name: dn, pop: data?.population ?? null, lit: data?.literate ?? null, hh: data?.households ?? null };
+    });
+    items.sort((a, b) => (b.pop || 0) - (a.pop || 0));
+    const totalPop = items.reduce((s, x) => s + (x.pop || 0), 0);
+    const src = (key) => {
+      const o = SOURCES[key];
+      return o ? `<a class="src-link" href="${esc(o.url)}" target="_blank" rel="noopener" title="Source: ${esc(o.name)}">↗</a>` : '';
+    };
+    const max = items[0]?.pop || 1;
+    const detail = $ind('#india-detail');
+    detail.innerHTML = `
+      <div class="india-detail-head">
+        <div>
+          <div class="india-detail-name">${esc(stateName)} · districts</div>
+          <div class="mono" style="font-size:10.5px;letter-spacing:0.04em;color:var(--muted-foreground);text-transform:uppercase;margin-top:2px">${items.length} districts · total Census 2011 pop ${totalPop.toLocaleString('en-IN')}</div>
+        </div>
+        <button class="india-back-btn" id="india-back-to-state">← Back to ${esc(stateName)}</button>
+      </div>
+
+      <div class="india-caveat" style="margin-bottom:0.6rem">
+        Every district is headed by <strong style="color:var(--foreground)">one IAS Collector / District Magistrate</strong> ${src('ias')} — not a varying count. The rest of the state's IAS cadre sits at the state secretariat, on Central deputation, in PSUs, on training, or vacant. Population from Census 2011 ${src('population')} — Census 2021 was deferred; some post-2011 newer districts not in this dataset.
+      </div>
+
+      <div class="india-detail-section-title">Districts by population</div>
+      <div class="district-list">
+        ${items.map((it, i) => `
+          <button class="district-row" data-district="${esc(it.name)}">
+            <span class="rnk">${String(i + 1).padStart(2, '0')}</span>
+            <span class="name">${esc(it.name)}</span>
+            <span class="bar-wrap"><span class="bar" style="width:${it.pop ? ((it.pop / max) * 100).toFixed(0) : 0}%"></span></span>
+            <span class="val">${it.pop ? (it.pop / 1e6).toFixed(2) + ' M' : '—'}</span>
+          </button>
+        `).join('')}
+      </div>
+    `;
+    detail.querySelectorAll('.district-row').forEach(row => {
+      row.addEventListener('click', () => selectDistrict(row.dataset.district, stateName));
+    });
+    $ind('#india-back-to-state')?.addEventListener('click', () => exitDrill(stateName));
+  }
+
+  function renderDistrictDetail(district, state) {
+    const data = getDistrictPop(state, district);
+    const src = (key) => {
+      const o = SOURCES[key];
+      return o ? `<a class="src-link" href="${esc(o.url)}" target="_blank" rel="noopener" title="Source: ${esc(o.name)}">↗</a>` : '';
+    };
+    const detail = $ind('#india-detail');
+    const litRate = data?.literate && data?.population ? (data.literate / data.population * 100).toFixed(1) : null;
+    const urbanPct = data?.urban_hh && data?.households ? (data.urban_hh / data.households * 100).toFixed(1) : null;
+    detail.innerHTML = `
+      <div class="india-detail-head">
+        <div>
+          <div class="india-detail-name">${esc(district)}</div>
+          <div class="mono" style="font-size:10.5px;letter-spacing:0.04em;color:var(--muted-foreground);text-transform:uppercase;margin-top:2px">District of ${esc(state)} · headed by 1 IAS Collector</div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.4rem">
+          <button class="india-back-btn" id="india-back-to-districts">← All districts</button>
+          <button class="india-back-btn" id="india-back-to-state">← ${esc(state)}</button>
+        </div>
+      </div>
+      ${data ? `
+      <div class="india-stat-grid">
+        <div class="india-stat"><div class="label">Population (2011) ${src('population')}</div><div class="value">${data.population.toLocaleString('en-IN')}</div></div>
+        <div class="india-stat"><div class="label">Literate ${src('population')}</div><div class="value">${litRate ? litRate + '%' : '—'}</div></div>
+        <div class="india-stat"><div class="label">Male / Female</div><div class="value">${data.male.toLocaleString('en-IN')} / ${data.female.toLocaleString('en-IN')}</div></div>
+        <div class="india-stat"><div class="label">Households ${src('population')}</div><div class="value">${data.households ? data.households.toLocaleString('en-IN') : '—'}</div></div>
+        <div class="india-stat"><div class="label">Urban share</div><div class="value">${urbanPct ? urbanPct + '%' : '—'}</div></div>
+        <div class="india-stat"><div class="label">Administrative head</div><div class="value" style="font-size:11.5px">1 IAS Collector / DM</div></div>
+      </div>
+      ` : `<p class="india-detail-empty-body">No Census 2011 record for this district — likely carved out post-2011.</p>`}
+
+      <div class="india-caveat">
+        Census 2011 totals are persons (not lakh / crore). Sex / household figures from the same Census round. IAS Collector posting changes ~every 2–3 years; the current DM's name isn't in this dashboard (no central machine-readable list — would have to scrape state DOPT sites). What IS structural: every district has exactly one DM, and that's the state's only routine IAS field deployment outside the secretariat.
+      </div>
+    `;
+    detail.querySelector('#india-back-to-districts')?.addEventListener('click', () => {
+      ui.state.drillDistrict = null;
+      const geo = districtGeoCache.get(state);
+      if (geo) renderDistrictPanel(state, geo);
+      districtPathByName.forEach(layer => layer.setStyle({ weight: 0.6, color: 'oklch(0.985 0 0 / 0.45)' }));
+    });
+    detail.querySelector('#india-back-to-state')?.addEventListener('click', () => exitDrill(state));
+  }
+
+  function exitDrill(stateName) {
+    ui.state.mode = 'states';
+    ui.state.drillState = null;
+    ui.state.drillDistrict = null;
+    if (districtLayer) { districtLayer.remove(); districtLayer = null; districtPathByName.clear(); }
+    // Restore state layer styling
+    if (geoLayer) geoLayer.eachLayer(layer => layer.setStyle(fillStyle(layer.feature.properties.ST_NM)));
+    if (stateName) selectState(stateName);
+    try { map.fitBounds(geoLayer.getBounds(), { padding: [10, 10] }); } catch (e) {}
   }
 
   function renderEmptyState() {
@@ -466,9 +727,9 @@
 
     const fcStrip = $ind('#india-fc-strip');
     fcStrip.innerHTML = `
-      <div class="fc-seg fc-13"><span class="fc-label">13th FC · 32% pool</span></div>
-      <div class="fc-seg fc-14"><span class="fc-label">14th FC · 42% pool (FY16-FY20)</span></div>
-      <div class="fc-seg fc-15"><span class="fc-label">15th FC · 41% pool (FY21-FY26)</span></div>
+      <div class="fc-seg fc-13" title="13th Finance Commission · 32% vertical pool · FY15"><span class="fc-label">13th FC</span></div>
+      <div class="fc-seg fc-14" title="14th Finance Commission · 42% vertical pool · FY16-FY20"><span class="fc-label">14th FC · 42%</span></div>
+      <div class="fc-seg fc-15" title="15th Finance Commission · 41% vertical pool · FY21-FY26"><span class="fc-label">15th FC · 41%</span></div>
       <div class="fc-marker" style="left:0"></div>
     `;
   }
@@ -504,10 +765,11 @@
 
   async function bootstrap() {
     try {
-      const [geoRes, dataRes, extrasRes] = await Promise.all([
+      const [geoRes, dataRes, extrasRes, popRes] = await Promise.all([
         fetch('india-states.geojson'),
         fetch('india-fiscal.json'),
-        fetch('india-extras.json')
+        fetch('india-extras.json'),
+        fetch('district-pop.json')
       ]);
       if (!geoRes.ok) throw new Error('GeoJSON HTTP ' + geoRes.status);
       if (!dataRes.ok) throw new Error('Fiscal JSON HTTP ' + dataRes.status);
@@ -515,6 +777,8 @@
       DATA = await dataRes.json();
       if (extrasRes.ok) EXTRAS = await extrasRes.json();
       else console.warn('india-extras.json missing — proceeding without governance footprint');
+      if (popRes.ok) DISTRICT_POP = await popRes.json();
+      else console.warn('district-pop.json missing — district drill-down will show names only');
 
       ui.state.yearIdx = DATA._meta.years.length - 1;
       // Compute the color domain BEFORE building the map: Leaflet's GeoJSON layer
