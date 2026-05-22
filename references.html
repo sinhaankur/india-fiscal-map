@@ -139,7 +139,44 @@
   </section>
 
   <section class="refs-section">
-    <h2><span class="num">05</span>Geographic data</h2>
+    <h2><span class="num">05</span>United States</h2>
+    <div class="sec-sub">Sources for the USA dashboard (<a href="usa.html">usa.html</a>)</div>
+    <ul class="refs-list">
+      <li>
+        <span class="src-name">BEA — GDP by State (SAGDP series)</span>
+        <span class="src-meta">Bureau of Economic Analysis · annual</span>
+        <div class="src-note">Current-dollar nominal GSP per state. Source of truth for all GSP / per-capita-GSP figures. <a href="https://www.bea.gov/data/gdp/gdp-state" target="_blank" rel="noopener">bea.gov/data/gdp/gdp-state</a></div>
+      </li>
+      <li>
+        <span class="src-name">Census — Annual Survey of State Government Finances</span>
+        <span class="src-meta">US Census Bureau · annual</span>
+        <div class="src-note">State own-source tax revenue. <a href="https://www.census.gov/programs-surveys/state.html" target="_blank" rel="noopener">census.gov/programs-surveys/state</a></div>
+      </li>
+      <li>
+        <span class="src-name">Census Bureau Vintage Population Estimates</span>
+        <span class="src-meta">US Census Bureau · annual</span>
+        <div class="src-note">Per-state population. Used for per-capita GSP. <a href="https://www.census.gov/topics/population/data.html" target="_blank" rel="noopener">census.gov/topics/population/data</a></div>
+      </li>
+      <li>
+        <span class="src-name">USAspending.gov + Pew Federal Funds tracker</span>
+        <span class="src-meta">Treasury · federal grants to state governments</span>
+        <div class="src-note">Federal grants-in-aid (Medicaid, IIJA, education, etc.) flowing TO state govts. <a href="https://www.usaspending.gov/" target="_blank" rel="noopener">usaspending.gov</a></div>
+      </li>
+      <li>
+        <span class="src-name">Rockefeller Institute — 'Balance of Payments' portal</span>
+        <span class="src-meta">SUNY Rockefeller Institute · annual</span>
+        <div class="src-note">Estimates federal taxes paid by each state's residents + businesses. Methodologically harder than the transfers side because corporate-tax HQ ≠ activity origin. Treat figures as ±10% of point estimate. <a href="https://rockinst.org/issue-areas/fiscal-analysis/balance-of-payments-portal/" target="_blank" rel="noopener">rockinst.org</a></div>
+      </li>
+      <li>
+        <span class="src-name">PublicaMundi simplified state GeoJSON</span>
+        <span class="src-meta">Open data · ~87 KB</span>
+        <div class="src-note">State polygon boundaries (50 states + DC + PR). <a href="https://github.com/PublicaMundi/MappingAPI" target="_blank" rel="noopener">github.com/PublicaMundi/MappingAPI</a></div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="refs-section">
+    <h2><span class="num">06</span>Geographic data</h2>
     <div class="sec-sub">State boundaries</div>
     <ul class="refs-list">
       <li>

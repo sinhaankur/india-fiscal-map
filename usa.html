@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>India Fiscal Map — state revenue, corruption &amp; GDP</title>
-  <meta name="description" content="Interactive map of Indian states: own revenue, corruption perception, GSDP, central tax devolution, governance footprint." />
+  <title>USA Fiscal Map — state revenue, net flow &amp; GSP</title>
+  <meta name="description" content="Interactive map of US states: GSP, federal transfers, federal taxes paid, net flow, own-tax revenue. BEA + Census + Treasury sources." />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
         crossorigin="" />
@@ -17,14 +17,13 @@
       <span class="brand-dot"></span> FISCAL MAP
       <span class="country-pick">
         <select id="country-select" aria-label="Country">
-          <option value="india" selected>🇮🇳 India</option>
-          <option value="usa">🇺🇸 United States</option>
+          <option value="india">🇮🇳 India</option>
+          <option value="usa" selected>🇺🇸 United States</option>
         </select>
       </span>
     </div>
     <div class="nav-links">
       <a href="#map">Map</a>
-      <a href="history.html">History race ↗</a>
       <a href="references.html">Sources ↗</a>
       <a href="https://github.com/sinhaankur/india-fiscal-map" target="_blank" rel="noopener">GitHub ↗</a>
     </div>
@@ -42,7 +41,7 @@
             <div class="readout-value">—</div>
           </div>
           <div id="india-map-legend">
-            <div class="india-legend-title mono" id="india-legend-title">Own tax revenue (₹ '000 cr)</div>
+            <div class="india-legend-title mono" id="india-legend-title">Gross State Product ($ billion)</div>
             <div class="india-legend-bar"><span class="india-legend-grad" id="india-legend-grad"></span></div>
             <div class="india-legend-ticks mono">
               <span id="india-legend-min">—</span>
@@ -57,10 +56,10 @@
       <aside class="india-side-panel">
         <header class="india-side-header">
           <div>
-            <div class="eyebrow">India · state-wise revenue, corruption, GDP</div>
-            <h2 class="display india-display">Who <em>earns</em>. Who <em>leaks</em>. Who <em>gets fed</em>.</h2>
+            <div class="eyebrow">United States · 50 states + DC · state-wise fiscal</div>
+            <h2 class="display india-display">Who <em>earns</em>. Who <em>gets fed</em>.</h2>
             <p class="india-side-sub">
-              Three lenses on India's 28 states + UTs over 10 fiscal years. Tap a state for its 10-year sparkline, governance footprint (IAS strength, state employees, bribe-paid %), and structural pros / cons.
+              50 states, 10 fiscal years (2014-23). GSP from BEA, own-tax from Census, federal flows from Treasury / Rockefeller estimates. Click a state for its 10-year sparkline and structural pros / cons.
             </p>
           </div>
           <a class="india-ref-link" href="references.html">Sources ↗</a>
@@ -68,30 +67,28 @@
 
         <div class="india-controls">
           <div class="india-view-group" role="tablist" aria-label="View">
-            <button class="ind-btn active" data-view="ownTax">Own revenue</button>
-            <button class="ind-btn" data-view="corruption">Corruption %</button>
-            <button class="ind-btn" data-view="gsdp">GSDP</button>
-            <button class="ind-btn" data-view="perCapitaGsdp" title="GSDP per resident per year">GDP / person</button>
-            <button class="ind-btn" data-view="ownTaxPctGsdp">Revenue / GSDP</button>
+            <button class="ind-btn active" data-view="gsp">GSP</button>
+            <button class="ind-btn" data-view="perCapitaGsp">GSP / person</button>
+            <button class="ind-btn" data-view="ownTax">Own tax</button>
+            <button class="ind-btn" data-view="ownTaxPctGsp">Tax / GSP</button>
             <button class="ind-btn" data-view="netFlow">Net flow</button>
-            <button class="ind-btn" data-view="devolution">Devolution in</button>
-            <button class="ind-btn" data-view="contribution">Contribution out</button>
-            <button class="ind-btn" data-view="fcShare" title="Finance Commission horizontal allocation %">FC share</button>
+            <button class="ind-btn" data-view="fed_transfers">Federal in</button>
+            <button class="ind-btn" data-view="fed_taxes_paid">Federal out</button>
+            <button class="ind-btn" data-view="pop">Population</button>
           </div>
           <div class="india-year-group">
             <span class="india-year-label mono">Year</span>
             <input type="range" id="india-year" min="0" max="9" value="9" step="1" aria-label="Year" />
-            <span class="india-year-value mono" id="india-year-value">FY24</span>
+            <span class="india-year-value mono" id="india-year-value">2023</span>
           </div>
-          <div class="india-fc-strip" id="india-fc-strip" aria-hidden="true"></div>
         </div>
 
         <div class="india-main">
           <div id="india-detail" class="india-detail">
             <div class="india-detail-empty">
               <div class="eyebrow">No state selected</div>
-              <p class="india-detail-empty-body">Click any state to see its 10-year history, fiscal flows, governance footprint, and structural pros / cons.</p>
-              <div id="india-summary" class="india-summary-inline"></div>
+              <p class="india-detail-empty-body">Click any state to see its 10-year history, federal flows, and structural pros / cons.</p>
+              <div id="usa-summary" class="india-summary-inline"></div>
             </div>
           </div>
         </div>
@@ -104,6 +101,6 @@
           integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
           crossorigin=""></script>
   <script src="country-select.js"></script>
-  <script src="app.js"></script>
+  <script src="app-usa.js"></script>
 </body>
 </html>

@@ -92,6 +92,23 @@ a:hover { border-color: var(--foreground); }
 }
 .nav-links a:hover { color: var(--foreground); }
 
+.country-pick {
+  display: inline-flex; align-items: center; margin-left: 0.6rem;
+  background: oklch(0.18 0 0); border: 1px solid var(--border-strong);
+  border-radius: 999px; padding: 0 0.25rem;
+}
+.country-pick select {
+  background: transparent; color: var(--foreground); border: none; outline: none;
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.03em;
+  padding: 4px 6px 4px 10px; cursor: pointer; appearance: none;
+  -webkit-appearance: none; -moz-appearance: none;
+  padding-right: 1.6rem;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><path d='M2 3.5l3 3 3-3' stroke='%23b3b3b3' stroke-width='1.2' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat: no-repeat; background-position: right 0.5rem center;
+}
+.country-pick select option { background: oklch(0.16 0 0); color: var(--foreground); }
+.country-pick:hover { border-color: var(--foreground); }
+
 /* ─────── India fiscal section — single-screen ─────── */
 .india-fullbleed {
   background: oklch(0.115 0 0);
