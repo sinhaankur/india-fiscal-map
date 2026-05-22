@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "title": "India block / taluk / tehsil pilot dataset",
-    "scope": "Pilot: Kerala (75 taluks), Goa (12 talukas), Sikkim (10 sub-divisions). Other states: data layer in progress.",
+    "title": "India block / taluk / tehsil dataset",
+    "scope": "V2 covers 8 states: Kerala (75 taluks), Goa (12 talukas), Sikkim (10 sub-divisions), Himachal Pradesh (90 tehsils), Uttarakhand (97 tehsils), Delhi (33 subdivisions), Punjab (88 tehsils), Haryana (110 tehsils) — 515 blocks across 100 districts. Larger states (TN, KA, MH, BR, UP, AP, TS, WB, MP, RJ, GJ) still on the roadmap.",
     "source": "Census 2011 sub-district directory; state revenue department websites for naming cross-check.",
-    "caveat": "Block-level population from Census 2011 PDF tables is not yet integrated — V1 lists block names + parent district only. Each block is headed by a Tahsildar / Block Development Officer (BDO), typically state civil service, not IAS. The state-cadre IAS list rarely extends below district headquarters.",
+    "caveat": "Block-level population from Census 2011 PDF tables is not yet integrated — V2 lists block names + parent district only. Each block is headed by a Tahsildar / Block Development Officer (BDO), typically state civil service, not IAS. The state-cadre IAS list rarely extends below district headquarters. Naming uses Census 2011 sub-district directory transliterations; minor variations vs current state-revenue-dept usage may exist (e.g., 'Tehsil' vs 'Tahsil').",
     "block_label_by_state": {
       "Kerala": "Taluk",
       "Goa": "Taluka",
@@ -16,9 +16,17 @@
       "Bihar": "Block",
       "Uttar Pradesh": "Tehsil",
       "Rajasthan": "Tehsil",
+      "Himachal Pradesh": "Tehsil",
+      "Uttarakhand": "Tehsil",
+      "Delhi": "Subdivision",
+      "Punjab": "Tehsil",
+      "Haryana": "Tehsil",
+      "Madhya Pradesh": "Tehsil",
+      "Gujarat": "Taluka",
+      "Maharashtra": "Taluka",
       "default": "Block"
     },
-    "roadmap_states": ["Tamil Nadu", "Karnataka", "Bihar", "Maharashtra", "Uttar Pradesh", "Andhra Pradesh", "West Bengal", "Madhya Pradesh", "Rajasthan", "Gujarat"]
+    "roadmap_states": ["Tamil Nadu", "Karnataka", "Bihar", "Maharashtra", "Uttar Pradesh", "Andhra Pradesh", "Telangana", "West Bengal", "Madhya Pradesh", "Rajasthan", "Gujarat"]
   },
   "states": {
     "Kerala": {
@@ -51,6 +59,106 @@
         "West Sikkim":          ["Geyzing", "Soreng"],
         "North Sikkim":         ["Mangan", "Chungthang"],
         "South Sikkim":         ["Namchi", "Ravangla", "Yangang"]
+      }
+    },
+    "Himachal Pradesh": {
+      "districts": {
+        "Chamba":               ["Bharmour", "Chamba", "Chowari", "Dalhousie", "Pangi", "Salooni", "Tissa"],
+        "Kangra":               ["Baijnath", "Dehra", "Dharamshala", "Fatehpur", "Indora", "Jaisinghpur", "Jaswan", "Jawali", "Kangra", "Multhan", "Nurpur", "Palampur", "Rakkar", "Shahpur"],
+        "Lahaul and Spiti":     ["Keylong", "Spiti (Kaza)", "Udaipur"],
+        "Kullu":                ["Banjar", "Kullu", "Manali", "Nirmand", "Sainj"],
+        "Mandi":                ["Aut", "Balh", "Baldwara", "Bali Chowki", "Jogindernagar", "Karsog", "Mandi", "Nihri", "Padhar", "Sandhole", "Sarkaghat", "Sundernagar", "Thunag"],
+        "Hamirpur":             ["Barsar", "Bhoranj", "Bijhri", "Hamirpur", "Nadaun", "Sujanpur"],
+        "Una":                  ["Amb", "Bangana", "Bharwain", "Haroli", "Una"],
+        "Bilaspur":             ["Bilaspur", "Ghumarwin", "Jhanduta", "Naina Devi"],
+        "Solan":                ["Arki", "Kandaghat", "Kasauli", "Krishangarh", "Nalagarh", "Ramshehar", "Solan"],
+        "Sirmaur":              ["Nahan", "Pachhad", "Paonta Sahib", "Rajgarh", "Renuka", "Sangrah", "Shillai"],
+        "Shimla":               ["Chirgaon", "Chopal", "Junga", "Jubbal", "Kotkhai", "Kumarsain", "Nankhari", "Rampur", "Rohru", "Shimla Rural", "Shimla Urban", "Suni", "Theog", "Tikkar"],
+        "Kinnaur":              ["Kalpa", "Moorang", "Nichar", "Pooh", "Sangla"]
+      }
+    },
+    "Uttarakhand": {
+      "districts": {
+        "Almora":               ["Almora", "Bhanoli", "Bhikiyasen", "Chaukhutia", "Dwarahat", "Jainti", "Lamgara", "Salt", "Syaldey", "Champanaula", "Tarikhet"],
+        "Bageshwar":            ["Bageshwar", "Garur", "Kapkot"],
+        "Chamoli":              ["Chamoli", "Gairsain", "Ghat", "Joshimath", "Karnaprayag", "Pipalkoti", "Pokhri", "Tharali"],
+        "Champawat":            ["Champawat", "Lohaghat", "Pati", "Pulinda"],
+        "Dehradun":             ["Chakrata", "Dehradun", "Doiwala", "Kalsi", "Mussoorie", "Rishikesh", "Tyuni", "Vikasnagar"],
+        "Haridwar":             ["Bhagwanpur", "Haridwar", "Khanpur", "Laksar", "Narsan", "Roorkee"],
+        "Nainital":             ["Bhimtal", "Dhari", "Haldwani", "Kaladhungi", "Kosya Kutauli", "Lalkuan", "Nainital", "Ramnagar"],
+        "Pauri Garhwal":        ["Bironkhal", "Chaubatakhal", "Dhumakot", "Kotdwar", "Lansdowne", "Pabou", "Pauri", "Pokhra", "Srinagar", "Thalisain", "Yamkeshwar"],
+        "Pithoragarh":          ["Berinag", "Dharchula", "Didihat", "Gangolihat", "Kanalichhina", "Munsiyari", "Pithoragarh"],
+        "Rudraprayag":          ["Augustyamuni", "Basukedar", "Jakholi", "Rudraprayag", "Ukhimath"],
+        "Tehri Garhwal":        ["Devprayag", "Dhanaulti", "Ghansali", "Jakhnidhar", "Kandisaur", "Kemar", "Kirtinagar", "Narendranagar", "Pratapnagar", "Tehri", "Thauldhar"],
+        "Udham Singh Nagar":    ["Bazpur", "Gadarpur", "Jaspur", "Kashipur", "Khatima", "Kichha", "Rudrapur", "Sitarganj"],
+        "Uttarkashi":           ["Barkot", "Bhatwari", "Chinyalisaur", "Dunda", "Mori", "Purola", "Uttarkashi"]
+      }
+    },
+    "Delhi": {
+      "districts": {
+        "North Delhi":          ["Civil Lines", "Model Town", "Narela"],
+        "North East Delhi":     ["Karawal Nagar", "Seelampur", "Yamuna Vihar"],
+        "North West Delhi":     ["Kanjhawala", "Rohini", "Saraswati Vihar"],
+        "West Delhi":           ["Patel Nagar", "Punjabi Bagh", "Rajouri Garden"],
+        "South West Delhi":     ["Delhi Cantonment", "Najafgarh", "Vasant Vihar"],
+        "South Delhi":          ["Defence Colony", "Hauz Khas", "Saket"],
+        "South East Delhi":     ["Defence Colony (SE)", "Kalkaji", "Sarita Vihar"],
+        "Central Delhi":        ["Daryaganj", "Karol Bagh", "Pahar Ganj"],
+        "New Delhi":            ["Chanakyapuri", "Connaught Place", "Vasant Vihar (ND)"],
+        "East Delhi":           ["Gandhi Nagar", "Mayur Vihar", "Preet Vihar"],
+        "Shahdara":             ["Seemapuri", "Shahdara", "Vivek Vihar"]
+      }
+    },
+    "Punjab": {
+      "districts": {
+        "Amritsar":             ["Ajnala", "Amritsar-I", "Amritsar-II", "Baba Bakala", "Lopoke"],
+        "Barnala":              ["Barnala", "Mahal Kalan", "Tappa"],
+        "Bathinda":             ["Bathinda", "Maur", "Phul", "Rampura Phul", "Talwandi Sabo"],
+        "Faridkot":             ["Faridkot", "Jaitu", "Kotkapura"],
+        "Fatehgarh Sahib":      ["Amloh", "Bassi Pathana", "Fatehgarh Sahib", "Khamano"],
+        "Fazilka":              ["Abohar", "Fazilka", "Jalalabad"],
+        "Ferozepur":            ["Ferozepur", "Guru Har Sahai", "Zira"],
+        "Gurdaspur":            ["Batala", "Dera Baba Nanak", "Dhariwal", "Gurdaspur", "Kalanaur"],
+        "Hoshiarpur":           ["Dasuya", "Garhshankar", "Hoshiarpur", "Mukerian"],
+        "Jalandhar":            ["Jalandhar-I", "Jalandhar-II", "Nakodar", "Phillaur", "Shahkot"],
+        "Kapurthala":           ["Bholath", "Kapurthala", "Phagwara", "Sultanpur Lodhi"],
+        "Ludhiana":             ["Jagraon", "Khanna", "Ludhiana East", "Ludhiana West", "Payal", "Raikot", "Samrala"],
+        "Mansa":                ["Budhlada", "Mansa", "Sardulgarh"],
+        "Moga":                 ["Bagha Purana", "Dharamkot", "Moga", "Nihal Singh Wala"],
+        "Sri Muktsar Sahib":    ["Gidderbaha", "Malout", "Sri Muktsar Sahib"],
+        "Pathankot":            ["Dhar Kalan", "Pathankot"],
+        "Patiala":              ["Nabha", "Patiala", "Rajpura", "Samana"],
+        "Rupnagar":             ["Anandpur Sahib", "Chamkaur Sahib", "Nangal", "Rupnagar"],
+        "S.A.S. Nagar (Mohali)": ["Dera Bassi", "Kharar", "Mohali"],
+        "Sangrur":              ["Bhawanigarh", "Dhuri", "Lehragaga", "Malerkotla", "Moonak", "Sangrur", "Sunam"],
+        "Shahid Bhagat Singh Nagar": ["Balachaur", "Nawanshahr", "Rahon"],
+        "Tarn Taran":           ["Bhikhiwind", "Khadoor Sahib", "Patti", "Tarn Taran"]
+      }
+    },
+    "Haryana": {
+      "districts": {
+        "Ambala":               ["Ambala", "Ambala Cantt", "Barara", "Naraingarh"],
+        "Bhiwani":              ["Bawani Khera", "Bhiwani", "Loharu", "Siwani", "Tosham"],
+        "Charkhi Dadri":        ["Badhra", "Charkhi Dadri"],
+        "Faridabad":            ["Ballabgarh", "Faridabad"],
+        "Fatehabad":            ["Bhattu Kalan", "Fatehabad", "Ratia", "Tohana"],
+        "Gurugram":             ["Farrukhnagar", "Gurugram", "Manesar", "Pataudi", "Sohna"],
+        "Hisar":                ["Adampur", "Barwala", "Hansi", "Hisar", "Narnaund", "Uklana"],
+        "Jhajjar":              ["Bahadurgarh", "Beri", "Jhajjar", "Matanhail", "Salhawas"],
+        "Jind":                 ["Alewa", "Jind", "Julana", "Narwana", "Pillukhera", "Safidon", "Uchana"],
+        "Kaithal":              ["Guhla", "Kaithal", "Kalayat", "Pundri", "Rajound", "Siwan"],
+        "Karnal":               ["Assandh", "Gharaunda", "Indri", "Karnal", "Nilokheri", "Nissing"],
+        "Kurukshetra":          ["Babain", "Ladwa", "Pehowa", "Shahabad", "Thanesar"],
+        "Mahendragarh":         ["Ateli", "Kanina", "Mahendragarh", "Narnaul", "Nangal Choudhary"],
+        "Nuh":                  ["Ferozepur Jhirka", "Nagina", "Nuh", "Punhana", "Taoru"],
+        "Palwal":               ["Hassanpur", "Hodal", "Hathin", "Palwal"],
+        "Panchkula":            ["Barwala", "Kalka", "Morni", "Panchkula", "Pinjore", "Raipur Rani"],
+        "Panipat":              ["Bapoli", "Israna", "Madlauda", "Panipat", "Samalkha"],
+        "Rewari":               ["Bawal", "Kosli", "Nahar", "Rewari"],
+        "Rohtak":               ["Kalanaur", "Lakhanmajra", "Meham", "Rohtak", "Sampla"],
+        "Sirsa":                ["Dabwali", "Ellenabad", "Kalanwali", "Nathusari Chopta", "Odhan", "Rania", "Sirsa"],
+        "Sonipat":              ["Ganaur", "Gohana", "Kharkhoda", "Mundlana", "Rai", "Sonipat"],
+        "Yamunanagar":          ["Bilaspur", "Chhachhrauli", "Jagadhri", "Mustafabad", "Radaur", "Sadhaura"]
       }
     }
   }
