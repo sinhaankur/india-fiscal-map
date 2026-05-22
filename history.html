@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>India Fiscal Map — FC-by-FC race + land revenue history</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* History page — bar-chart race + timeline */
+    body { background: oklch(0.115 0 0); }
+    .hist-wrap { max-width: 1280px; margin: 0 auto; padding: 1.5rem var(--pad-x) 5rem; }
+    .hist-back {
+      font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase;
+      color: var(--muted-foreground); display: inline-block; margin-bottom: 1.25rem;
+      border: 1px solid var(--border-strong); padding: 5px 12px; border-radius: 999px;
+    }
+    .hist-back:hover { color: var(--foreground); border-color: var(--foreground); }
+    .hist-title { font-family: var(--font-display); font-weight: 400; font-size: clamp(1.6rem, 2.6vw, 2.1rem); line-height: 1.15; margin: 0 0 0.4rem; letter-spacing: -0.01em; }
+    .hist-title em { font-family: var(--font-italic); font-style: italic; }
+    .hist-lede { font-size: 13.5px; line-height: 1.6; color: var(--muted-foreground); margin: 0 0 1.5rem; max-width: 720px; }
+
+    .race-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg);
+      padding: 1.25rem 1.5rem 1.25rem; margin-bottom: 1.5rem;
+    }
+    .race-head {
+      display: grid; grid-template-columns: 1fr auto; gap: 1rem;
+      align-items: end; margin-bottom: 1rem;
+    }
+    .race-fc-meta {
+      font-family: var(--font-mono); font-size: 11px; color: var(--muted-foreground); letter-spacing: 0.04em;
+    }
+    .race-fc-name {
+      font-family: var(--font-display); font-weight: 400; font-size: 28px; color: var(--foreground); line-height: 1.05; margin: 0;
+    }
+    .race-fc-years { font-family: var(--font-mono); font-size: 12px; color: var(--muted-foreground); letter-spacing: 0.03em; margin-top: 4px; }
+    .race-fc-chair { font-family: var(--font-mono); font-size: 11px; color: var(--muted-foreground); margin-top: 6px; }
+    .race-fc-key { font-size: 12.5px; line-height: 1.5; color: var(--foreground); margin-top: 0.4rem; max-width: 640px; }
+
+    .race-controls {
+      display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;
+      padding: 0.75rem 1rem; background: oklch(0.155 0 0); border: 1px solid var(--border); border-radius: var(--radius-lg);
+    }
+    .race-play {
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--foreground); color: var(--background);
+      border: none; font-size: 14px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .race-play:hover { background: oklch(0.78 0.16 70); }
+    .race-pool {
+      font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.04em;
+      color: var(--muted-foreground); white-space: nowrap;
+    }
+    .race-pool strong { color: var(--foreground); }
+    #race-fc-slider {
+      flex: 1; -webkit-appearance: none; appearance: none; height: 4px;
+      background: var(--border-strong); border-radius: 999px; outline: none; cursor: pointer;
+    }
+    #race-fc-slider::-webkit-slider-thumb {
+      -webkit-appearance: none; appearance: none; width: 16px; height: 16px; border-radius: 50%;
+      background: var(--foreground); border: 2px solid oklch(0.145 0 0); cursor: pointer;
+    }
+
+    .race-list { display: flex; flex-direction: column; gap: 4px; }
+    .race-row {
+      display: grid; grid-template-columns: 28px 200px 1fr 80px; align-items: center;
+      gap: 0.75rem; padding: 0.4rem 0.6rem;
+      background: oklch(0.17 0 0); border: 1px solid var(--border); border-radius: var(--radius-sm);
+      font-size: 13px;
+      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s;
+      position: relative;
+    }
+    .race-row.absent { opacity: 0.4; }
+    .race-row .rnk { font-family: var(--font-mono); font-size: 10.5px; color: var(--muted-foreground); }
+    .race-row .name { color: var(--foreground); font-weight: 500; letter-spacing: -0.005em; }
+    .race-row .bar-wrap { background: oklch(0.22 0 0); height: 18px; border-radius: 4px; overflow: hidden; position: relative; }
+    .race-row .bar {
+      display: block; height: 100%; border-radius: 4px;
+      transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1), background 0.4s;
+    }
+    .race-row .val {
+      font-family: var(--font-mono); font-size: 12px; color: var(--foreground);
+      text-align: right; letter-spacing: 0.01em;
+    }
+
+    .race-fc-strip-wrap {
+      display: grid;
+      grid-template-columns: repeat(15, 1fr); gap: 2px;
+      margin: 1rem 0 1.4rem; height: 7px; border-radius: 4px; overflow: visible;
+      position: relative;
+    }
+    .race-fc-tick { background: oklch(0.3 0.04 240); border-radius: 2px; transition: background 0.2s, transform 0.2s; cursor: pointer; }
+    .race-fc-tick.active { background: oklch(0.78 0.16 70); transform: scaleY(2); }
+
+    /* Timeline */
+    .timeline-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg);
+      padding: 1.25rem 1.5rem 0.5rem;
+    }
+    .timeline-card h2 {
+      font-family: var(--font-display); font-weight: 400; font-size: 22px; color: var(--foreground);
+      letter-spacing: -0.005em; margin: 0 0 0.25rem;
+    }
+    .timeline-card .sub {
+      font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.04em;
+      color: var(--muted-foreground); text-transform: uppercase; margin-bottom: 1.25rem;
+    }
+    .era {
+      border-left: 2px solid oklch(0.78 0.16 70 / 0.4);
+      padding: 0.25rem 0 1.5rem 1.25rem; position: relative; margin-bottom: 0.5rem;
+    }
+    .era::before {
+      content: ''; position: absolute; left: -6px; top: 0.55rem;
+      width: 10px; height: 10px; border-radius: 50%; background: oklch(0.78 0.16 70);
+    }
+    .era h3 {
+      font-family: var(--font-sans); font-weight: 500; font-size: 15px;
+      color: var(--foreground); margin: 0 0 0.4rem; letter-spacing: -0.005em;
+    }
+    .era .system { font-size: 12.5px; line-height: 1.55; color: var(--foreground); margin: 0 0 0.5rem; }
+    .era .system strong { color: var(--foreground); }
+    .era .systems-list { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.6rem; margin: 0.5rem 0 0.75rem; }
+    @media (max-width: 720px) { .era .systems-list { grid-template-columns: 1fr; } }
+    .era .systems-list .item {
+      background: oklch(0.18 0 0); border: 1px solid var(--border); border-radius: var(--radius-sm);
+      padding: 0.5rem 0.65rem;
+    }
+    .era .systems-list .item .n { font-family: var(--font-sans); font-weight: 500; font-size: 12.5px; color: var(--foreground); }
+    .era .systems-list .item .w { font-family: var(--font-mono); font-size: 10.5px; color: var(--muted-foreground); margin: 2px 0; }
+    .era .systems-list .item .b { font-size: 11.5px; line-height: 1.45; color: var(--muted-foreground); }
+    .era .data-point {
+      font-family: var(--font-mono); font-size: 11.5px; color: oklch(0.78 0.16 70);
+      background: oklch(0.78 0.16 70 / 0.08); padding: 0.4rem 0.7rem;
+      border-left: 2px solid oklch(0.78 0.16 70); margin: 0.4rem 0 0.5rem;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    }
+    .era ul { margin: 0.3rem 0 0.5rem; padding-left: 1.1rem; }
+    .era li { font-size: 12px; line-height: 1.55; color: var(--foreground); margin-bottom: 0.3rem; }
+    .era .headline { font-family: var(--font-mono); font-size: 11.5px; color: var(--muted-foreground); margin-top: 0.4rem; }
+    .era .source {
+      font-family: var(--font-mono); font-size: 10px; color: var(--muted-foreground); opacity: 0.7;
+      margin-top: 0.4rem; letter-spacing: 0.02em;
+    }
+  </style>
+</head>
+<body>
+  <nav id="nav">
+    <div class="brand"><span class="brand-dot"></span> INDIA FISCAL MAP · HISTORY</div>
+    <div class="nav-links">
+      <a href="index.html">← Map</a>
+      <a href="references.html">Sources ↗</a>
+      <a href="https://github.com/sinhaankur/india-fiscal-map" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </nav>
+
+  <div class="hist-wrap">
+    <h1 class="hist-title">Who got <em>how much</em>, FC by FC.</h1>
+    <p class="hist-lede">
+      Article 280 of the Constitution mandates a Finance Commission every five years to recommend the horizontal share — how the divisible pool of central taxes is split among states. Below: every FC's exact horizontal allocation, from <strong>1st FC (1952-57)</strong> through <strong>15th FC (2020-26)</strong>. 15 horizons, 73 years. States appear/disappear with reorganisations (1956 linguistic states, 1960 Bombay split, 1966 Punjab split, 2000 new states, 2014 Telangana). Below the race: how the land-revenue tax we forgot about used to BE Indian fiscal policy — from Akbar's <em>Dahsala</em> through the Permanent Settlement.
+    </p>
+
+    <div class="race-card">
+      <div class="race-head">
+        <div>
+          <div class="race-fc-meta">Finance Commission · horizontal share</div>
+          <div class="race-fc-name" id="race-fc-name">14th FC</div>
+          <div class="race-fc-years" id="race-fc-years">2015-20 · 42% vertical pool</div>
+          <div class="race-fc-chair" id="race-fc-chair">Chair: Y. V. Reddy</div>
+          <div class="race-fc-key" id="race-fc-key">—</div>
+        </div>
+        <div class="race-pool">FC <strong id="race-fc-idx">15</strong> of 15</div>
+      </div>
+      <div class="race-fc-strip-wrap" id="race-fc-strip"></div>
+      <div class="race-controls">
+        <button class="race-play" id="race-play" title="Play / pause">▶</button>
+        <span class="race-pool" id="race-pool-info">Vertical pool: <strong>42%</strong></span>
+        <input type="range" id="race-fc-slider" min="0" max="14" value="13" />
+      </div>
+      <div class="race-list" id="race-list"></div>
+    </div>
+
+    <div class="timeline-card">
+      <h2>Before the FC there was <em>land revenue</em>.</h2>
+      <div class="sub">India's 2000-year-deep fiscal backbone — and why it disappeared</div>
+      <div id="timeline"></div>
+    </div>
+  </div>
+
+  <script src="history.js"></script>
+</body>
+</html>
