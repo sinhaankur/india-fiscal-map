@@ -1,0 +1,57 @@
+{
+  "_meta": {
+    "title": "India block / taluk / tehsil pilot dataset",
+    "scope": "Pilot: Kerala (75 taluks), Goa (12 talukas), Sikkim (10 sub-divisions). Other states: data layer in progress.",
+    "source": "Census 2011 sub-district directory; state revenue department websites for naming cross-check.",
+    "caveat": "Block-level population from Census 2011 PDF tables is not yet integrated — V1 lists block names + parent district only. Each block is headed by a Tahsildar / Block Development Officer (BDO), typically state civil service, not IAS. The state-cadre IAS list rarely extends below district headquarters.",
+    "block_label_by_state": {
+      "Kerala": "Taluk",
+      "Goa": "Taluka",
+      "Sikkim": "Sub-division",
+      "Tamil Nadu": "Taluk",
+      "Karnataka": "Taluk",
+      "Andhra Pradesh": "Mandal",
+      "Telangana": "Mandal",
+      "West Bengal": "Sub-division / Block",
+      "Bihar": "Block",
+      "Uttar Pradesh": "Tehsil",
+      "Rajasthan": "Tehsil",
+      "default": "Block"
+    },
+    "roadmap_states": ["Tamil Nadu", "Karnataka", "Bihar", "Maharashtra", "Uttar Pradesh", "Andhra Pradesh", "West Bengal", "Madhya Pradesh", "Rajasthan", "Gujarat"]
+  },
+  "states": {
+    "Kerala": {
+      "districts": {
+        "Kasaragod":            ["Kasaragod", "Hosdurg", "Vellarikundu", "Manjeshwaram"],
+        "Kannur":               ["Kannur", "Taliparamba", "Thalassery", "Iritty", "Payyanur"],
+        "Wayanad":              ["Mananthavady", "Sulthan Bathery", "Vythiri"],
+        "Kozhikode":            ["Kozhikode", "Quilandy", "Vatakara", "Thamarassery"],
+        "Malappuram":           ["Eranad", "Nilambur", "Perinthalmanna", "Ponnani", "Thirurangadi", "Tirur"],
+        "Palakkad":             ["Alathur", "Chittur", "Mannarkkad", "Ottapalam", "Palakkad", "Pattambi"],
+        "Thrissur":             ["Chalakudy", "Chavakkad", "Kodungallur", "Kunnamkulam", "Mukundapuram", "Thalapilly", "Thrissur"],
+        "Ernakulam":            ["Aluva", "Kanayannur", "Kochi", "Kothamangalam", "Kunnathunad", "Muvattupuzha", "North Paravur"],
+        "Idukki":               ["Devikulam", "Idukki", "Peerumade", "Thodupuzha", "Udumbanchola"],
+        "Kottayam":             ["Changanassery", "Kanjirappally", "Kottayam", "Meenachil", "Vaikom"],
+        "Alappuzha":            ["Ambalappuzha", "Chengannur", "Cherthala", "Karthikappally", "Kuttanad", "Mavelikkara"],
+        "Pathanamthitta":       ["Adoor", "Kozhencherry", "Mallappally", "Ranni", "Thiruvalla"],
+        "Kollam":               ["Karunagappally", "Kollam", "Kottarakkara", "Kunnathur", "Pathanapuram", "Punalur"],
+        "Thiruvananthapuram":   ["Chirayinkeezhu", "Kattakkada", "Neyyattinkara", "Nedumangad", "Thiruvananthapuram", "Varkala"]
+      }
+    },
+    "Goa": {
+      "districts": {
+        "North Goa":            ["Bardez", "Bicholim", "Pernem", "Sattari", "Tiswadi", "Ponda"],
+        "South Goa":            ["Salcete", "Mormugao", "Sanguem", "Quepem", "Canacona", "Dharbandora"]
+      }
+    },
+    "Sikkim": {
+      "districts": {
+        "East Sikkim":          ["Gangtok", "Pakyong", "Rangpo"],
+        "West Sikkim":          ["Geyzing", "Soreng"],
+        "North Sikkim":         ["Mangan", "Chungthang"],
+        "South Sikkim":         ["Namchi", "Ravangla", "Yangang"]
+      }
+    }
+  }
+}

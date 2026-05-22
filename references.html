@@ -176,7 +176,34 @@
   </section>
 
   <section class="refs-section">
-    <h2><span class="num">06</span>Geographic data</h2>
+    <h2><span class="num">06</span>Block / taluk / tehsil (sub-district)</h2>
+    <div class="sec-sub">V1 pilot: Kerala, Goa, Sikkim. Other states on roadmap.</div>
+    <ul class="refs-list">
+      <li>
+        <span class="src-name">Census of India 2011 — Sub-District Directory</span>
+        <span class="src-meta">Office of the Registrar General &amp; Census Commissioner</span>
+        <div class="src-note">Block / taluk / tehsil names + populations. <em>Not available as a single open CSV</em> — locked in per-state PDF tables on the official portal. V1 hand-encodes block names from these directories cross-checked with state revenue dept sites; populations deferred to V2. <a href="https://censusindia.gov.in" target="_blank" rel="noopener">censusindia.gov.in</a></div>
+      </li>
+      <li>
+        <span class="src-name">LGD (Local Government Directory) — Ministry of Panchayati Raj</span>
+        <span class="src-meta">Official government source · POST-based, no open API</span>
+        <div class="src-note">Authoritative block / sub-district codes. Behind POST requests and stateful forms — requires per-state scraping with Selenium or undocumented endpoints. <a href="https://lgdirectory.gov.in" target="_blank" rel="noopener">lgdirectory.gov.in</a></div>
+      </li>
+      <li>
+        <span class="src-name">MGNREGA — block-level person-days &amp; wage payments</span>
+        <span class="src-meta">nrega.nic.in · monthly · not yet wired</span>
+        <div class="src-note">Largest centrally-sponsored scheme; reports at block level. No clean open API; data is hidden behind state→district→block dropdown forms. Wiring this gives a "rural employment delivery" view at block level. <a href="https://nrega.nic.in" target="_blank" rel="noopener">nrega.nic.in</a></div>
+      </li>
+      <li>
+        <span class="src-name">Administrative head note</span>
+        <span class="src-meta">structural fact, not data</span>
+        <div class="src-note">Each block is headed by a Tahsildar (revenue) and a Block Development Officer (development), both typically state civil service — <strong>not IAS</strong>. The IAS cadre stops at district HQ; only a tiny subset of younger IAS officers serve as Sub-Divisional Magistrates above the block, never AT the block.</div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="refs-section">
+    <h2><span class="num">07</span>Geographic data</h2>
     <div class="sec-sub">State boundaries</div>
     <ul class="refs-list">
       <li>

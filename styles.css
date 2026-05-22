@@ -491,6 +491,52 @@ a:hover { border-color: var(--foreground); }
 .district-row .bar { display: block; height: 100%; background: oklch(0.55 0.13 70); border-radius: 3px; }
 .district-row .val { font-family: var(--font-mono); font-size: 10.5px; color: var(--muted-foreground); }
 
+/* Block / taluk list inside district detail */
+.block-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  margin-top: 0.3rem;
+}
+@media (max-width: 600px) { .block-list { grid-template-columns: 1fr; } }
+.block-row {
+  display: grid;
+  grid-template-columns: 22px 1fr auto;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.32rem 0.55rem;
+  background: oklch(0.17 0 0);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 11.5px;
+  color: var(--foreground);
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+}
+.block-row:hover { background: oklch(0.21 0 0); border-color: var(--border-strong); }
+.block-row .rnk { font-family: var(--font-mono); font-size: 9.5px; color: var(--muted-foreground); }
+.block-row .name { color: var(--foreground); }
+.block-row .lbl {
+  font-family: var(--font-mono); font-size: 9px; color: var(--muted-foreground);
+  text-transform: uppercase; letter-spacing: 0.05em;
+}
+
+.block-empty {
+  background: oklch(0.17 0 0); border: 1px solid var(--border);
+  border-left: 2px solid oklch(0.65 0.18 250);
+  border-radius: var(--radius-sm);
+  padding: 0.7rem 0.85rem;
+  margin-top: 0.3rem;
+}
+.block-empty-eyebrow {
+  font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.08em;
+  text-transform: uppercase; color: oklch(0.65 0.18 250); margin-bottom: 0.3rem;
+}
+.block-empty-body {
+  font-size: 11.5px; line-height: 1.55; color: var(--foreground); margin: 0;
+}
+
 .india-detail-empty {
   display: flex;
   flex-direction: column;

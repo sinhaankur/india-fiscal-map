@@ -102,7 +102,7 @@
 
   const ui = { state: { view: 'ownTax', yearIdx: 9, selected: null, hover: null, mode: 'states', drillState: null, drillDistrict: null } };
 
-  let DATA = null, EXTRAS = null, GEO = null, DISTRICT_POP = null;
+  let DATA = null, EXTRAS = null, GEO = null, DISTRICT_POP = null, BLOCKS = null;
   let map = null, geoLayer = null, districtLayer = null;
   const pathByName = new Map();
   const districtPathByName = new Map();
@@ -568,6 +568,8 @@
       </div>
       ` : `<p class="india-detail-empty-body">No Census 2011 record for this district — likely carved out post-2011.</p>`}
 
+      ${renderBlockSection(state, district)}
+
       <div class="india-caveat">
         Census 2011 totals are persons (not lakh / crore). Sex / household figures from the same Census round. IAS Collector posting changes ~every 2–3 years; the current DM's name isn't in this dashboard (no central machine-readable list — would have to scrape state DOPT sites). What IS structural: every district has exactly one DM, and that's the state's only routine IAS field deployment outside the secretariat.
       </div>
@@ -579,6 +581,97 @@
       districtPathByName.forEach(layer => layer.setStyle({ weight: 0.6, color: 'oklch(0.985 0 0 / 0.45)' }));
     });
     detail.querySelector('#india-back-to-state')?.addEventListener('click', () => exitDrill(state));
+    bindBlockClicks(detail);
+  }
+
+  /* ───────── BLOCK / TALUK level (V1 pilot — Kerala, Goa, Sikkim) ───────── */
+  function blockLabelFor(state) {
+    const map = BLOCKS?._meta?.block_label_by_state || {};
+    return map[state] || map.default || 'Block';
+  }
+  function blocksForDistrict(state, district) {
+    return BLOCKS?.states?.[state]?.districts?.[district] || null;
+  }
+  function renderBlockSection(state, district) {
+    if (!BLOCKS) return '';
+    const blocks = blocksForDistrict(state, district);
+    const label = blockLabelFor(state);
+    const isPilotState = BLOCKS.states && BLOCKS.states[state];
+    if (!isPilotState) {
+      const roadmap = BLOCKS._meta?.roadmap_states || [];
+      const inRoadmap = roadmap.includes(state);
+      return `
+        <div class="india-detail-section-title">${esc(label)}s in ${esc(district)}</div>
+        <div class="block-empty">
+          <div class="block-empty-eyebrow">Block data: layer in progress</div>
+          <p class="block-empty-body">
+            Census 2011 sub-district / block tables are locked in per-state PDFs on censusindia.gov.in — not a single open CSV. V1 pilot covers <strong>Kerala (75 taluks)</strong>, <strong>Goa (12 talukas)</strong>, and <strong>Sikkim (10 sub-divisions)</strong>.
+            ${inRoadmap ? `<br/><br/>${esc(state)} is on the roadmap.` : ''}
+          </p>
+        </div>`;
+    }
+    if (!blocks || !blocks.length) {
+      return `
+        <div class="india-detail-section-title">${esc(label)}s in ${esc(district)}</div>
+        <p class="india-detail-empty-body">No ${esc(label.toLowerCase())}s recorded for this district in the pilot dataset.</p>`;
+    }
+    return `
+      <div class="india-detail-section-title">${esc(label)}s in ${esc(district)} <span style="font-family:var(--font-mono);font-size:10px;color:var(--muted-foreground);text-transform:none;letter-spacing:0.02em">· ${blocks.length} ${esc(label.toLowerCase())}${blocks.length===1?'':'s'}</span></div>
+      <div class="block-list">
+        ${blocks.map((b, i) => `
+          <button class="block-row" data-block="${esc(b)}" data-state="${esc(state)}" data-district="${esc(district)}">
+            <span class="rnk">${String(i + 1).padStart(2, '0')}</span>
+            <span class="name">${esc(b)}</span>
+            <span class="lbl">${esc(label)}</span>
+          </button>
+        `).join('')}
+      </div>
+      <p class="india-caveat">
+        Each ${esc(label.toLowerCase())} is headed by a Tahsildar (revenue side) and a Block Development Officer (development side) — both typically state civil service, <strong>not IAS</strong>. The cadre rarely deploys below district HQ. Block population from Census 2011 PDF tables pending integration in V2.
+      </p>`;
+  }
+  function bindBlockClicks(detail) {
+    detail.querySelectorAll('.block-row').forEach(row => {
+      row.addEventListener('click', () => renderBlockDetail(row.dataset.block, row.dataset.district, row.dataset.state));
+    });
+  }
+  function renderBlockDetail(block, district, state) {
+    const label = blockLabelFor(state);
+    const detail = $ind('#india-detail');
+    const src = (key) => {
+      const o = SOURCES[key];
+      return o ? `<a class="src-link" href="${esc(o.url)}" target="_blank" rel="noopener" title="Source: ${esc(o.name)}">↗</a>` : '';
+    };
+    detail.innerHTML = `
+      <div class="india-detail-head">
+        <div>
+          <div class="india-detail-name">${esc(block)}</div>
+          <div class="mono" style="font-size:10.5px;letter-spacing:0.04em;color:var(--muted-foreground);text-transform:uppercase;margin-top:2px">${esc(label)} of ${esc(district)} · ${esc(state)}</div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.4rem">
+          <button class="india-back-btn" id="block-back-to-district">← ${esc(district)}</button>
+          <button class="india-back-btn" id="block-back-to-state">← ${esc(state)}</button>
+        </div>
+      </div>
+
+      <div class="india-stat-grid">
+        <div class="india-stat"><div class="label">${esc(label)} name</div><div class="value" style="font-size:14px">${esc(block)}</div></div>
+        <div class="india-stat"><div class="label">Parent district</div><div class="value" style="font-size:13px">${esc(district)}</div></div>
+        <div class="india-stat"><div class="label">Parent state</div><div class="value" style="font-size:13px">${esc(state)}</div></div>
+        <div class="india-stat"><div class="label">Administrative head</div><div class="value" style="font-size:11px">Tahsildar + BDO</div></div>
+        <div class="india-stat" style="grid-column:span 2"><div class="label">IAS deployment ${src('ias')}</div><div class="value" style="font-size:11px">Typically <strong>none</strong> — Tahsildar and BDO are state civil service. IAS cadre stops at district HQ.</div></div>
+      </div>
+
+      <div class="india-caveat">
+        Block name from Census 2011 sub-district directory. Population, MGNREGA delivery, and PMAY-G performance data not yet integrated for this level — Census PDFs need parsing; MGNREGA's nrega.nic.in lacks a clean open API. Source: <a href="https://censusindia.gov.in" target="_blank" rel="noopener" style="color:oklch(0.78 0.16 70)">censusindia.gov.in</a> directory of sub-districts, cross-checked with state revenue department websites.
+      </div>`;
+    detail.querySelector('#block-back-to-district')?.addEventListener('click', () => {
+      // Re-render district detail (which includes the block list)
+      renderDistrictDetail(district, state);
+      const det = $ind('#india-detail');
+      bindBlockClicks(det);
+    });
+    detail.querySelector('#block-back-to-state')?.addEventListener('click', () => exitDrill(state));
   }
 
   function exitDrill(stateName) {
@@ -765,11 +858,12 @@
 
   async function bootstrap() {
     try {
-      const [geoRes, dataRes, extrasRes, popRes] = await Promise.all([
+      const [geoRes, dataRes, extrasRes, popRes, blocksRes] = await Promise.all([
         fetch('india-states.geojson'),
         fetch('india-fiscal.json'),
         fetch('india-extras.json'),
-        fetch('district-pop.json')
+        fetch('district-pop.json'),
+        fetch('india-blocks.json')
       ]);
       if (!geoRes.ok) throw new Error('GeoJSON HTTP ' + geoRes.status);
       if (!dataRes.ok) throw new Error('Fiscal JSON HTTP ' + dataRes.status);
@@ -779,6 +873,8 @@
       else console.warn('india-extras.json missing — proceeding without governance footprint');
       if (popRes.ok) DISTRICT_POP = await popRes.json();
       else console.warn('district-pop.json missing — district drill-down will show names only');
+      if (blocksRes.ok) BLOCKS = await blocksRes.json();
+      else console.warn('india-blocks.json missing — block list will be skipped');
 
       ui.state.yearIdx = DATA._meta.years.length - 1;
       // Compute the color domain BEFORE building the map: Leaflet's GeoJSON layer
