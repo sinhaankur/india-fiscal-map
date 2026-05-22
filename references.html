@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>India Fiscal — Sources & References</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .refs-wrap { max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem 6rem; }
+    .refs-wrap h1 { font-family: var(--font-display); font-weight: 400; font-size: clamp(1.8rem, 3vw, 2.4rem); line-height: 1.1; margin: 0 0 0.5rem; letter-spacing: -0.01em; }
+    .refs-wrap h1 em { font-family: var(--font-italic); font-style: italic; }
+    .refs-wrap > .lede { font-size: 14px; color: var(--muted-foreground); line-height: 1.6; margin-bottom: 2.5rem; max-width: 720px; }
+    .refs-back { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted-foreground); display: inline-block; margin-bottom: 1.5rem; border: 1px solid var(--border-strong); padding: 5px 12px; border-radius: 999px; }
+    .refs-back:hover { color: var(--foreground); border-color: var(--foreground); }
+    .refs-section { margin-top: 2.5rem; }
+    .refs-section h2 { font-family: var(--font-sans); font-weight: 500; font-size: 18px; letter-spacing: -0.005em; margin: 0 0 0.25rem; color: var(--foreground); }
+    .refs-section h2 .num { font-family: var(--font-mono); font-size: 11px; color: var(--muted-foreground); font-weight: 400; letter-spacing: 0.05em; margin-right: 0.6rem; }
+    .refs-section .sec-sub { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.03em; color: var(--muted-foreground); margin: 0 0 1rem; }
+    .refs-list { list-style: none; padding: 0; margin: 0; }
+    .refs-list li { padding: 0.7rem 0; border-bottom: 1px dashed oklch(0.985 0 0 / 0.08); }
+    .refs-list li:last-child { border-bottom: 0; }
+    .refs-list .src-name { font-family: var(--font-sans); font-weight: 500; color: var(--foreground); font-size: 14px; }
+    .refs-list .src-meta { font-family: var(--font-mono); font-size: 11px; color: var(--muted-foreground); letter-spacing: 0.03em; margin-left: 0.5rem; }
+    .refs-list .src-note { font-size: 12.5px; color: var(--muted-foreground); line-height: 1.55; margin-top: 4px; }
+    .refs-list a { color: oklch(0.78 0.16 70); border-bottom-color: oklch(0.78 0.16 70 / 0.4); }
+    .refs-list a:hover { border-bottom-color: oklch(0.78 0.16 70); }
+    .refs-caveats { background: oklch(0.16 0 0); border: 1px solid var(--border); border-left: 3px solid oklch(0.7 0.18 30); border-radius: var(--radius-sm); padding: 1rem 1.2rem; margin-top: 2.5rem; }
+    .refs-caveats h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted-foreground); margin: 0 0 0.5rem; }
+    .refs-caveats p { font-size: 13px; line-height: 1.6; color: var(--foreground); margin: 0 0 0.7rem; }
+    .refs-caveats p:last-child { margin-bottom: 0; }
+    .refs-caveats em { font-family: var(--font-italic); font-style: italic; }
+    .refs-deferred { background: oklch(0.16 0 0); border: 1px solid var(--border); border-left: 3px solid oklch(0.65 0.18 250); border-radius: var(--radius-sm); padding: 1rem 1.2rem; margin-top: 1.25rem; }
+    .refs-deferred h3 { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted-foreground); margin: 0 0 0.5rem; }
+    .refs-deferred ul { padding-left: 1.25rem; margin: 0; }
+    .refs-deferred li { font-size: 12.5px; line-height: 1.55; color: var(--foreground); margin-bottom: 0.35rem; }
+  </style>
+</head>
+<body>
+
+<div class="refs-wrap">
+  <a class="refs-back" href="index.html#map">← Back to map</a>
+
+  <h1>Sources &amp; <em>references</em></h1>
+  <p class="lede">
+    Every number on the India fiscal map is sourced from public datasets — Finance Commission reports, RBI's Handbook of Statistics on Indian States, MoSPI advance estimates, Union Budget receipts, and the CMS-India Corruption Study. Headline percentages (Finance Commission horizontal shares, FY24 budget actuals) are exact. State-level breakdowns (GSDP, own tax, devolution per year) are approximations within ±10%, smoothed for year-on-year comparability. Each section below documents what we used and what we are deliberately approximating.
+  </p>
+
+  <section class="refs-section">
+    <h2><span class="num">01</span>Finance Commission devolution</h2>
+    <div class="sec-sub">Vertical pool + horizontal shares (exact figures)</div>
+    <ul class="refs-list">
+      <li>
+        <span class="src-name">Report of the 14th Finance Commission (2015–2020)</span>
+        <span class="src-meta">FC-XIV · Government of India · 2014</span>
+        <div class="src-note">Recommended raising the vertical share of central taxes devolved to states from 32% to 42%. Horizontal formula weights: population (17.5%), demographic change (10%), area (15%), forest cover (7.5%), income distance (50%). <a href="https://fincomindia.nic.in/asset/doc/commission-reports/14thFCRENG.pdf" target="_blank" rel="noopener">PDF</a></div>
+      </li>
+      <li>
+        <span class="src-name">Report of the 15th Finance Commission (2021–2026)</span>
+        <span class="src-meta">FC-XV · Government of India · 2020 (final)</span>
+        <div class="src-note">Lowered vertical share to 41% (absorbed J&amp;K/Ladakh becoming UTs). New horizontal formula weights: population 2011 (15%), area (15%), forest &amp; ecology (10%), income distance (45%), demographic performance (12.5%), tax effort (2.5%). <a href="https://fincomindia.nic.in/asset/doc/commission-reports/XVFC-VOL-I.pdf" target="_blank" rel="noopener">PDF</a></div>
+      </li>
+      <li>
+        <span class="src-name">Union Budget — Receipts &amp; Devolution</span>
+        <span class="src-meta">Ministry of Finance · annual</span>
+        <div class="src-note">Actual vertical devolution figures FY15–FY24 (used as the annual pool ranges in the dashboard's <code>vertical_pool_actuals</code>). <a href="https://www.indiabudget.gov.in/" target="_blank" rel="noopener">indiabudget.gov.in</a></div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="refs-section">
+    <h2><span class="num">02</span>State GSDP &amp; own tax revenue</h2>
+    <div class="sec-sub">Yearly data, current prices (approximated within ±10%)</div>
+    <ul class="refs-list">
+      <li>
+        <span class="src-name">RBI — Handbook of Statistics on Indian States</span>
+        <span class="src-meta">Reserve Bank of India · annual</span>
+        <div class="src-note">Authoritative state-wise dataset for own tax revenue, debt-GSDP, fiscal deficit. Used for own-tax and devolution receipts cross-checks. <a href="https://www.rbi.org.in/Scripts/AnnualPublications.aspx?head=Handbook+of+Statistics+on+Indian+States" target="_blank" rel="noopener">RBI handbook</a></div>
+      </li>
+      <li>
+        <span class="src-name">MoSPI — State-wise GSDP (current prices)</span>
+        <span class="src-meta">Ministry of Statistics &amp; Programme Implementation · advance + provisional estimates</span>
+        <div class="src-note">Primary source for GSDP series FY15–FY24. Recent years use first/second advance estimates and will be revised. <a href="https://mospi.gov.in/state-domestic-product" target="_blank" rel="noopener">mospi.gov.in</a></div>
+      </li>
+      <li>
+        <span class="src-name">CAG — State Finance Audit Reports</span>
+        <span class="src-meta">Comptroller &amp; Auditor General · annual, by state</span>
+        <div class="src-note">Used to sanity-check devolution-received and grants-in-aid figures for major states. <a href="https://cag.gov.in/en/audit-report" target="_blank" rel="noopener">cag.gov.in</a></div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="refs-section">
+    <h2><span class="num">03</span>Contribution to Center (estimated)</h2>
+    <div class="sec-sub">Heavily approximated — methodology disclosure</div>
+    <ul class="refs-list">
+      <li>
+        <span class="src-name">CBDT / DGTS — Income &amp; Corporate Tax Collections</span>
+        <span class="src-meta">Direct taxes by region · annual</span>
+        <div class="src-note">Maharashtra, Karnataka, Tamil Nadu, Delhi, Gujarat dominate direct-tax collections — used as anchors for the relative scaling. <a href="https://incometaxindia.gov.in/Pages/Direct-Taxes-Data.aspx" target="_blank" rel="noopener">incometaxindia.gov.in</a></div>
+      </li>
+      <li>
+        <span class="src-name">GST Council — State-wise SGST + IGST</span>
+        <span class="src-meta">monthly GST collections</span>
+        <div class="src-note">SGST is destination-based, but IGST at origin gives a partial proxy for production-side contribution. State-wise monthly figures published since 2017. <a href="https://gstcouncil.gov.in/" target="_blank" rel="noopener">gstcouncil.gov.in</a></div>
+      </li>
+      <li>
+        <span class="src-name">PRS Legislative Research — State Finance Notes</span>
+        <span class="src-meta">PRS India · per-state annual briefs</span>
+        <div class="src-note">Used for triangulation of central-share receipts and grants. <a href="https://prsindia.org/policy/budgets" target="_blank" rel="noopener">prsindia.org</a></div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="refs-section">
+    <h2><span class="num">04</span>Governance footprint</h2>
+    <div class="sec-sub">IAS cadre strength, state employees, corruption perception</div>
+    <ul class="refs-list">
+      <li>
+        <span class="src-name">DoPT — Civil List, IAS Cadre Strength</span>
+        <span class="src-meta">Department of Personnel &amp; Training · annual civil list</span>
+        <div class="src-note">Approved (sanctioned) cadre strength per state. <em>Important:</em> 25–40% of cadre officers are typically on Central deputation at any time — the dashboard number is structural cap, not on-ground headcount. <a href="https://dopt.gov.in/" target="_blank" rel="noopener">dopt.gov.in</a></div>
+      </li>
+      <li>
+        <span class="src-name">Pay Research Unit — State Govt Employee Census</span>
+        <span class="src-meta">Ministry of Finance / state finance reports</span>
+        <div class="src-note">State govt direct employee counts (in lakh). Excludes contract, outsourced, and PSU workers — which can add 30–60% more. <a href="https://doe.gov.in/order-circular" target="_blank" rel="noopener">doe.gov.in</a></div>
+      </li>
+      <li>
+        <span class="src-name">CMS-India — India Corruption Study 2019</span>
+        <span class="src-meta">Centre for Media Studies · last edition before COVID</span>
+        <div class="src-note">% of households reporting they paid a bribe to access a public service in the past 12 months — most rigorous state-level corruption survey publicly available. CMS resumed sporadic studies post-COVID but full state coverage hasn't been replicated. <a href="https://www.cmsindia.org/india-corruption-study" target="_blank" rel="noopener">cmsindia.org</a></div>
+      </li>
+      <li>
+        <span class="src-name">State govt department lists</span>
+        <span class="src-meta">Each state's secretariat website</span>
+        <div class="src-note">Departments listed in the detail card are illustrative of each state's structure — the "back-office" vs "public-facing" classification is editorial, drawn from published CAG audit reports and budget allocations.</div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="refs-section">
+    <h2><span class="num">05</span>Geographic data</h2>
+    <div class="sec-sub">State boundaries</div>
+    <ul class="refs-list">
+      <li>
+        <span class="src-name">Datameet India — state boundaries (TopoJSON/GeoJSON)</span>
+        <span class="src-meta">datameet.org · open data</span>
+        <div class="src-note">Used as the source for the state polygon boundaries. Open-licensed civic data project. <a href="https://github.com/datameet/maps" target="_blank" rel="noopener">github.com/datameet/maps</a></div>
+      </li>
+      <li>
+        <span class="src-name">CARTO basemaps — dark_nolabels tile layer</span>
+        <span class="src-meta">© OpenStreetMap, © CARTO</span>
+        <div class="src-note">Background tile layer (no labels) to keep the choropleth read clean. <a href="https://carto.com/attributions" target="_blank" rel="noopener">attribution</a></div>
+      </li>
+    </ul>
+  </section>
+
+  <div class="refs-caveats">
+    <h3>Caveats &amp; methodology</h3>
+    <p><em>Per-state per-year figures are approximations within ±10%</em> for GSDP, own tax, devolution, grants, and contribution. They are smoothed for year-on-year readability rather than reported to the exact rupee. Finance Commission horizontal shares are exact, sourced directly from the FC final reports.</p>
+    <p><em>Contribution to Center is necessarily an estimate.</em> Most central tax incidence is destination-blind — GST is consumption-based, customs are collected at ports (not at origin of consumption), and corporate tax is collected at registered HQ (which concentrates in Mumbai, Delhi, Bengaluru regardless of where activity happens). The dashboard uses a GSDP-weighted, formal-sector-share-adjusted estimate.</p>
+    <p><em>Corruption perception</em> is from a 2019 survey — pre-COVID, pre-DBT-acceleration. Treat as directional, not as a 2024 number.</p>
+    <p><em>"Back-office" vs "public-facing"</em> department classification is editorial. It draws on published CAG audit findings (which department's spending shows up most often in irregularity reports) and budget composition (salaries vs program spend ratios), but ultimately reflects an opinionated read.</p>
+  </div>
+
+  <div class="refs-deferred">
+    <h3>Not yet wired (V2 candidates)</h3>
+    <ul>
+      <li>Minister-by-minister breakdowns with public asset declarations (~700+ ministers across 30 states; requires scraping each state's official record)</li>
+      <li>Per-department headcount (state-published, but inconsistent format; would need a normalisation pass)</li>
+      <li>Centrally Sponsored Scheme flows (PMJAY, PMAY, MGNREGS) — a separate axis of center-state money flow worth its own view</li>
+      <li>Per-state debt-to-GSDP trajectory (RBI data exists; just hasn't been added as a view yet)</li>
+      <li>Net Central Public Sector Undertaking (CPSU) presence by state — central capital, central employment, but not in FC formula</li>
+    </ul>
+  </div>
+
+</div>
+</body>
+</html>

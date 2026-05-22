@@ -1,0 +1,460 @@
+{
+  "_meta": {
+    "ias_note": "IAS officers belong to state cadres but are appointed by UPSC and routinely deputed to the Center (DoPT manages central deputation). The number below is the cadre's approved strength — at any time ~25–40% may be on Central deputation, leave, training, or vacant. AGMUT (Arunachal-Goa-Mizoram-Union Territories) and joint cadres are noted where applicable.",
+    "employees_note": "State government direct employees in lakh — excludes Centrally-sponsored staff, PSU workers, and outsourced/contract workers (which can add 30–60% more depending on state).",
+    "corruption_source": "CMS-India India Corruption Study 2019 — % of households reporting they paid a bribe to access a public service in the past 12 months. Some smaller states use regional averages where state-specific data is unavailable.",
+    "departments_note": "Back-office = secretariat, administration, public works payroll-heavy units with low direct public output. Public-facing = where citizens actually interact with the state. Most state budgets show back-office salary bills crowding out public-facing capex."
+  },
+  "states": {
+    "Maharashtra": {
+      "ias": 440,
+      "employees_lakh": 7.0,
+      "corruption_pct": 45,
+      "dept_back": [
+        { "name": "General Administration (Mantralaya)", "note": "Apex secretariat — ~12,000 staff; bulk salary bill, slow file movement." },
+        { "name": "Public Works", "note": "Tender-heavy; recurring CAG audit findings on irregularities." },
+        { "name": "Revenue & Forests", "note": "Land records modernisation pending despite decades of effort." }
+      ],
+      "dept_public": [
+        { "name": "Public Health", "note": "Runs ~1,800 PHCs and the BMC's flagship municipal hospital network." },
+        { "name": "School Education", "note": "~1.1 lakh govt schools; outcomes lag Tamil Nadu and Kerala." },
+        { "name": "Cooperation, Marketing & Textiles", "note": "Sugar coops + handloom — political patronage channel as much as economic vehicle." }
+      ]
+    },
+    "Tamil Nadu": {
+      "ias": 373,
+      "employees_lakh": 10.5,
+      "corruption_pct": 62,
+      "dept_back": [
+        { "name": "Public (Secretariat)", "note": "Fort St. George; ~15,000 staff; oldest secretariat by continuous operation." },
+        { "name": "Highways & Minor Ports", "note": "Big capex but high cost-overrun rate flagged by CAG." },
+        { "name": "Hindu Religious & Charitable Endowments", "note": "Manages ~38,000 temples' wealth; recurring transparency disputes." }
+      ],
+      "dept_public": [
+        { "name": "Health & Family Welfare", "note": "Best-in-India primary health system; PHC density highest." },
+        { "name": "School Education + Noon Meal Scheme", "note": "Original mid-day meal — model for the national programme." },
+        { "name": "Adi Dravidar & Tribal Welfare", "note": "Largest scheduled-caste outreach budget by state spend share." }
+      ]
+    },
+    "Gujarat": {
+      "ias": 313,
+      "employees_lakh": 5.5,
+      "corruption_pct": 36,
+      "dept_back": [
+        { "name": "General Administration", "note": "Sachivalaya, Gandhinagar — lean by national standards but tight central control." },
+        { "name": "Revenue", "note": "Land conversion/permits — friction point for industry despite ease-of-business rank." },
+        { "name": "Roads & Buildings", "note": "Heavy contracting; recurring queries on toll-road concession terms." }
+      ],
+      "dept_public": [
+        { "name": "Industries & Mines", "note": "Vibrant Gujarat machinery — investment promotion baked into bureaucracy." },
+        { "name": "Education", "note": "Government schools weaker than private growth; learning outcomes lag." },
+        { "name": "Ports & Transport", "note": "GMB runs minor ports — Mundra/Pipavav are the high-growth lines." }
+      ]
+    },
+    "Karnataka": {
+      "ias": 314,
+      "employees_lakh": 5.5,
+      "corruption_pct": 63,
+      "dept_back": [
+        { "name": "DPAR (Personnel & Admin Reforms)", "note": "Bangalore Vidhana Soudha — opaque transfer-posting market for officers." },
+        { "name": "PWD", "note": "Bengaluru tender disputes — repeated allegations against contractors." },
+        { "name": "Revenue (Bhoomi land records aside)", "note": "Bhoomi digitised land records well; rest of the dept slow." }
+      ],
+      "dept_public": [
+        { "name": "Electronics, IT & BT", "note": "Dedicated dept for tech promotion — rare among states, partly explains Bengaluru's continued dominance." },
+        { "name": "Health & Family Welfare", "note": "Strong urban hospitals, weak rural primary care." },
+        { "name": "Rural Development & Panchayat Raj", "note": "Pioneered panchayat empowerment; budget for direct rural transfers is large." }
+      ]
+    },
+    "Uttar Pradesh": {
+      "ias": 621,
+      "employees_lakh": 14.7,
+      "corruption_pct": 49,
+      "dept_back": [
+        { "name": "Personnel (Karmik)", "note": "Largest state bureaucracy in India — slow transfers, opaque postings." },
+        { "name": "Revenue & Land Records", "note": "Massive pending mutation backlog; land-grab/encroachment disputes ubiquitous." },
+        { "name": "PWD", "note": "Expressway construction recent showcase — but day-to-day road maintenance weak." }
+      ],
+      "dept_public": [
+        { "name": "Basic Education (Bachhwa Shiksha Parishad)", "note": "Runs ~1.5 lakh schools — largest single school system in India." },
+        { "name": "Police", "note": "Largest state police force; staffing strength low per capita relative to crime load." },
+        { "name": "Food & Civil Supplies", "note": "Biggest PDS network — ~15 crore beneficiaries; leakage historically high." }
+      ]
+    },
+    "West Bengal": {
+      "ias": 378,
+      "employees_lakh": 5.0,
+      "corruption_pct": 35,
+      "dept_back": [
+        { "name": "Personnel & Administrative Reforms", "note": "Nabanna secretariat — politicised transfers a recurring grievance." },
+        { "name": "Public Works", "note": "Roads + buildings dept; large salary head." },
+        { "name": "Revenue", "note": "Land reform legacy — but mutation/Khatian processes still slow." }
+      ],
+      "dept_public": [
+        { "name": "School Education", "note": "Pratichi Trust audits show learning outcomes well below national peers." },
+        { "name": "Health & Family Welfare", "note": "Doctors' strike + recruitment delays — capacity strained." },
+        { "name": "MSME & Textiles", "note": "Jute mills (legacy), Bengal handloom — large workforce, low productivity." }
+      ]
+    },
+    "Bihar": {
+      "ias": 342,
+      "employees_lakh": 3.5,
+      "corruption_pct": 75,
+      "dept_back": [
+        { "name": "General Administration", "note": "Underweight relative to state size — chronic under-staffing of supervisory cadres." },
+        { "name": "Revenue & Land Reforms", "note": "Worst-rated land record system in India; mutation backlog years deep." },
+        { "name": "Road Construction", "note": "Catch-up phase post-2005 — large capex, persistent quality concerns." }
+      ],
+      "dept_public": [
+        { "name": "Health", "note": "Doctor-population ratio worst in India; AES/encephalitis outbreaks recurring." },
+        { "name": "Education", "note": "Largest fiscal share; outcomes lag every major state." },
+        { "name": "Disaster Management", "note": "Annual flood response — sophisticated for the budget, but pre-emption weak." }
+      ]
+    },
+    "Rajasthan": {
+      "ias": 322,
+      "employees_lakh": 7.5,
+      "corruption_pct": 78,
+      "dept_back": [
+        { "name": "Personnel (DOP)", "note": "Sachivalaya — known for politicised transfer ecosystem." },
+        { "name": "Revenue", "note": "Vast geography + tribal land titling = slow records." },
+        { "name": "PWD", "note": "Roads to remote districts — high cost per km, tender quality patchy." }
+      ],
+      "dept_public": [
+        { "name": "Water Resources", "note": "Indira Gandhi Canal + tankers — water mgmt is core to politics." },
+        { "name": "School Education", "note": "Adhyapak Bharti recruitment cycles politically loaded." },
+        { "name": "Mines & Minerals", "note": "Stone/marble belt — royalty collection contested between Center and state." }
+      ]
+    },
+    "Andhra Pradesh": {
+      "ias": 204,
+      "employees_lakh": 5.0,
+      "corruption_pct": 40,
+      "dept_back": [
+        { "name": "General Administration (GAD)", "note": "Amaravati vs Visakhapatnam capital flip-flop has fragmented secretariat." },
+        { "name": "Revenue", "note": "Land surveys interrupted by capital relocation politics." },
+        { "name": "Public Works", "note": "Amaravati construction stalled, restarted, stalled — political cost is fiscal." }
+      ],
+      "dept_public": [
+        { "name": "Health (Aarogyasri)", "note": "Pioneer of state-funded health insurance — model copied by other states." },
+        { "name": "Civil Supplies (Doorstep PDS)", "note": "Mobile distribution units innovation; reaches remote villages." },
+        { "name": "Endowments", "note": "TTD (Tirumala) is a state-administered entity with budget ~₹4,000 cr/yr." }
+      ]
+    },
+    "Kerala": {
+      "ias": 217,
+      "employees_lakh": 5.0,
+      "corruption_pct": 44,
+      "dept_back": [
+        { "name": "Personnel & Admin Reforms", "note": "Strong PSU-style employee culture; transfers heavily regulated." },
+        { "name": "PWD", "note": "Roads + flood reconstruction (post-2018) — large capex programme." },
+        { "name": "Cooperatives", "note": "Coop sector is huge — partly back-office, partly genuine credit infrastructure." }
+      ],
+      "dept_public": [
+        { "name": "Health & Family Welfare", "note": "India's leader on every health indicator — institutional culture built since 1950s." },
+        { "name": "Local Self Government (Decentralisation)", "note": "Most empowered panchayats in India — 25–35% of state plan flows through them." },
+        { "name": "NORKA (Non-Resident Keralites)", "note": "Diaspora-specific portfolio — return-migrant rehabilitation, Gulf labour rights." }
+      ]
+    },
+    "Telangana": {
+      "ias": 208,
+      "employees_lakh": 3.5,
+      "corruption_pct": 67,
+      "dept_back": [
+        { "name": "GAD (Telangana Secretariat)", "note": "New secretariat at Hyderabad — built post-2014; staff doubled in 10 years." },
+        { "name": "Irrigation", "note": "Kaleshwaram + Mission Bhagiratha — massive capex; cost-benefit analyses contested." },
+        { "name": "R&B (Roads & Buildings)", "note": "High infrastructure tender volume; CAG queries on Kaleshwaram contracts." }
+      ],
+      "dept_public": [
+        { "name": "Health (KCR Kits, Aasara Pensions)", "note": "Maternity kits + welfare pensions — flagship schemes." },
+        { "name": "Civil Supplies", "note": "PDS rice + dignity-kit programme reaches ~85% of households." },
+        { "name": "Industries & Commerce", "note": "Hyderabad IT corridor admin — Cyberabad SEZ, pharma cluster." }
+      ]
+    },
+    "Madhya Pradesh": {
+      "ias": 439,
+      "employees_lakh": 6.0,
+      "corruption_pct": 44,
+      "dept_back": [
+        { "name": "GAD (Mantralaya)", "note": "Bhopal Vallabh Bhavan — large secretariat, slow file disposal." },
+        { "name": "PWD", "note": "Roads across the largest contiguous geography; high per-km cost." },
+        { "name": "Revenue", "note": "Tribal/forest land conflicts unresolved; survey-settlement decades pending." }
+      ],
+      "dept_public": [
+        { "name": "School Education", "note": "Atal Bal Mission, mid-day meals — outcomes still below national median." },
+        { "name": "Tribal Welfare", "note": "Largest tribal population state — separate portfolio with significant spend." },
+        { "name": "Energy", "note": "Power distribution losses very high — drag on state finances." }
+      ]
+    },
+    "Odisha": {
+      "ias": 241,
+      "employees_lakh": 5.5,
+      "corruption_pct": 27,
+      "dept_back": [
+        { "name": "GAD (Bhubaneswar)", "note": "Famously lean and disciplined under 24-yr one-party rule (until 2024)." },
+        { "name": "Revenue", "note": "Forest land + tribal title conflicts — Forest Rights Act implementation slow." },
+        { "name": "Works", "note": "Roads + buildings; coastal+cyclone construction adds cost." }
+      ],
+      "dept_public": [
+        { "name": "Disaster Management (OSDMA)", "note": "Global benchmark — cyclone fatalities down ~99% since 1999." },
+        { "name": "Health (Mission Shakti)", "note": "SHG-led last-mile health and welfare — distinctive women-collective model." },
+        { "name": "Steel & Mines", "note": "Royalties = core revenue; environmental costs externalised." }
+      ]
+    },
+    "Punjab": {
+      "ias": 232,
+      "employees_lakh": 3.5,
+      "corruption_pct": 50,
+      "dept_back": [
+        { "name": "Personnel", "note": "Punjab Civil Sectt — staff pension burden among highest in India." },
+        { "name": "Local Govt + PWD", "note": "Recurring municipal funding crises." },
+        { "name": "Power", "note": "Free agri-power subsidy is the fiscal black hole — runs ~₹15,000 cr/yr." }
+      ],
+      "dept_public": [
+        { "name": "Agriculture", "note": "Largest dept by reach but ecologically captured — paddy monoculture." },
+        { "name": "Health & Family Welfare", "note": "Drug abuse crisis — de-addiction infrastructure scaled up post-2017." },
+        { "name": "Co-operation", "note": "Sugar coops + milk federations (Verka) — Punjab agri-coop bedrock." }
+      ]
+    },
+    "Haryana": {
+      "ias": 217,
+      "employees_lakh": 3.5,
+      "corruption_pct": 38,
+      "dept_back": [
+        { "name": "Chief Secretary's Office", "note": "Chandigarh secretariat — small, tightly run." },
+        { "name": "Revenue", "note": "HARERA reform partial — land records digitised but disputes still long." },
+        { "name": "PWD", "note": "Roads + buildings — NCR adjacency complicates Haryana-Delhi-NCR-Authority overlap." }
+      ],
+      "dept_public": [
+        { "name": "Industries (Gurugram corridor)", "note": "Maruti, Hero, Honda — auto cluster; Gurugram IT/BPO base." },
+        { "name": "School Education", "note": "Recent push on smart classrooms; outcomes mid-tier nationally." },
+        { "name": "Sports", "note": "Disproportionate medal output per capita — institutional sports investment." }
+      ]
+    },
+    "Chhattisgarh": {
+      "ias": 189,
+      "employees_lakh": 3.5,
+      "corruption_pct": 30,
+      "dept_back": [
+        { "name": "GAD (Raipur)", "note": "Younger secretariat — leaner than older states of similar size." },
+        { "name": "Forest", "note": "Forest dept budget is huge — manages 44% land cover + Bastar security." },
+        { "name": "Mines", "note": "Coal + iron ore royalties — admin tightly tied to private mining interests." }
+      ],
+      "dept_public": [
+        { "name": "PDS (Civil Supplies)", "note": "Pioneering universal PDS — model copied by other states." },
+        { "name": "Tribal Affairs", "note": "~30% population — dedicated dept with significant spend share." },
+        { "name": "Health", "note": "Maoist-affected districts have weakest service delivery; recurring resource diversion to security." }
+      ]
+    },
+    "Jharkhand": {
+      "ias": 225,
+      "employees_lakh": 3.0,
+      "corruption_pct": 56,
+      "dept_back": [
+        { "name": "Personnel & Admin Reforms", "note": "Post-Bihar bifurcation cadre — chronic shortage of senior officers." },
+        { "name": "Revenue", "note": "CNT/SPT Act land protections complicate non-tribal acquisition." },
+        { "name": "Mining", "note": "Coal mafia + central PSU coal block allocations = governance grey zone." }
+      ],
+      "dept_public": [
+        { "name": "Welfare (Tribal)", "note": "Welfare budget large; outcomes uneven — leakage and infrastructure both weak." },
+        { "name": "Health", "note": "Doctor shortages acute outside Ranchi; tribal interior under-served." },
+        { "name": "Drinking Water & Sanitation", "note": "Borewell-heavy approach; iron contamination in many districts." }
+      ]
+    },
+    "Assam": {
+      "ias": 210,
+      "employees_lakh": 4.0,
+      "corruption_pct": 35,
+      "dept_back": [
+        { "name": "GAD (Dispur)", "note": "Joint Assam-Meghalaya IAS cadre — supply constrained at senior levels." },
+        { "name": "Revenue & Disaster Management", "note": "Annual flood files dominate routine work; permanent solutions deferred." },
+        { "name": "PWD", "note": "Road network in flood plains — short asset life, repeat construction." }
+      ],
+      "dept_public": [
+        { "name": "Health (Mission Indradhanush)", "note": "Vaccination drives have markedly improved; doctor density still low." },
+        { "name": "Agriculture & Horticulture", "note": "Tea + rice + horticulture — small-farmer base." },
+        { "name": "Border Areas Department", "note": "Bangladesh border admin — citizenship/NRC processes administered here." }
+      ]
+    },
+    "Uttarakhand": {
+      "ias": 120,
+      "employees_lakh": 1.5,
+      "corruption_pct": 28,
+      "dept_back": [
+        { "name": "GAD (Dehradun)", "note": "Small cadre, ~25-30 officers managing 13 hill+plain districts." },
+        { "name": "PWD", "note": "Mountain road construction — extreme per-km cost." },
+        { "name": "Revenue", "note": "Khasra/Khatauni records — modernisation pending." }
+      ],
+      "dept_public": [
+        { "name": "Disaster Management (USDMA)", "note": "Post-2013 Kedarnath retooling — early warning improved." },
+        { "name": "Tourism", "note": "Char Dham + adventure tourism — fiscal lifeline." },
+        { "name": "Forest", "note": "Largest dept by area; forest fire mgmt becoming central issue." }
+      ]
+    },
+    "Himachal Pradesh": {
+      "ias": 155,
+      "employees_lakh": 2.5,
+      "corruption_pct": 26,
+      "dept_back": [
+        { "name": "Personnel", "note": "Small cadre, generally well-regarded administration." },
+        { "name": "PWD", "note": "Hill roads — recurring landslide/cloudburst damage." },
+        { "name": "Forest", "note": "~67% forest cover; conservation dept has large field workforce." }
+      ],
+      "dept_public": [
+        { "name": "Health", "note": "Per-capita health spend among top 3 in India." },
+        { "name": "Education (Devbhoomi-trained teachers)", "note": "Near-universal literacy; outcomes consistently top-quartile." },
+        { "name": "Horticulture (apples)", "note": "Apple economy dept — pricing, R&D, mandis." }
+      ]
+    },
+    "Goa": {
+      "ias": 63,
+      "employees_lakh": 0.7,
+      "corruption_pct": 35,
+      "dept_back": [
+        { "name": "GAD (Panaji)", "note": "AGMUT cadre — officers rotated with Delhi/Arunachal/Mizoram/UTs." },
+        { "name": "Mines", "note": "Iron-ore mining ban + restart cycle — admin in flux." },
+        { "name": "PWD", "note": "Coastal roads + bridges; recurring monsoon damage." }
+      ],
+      "dept_public": [
+        { "name": "Tourism", "note": "Lifeblood — admin spans coastal regulation + permits." },
+        { "name": "Health (Goa Medical College)", "note": "Highest per-capita health infra in India." },
+        { "name": "Power", "note": "100% village electrification first; runs at near break-even." }
+      ]
+    },
+    "Tripura": {
+      "ias": 80,
+      "employees_lakh": 1.3,
+      "corruption_pct": 30,
+      "dept_back": [
+        { "name": "GAD (Agartala)", "note": "Joint Manipur-Tripura cadre; small numbers." },
+        { "name": "PWD", "note": "Border road construction high-cost; landlocked terrain." },
+        { "name": "Revenue", "note": "Tribal council (TTAADC) overlay adds complexity." }
+      ],
+      "dept_public": [
+        { "name": "Tribal Welfare", "note": "~31% ST population — dedicated dept with autonomous council." },
+        { "name": "Industries", "note": "Bamboo, rubber, agri-tech — niche but state's main industrial bet." },
+        { "name": "Health", "note": "AYUSH integration emphasised; doctor density low." }
+      ]
+    },
+    "Meghalaya": {
+      "ias": 53,
+      "employees_lakh": 0.7,
+      "corruption_pct": 30,
+      "dept_back": [
+        { "name": "GAD (Shillong)", "note": "Joint Assam-Meghalaya cadre — chronic short-staffing of senior posts." },
+        { "name": "PWD", "note": "Hill roads, very high monsoon impact." },
+        { "name": "Mining", "note": "Rat-hole coal moratorium since 2014 has reshaped dept role." }
+      ],
+      "dept_public": [
+        { "name": "Forest & Environment", "note": "Highest rainfall — autonomous district councils control most forests." },
+        { "name": "Health", "note": "Mission Mode units for malaria/TB; weak last-mile coverage." },
+        { "name": "Sericulture & Weaving", "note": "Eri/muga silk — niche local industry promoted by state." }
+      ]
+    },
+    "Manipur": {
+      "ias": 85,
+      "employees_lakh": 0.8,
+      "corruption_pct": 33,
+      "dept_back": [
+        { "name": "GAD (Imphal)", "note": "Joint Manipur-Tripura cadre — ethnic-conflict context strains administration." },
+        { "name": "PWD", "note": "Insurgency-affected roads — central security funds finance much of construction." },
+        { "name": "Revenue", "note": "Hill-valley land tenure differs sharply; conflict-displaced families add caseload." }
+      ],
+      "dept_public": [
+        { "name": "Tribal Affairs & Hills", "note": "Hill-area autonomous council — separate budgeting from valley." },
+        { "name": "Sports", "note": "Boxing, weightlifting, hockey — disproportionate national-medal output." },
+        { "name": "Health", "note": "Mary Kom-era infrastructure boost; conflict (2023-) disrupted operations." }
+      ]
+    },
+    "Nagaland": {
+      "ias": 74,
+      "employees_lakh": 1.0,
+      "corruption_pct": 30,
+      "dept_back": [
+        { "name": "GAD (Kohima)", "note": "Joint Nagaland cadre — small numbers, high per-capita IAS." },
+        { "name": "PWD", "note": "Hill roads, AFSPA-affected districts add operational cost." },
+        { "name": "Personnel & Vigilance", "note": "Tribal council interactions add layers; Naga Accord pending." }
+      ],
+      "dept_public": [
+        { "name": "Tourism (Hornbill Festival)", "note": "Single biggest annual revenue event; cultural diplomacy." },
+        { "name": "Agriculture & Horticulture", "note": "Bamboo, organic — niche export plays." },
+        { "name": "School Education", "note": "Highest English-medium adoption in India after Mizoram." }
+      ]
+    },
+    "Mizoram": {
+      "ias": 50,
+      "employees_lakh": 0.7,
+      "corruption_pct": 27,
+      "dept_back": [
+        { "name": "GAD (Aizawl)", "note": "AGMUT cadre rotations include Delhi, Arunachal, UTs." },
+        { "name": "PWD", "note": "Hill connectivity; Kaladan corridor adds central capex." },
+        { "name": "Revenue", "note": "Customary land tenure under VC (village council) — complex titling." }
+      ],
+      "dept_public": [
+        { "name": "Health", "note": "Highest cancer incidence in India — research/treatment unit prioritised." },
+        { "name": "Education", "note": "~91% literacy — model rural school system." },
+        { "name": "Soil & Water Conservation", "note": "Jhum cultivation shift — state actively subsidising terrace farming." }
+      ]
+    },
+    "Arunachal Pradesh": {
+      "ias": 92,
+      "employees_lakh": 0.7,
+      "corruption_pct": 30,
+      "dept_back": [
+        { "name": "GAD (Itanagar)", "note": "AGMUT cadre — Delhi-centric rotation pattern." },
+        { "name": "PWD", "note": "Border road construction — central security capex flows through here." },
+        { "name": "Revenue & Land Records", "note": "Customary land + clan tenure unmapped formally." }
+      ],
+      "dept_public": [
+        { "name": "Power", "note": "Hydropower portfolio — many MoUs signed, few operational." },
+        { "name": "Tourism", "note": "Tawang, Ziro — niche but growing." },
+        { "name": "Agriculture (Apatani heritage)", "note": "Indigenous agri systems — state showcases as soft power." }
+      ]
+    },
+    "Sikkim": {
+      "ias": 42,
+      "employees_lakh": 0.4,
+      "corruption_pct": 25,
+      "dept_back": [
+        { "name": "GAD (Gangtok)", "note": "Smallest IAS deployment; Sikkim shares cadre arrangements with WB." },
+        { "name": "PWD", "note": "Mountain roads, recent disaster (2023 Teesta) reshaped priorities." },
+        { "name": "Revenue", "note": "Tribal land protections (under Article 371F) — non-Sikkimese can't acquire." }
+      ],
+      "dept_public": [
+        { "name": "Horticulture (Organic Mission)", "note": "First fully organic state — entire ag dept retooled." },
+        { "name": "Tourism", "note": "Largest after horticulture in formal employment." },
+        { "name": "Energy & Power", "note": "Multiple run-of-river hydro — Teesta cascade central to revenue and disaster planning." }
+      ]
+    },
+    "Delhi": {
+      "ias": 140,
+      "employees_lakh": 2.5,
+      "corruption_pct": 29,
+      "dept_back": [
+        { "name": "GAD (Delhi Sectt)", "note": "AGMUT cadre — split authority with LG/MHA limits CM's control." },
+        { "name": "Vigilance", "note": "Constant CBI/CVC overlap due to dual control structure." },
+        { "name": "Land & Building", "note": "Most land is DDA (Central body) — state has limited land-policy levers." }
+      ],
+      "dept_public": [
+        { "name": "Health (Mohalla Clinics)", "note": "Pioneer last-mile primary care — copied elsewhere." },
+        { "name": "Education (Schools of Specialised Excellence)", "note": "Highest per-student spend among states + UTs." },
+        { "name": "Transport (DTC, DMRC interface)", "note": "Bus + metro — last-mile mobility flagship." }
+      ]
+    },
+    "Jammu & Kashmir": {
+      "ias": 137,
+      "employees_lakh": 5.0,
+      "corruption_pct": 38,
+      "dept_back": [
+        { "name": "GAD (now UT structure)", "note": "Post-2019 UT — Center now controls senior appointments; AGMUT cadre." },
+        { "name": "Revenue", "note": "Land titling reforms ongoing post Article 370 abrogation." },
+        { "name": "Police", "note": "Security-dominated state structure; large central force overlay." }
+      ],
+      "dept_public": [
+        { "name": "Tourism", "note": "Pre-conflict mainstay — recently rebounding (4 cr visitors in 2023)." },
+        { "name": "Horticulture (apples, saffron)", "note": "Largest formal employer outside govt — unique high-value agri." },
+        { "name": "Power (hydropower)", "note": "Massive hydro potential — Center-state revenue-share long-standing dispute." }
+      ]
+    }
+  }
+}
